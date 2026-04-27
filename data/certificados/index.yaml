@@ -1,0 +1,46 @@
+# Índice de Certificados e Diplomas
+# Este arquivo é a fonte de verdade para a seção de certificações do CV.
+# Estrutura legível por código: futuramente alimentará o gerador de PDF automaticamente.
+# Atualizado: 2026-04-26
+
+academicos:
+  - titulo: "Master of Business Administration (MBA)"
+    area: "Estratégia e Gestão de Negócios"
+    instituicao: "Fundação Getulio Vargas (FGV)"
+    periodo: "2012 - 2014"
+    arquivo: "academicos/fgv_mba.pdf"  # adicionar o arquivo quando disponível
+
+  - titulo: "Graduação em Estatística"
+    area: "Estatística e Análise de Sistemas"
+    instituicao: "Universidade do Estado do Rio de Janeiro (UERJ)"
+    periodo: "1984 - 1990"
+    arquivo: "academicos/uerj_estatistica.pdf"
+
+tecnicos:
+  - titulo: "ITIL Foundation V2"
+    emissor: "EXIN / OGC"
+    ano: (preencher)
+    arquivo: "tecnicos/itil_foundation_v2.pdf"
+
+  - titulo: "ISO 20000"
+    emissor: (preencher)
+    ano: (preencher)
+    arquivo: "tecnicos/iso_20000.pdf"
+
+  - titulo: "IBM Tivoli Security Solution Sales"
+    emissor: "IBM"
+    ano: (preencher)
+    arquivo: "tecnicos/ibm_tivoli.pdf"
+
+online:
+  - titulo: "Intermediate Machine Learning"
+    emissor: "Kaggle Learn"
+    ano: (preencher)
+    url: "https://www.kaggle.com/learn/certification/(username)/intermediate-machine-learning"
+    arquivo: "online/kaggle_intermediate_ml.pdf"
+
+  - titulo: "Feature Engineering"
+    emissor: "Kaggle Learn"
+    ano: (preencher)
+    url: "https://www.kaggle.com/learn/certification/(username)/feature-engineering"
+    arquivo: "online/kaggle_feature_engineering.pdf"

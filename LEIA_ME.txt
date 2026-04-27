@@ -1,0 +1,27 @@
+INSTRUÇÕES PARA GERAR O CURRÍCULO
+
+Este pacote contém o código fonte necessário para gerar o currículo de Pedro Gentil em PDF (Português e Inglês), garantindo o layout correto e as informações atualizadas.
+
+PRÉ-REQUISITOS:
+- Python 3 instalado no seu computador.
+
+PASSO A PASSO:
+
+1. Instale a biblioteca necessária:
+   Abra o terminal ou prompt de comando na pasta onde extraiu os arquivos e execute:
+   pip install -r requirements.txt
+
+2. Execute o gerador:
+   No mesmo terminal, execute:
+   python gerar_curriculo.py
+
+3. Resultado:
+   Dois arquivos PDF serão criados na mesma pasta:
+   - Curriculo_Pedro_Gentil.pdf (Versão em Português)
+   - Resume_Pedro_Gentil.pdf (Versão em Inglês)
+
+NOTAS:
+- O arquivo 'gerar_curriculo.py' contém todo o texto e lógica de layout. Você pode abri-lo com qualquer editor de texto (como Bloco de Notas ou VS Code) para alterar informações futuras (telefone, novas experiências, etc.).
+- A foto 'FotoLinkedin.png' deve estar na mesma pasta para ser incluída no PDF.
+
+Se tiver dúvidas ou precisar de ajustes futuros, basta editar o arquivo .py e rodar o comando novamente.

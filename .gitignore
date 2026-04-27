@@ -1,0 +1,46 @@
+# Generated PDFs
+output/
+!output/.gitkeep
+
+# PDFs soltos na raiz (devem ficar em output/)
+Curriculo_Pedro_Gentil.pdf
+Resume_Pedro_Gentil.pdf
+
+# Documentos pessoais (CPF, RG, CTPS — dados sensíveis)
+data/gov_br/
+
+# Dados operacionais internos FGV (relatórios com nomes de funcionários)
+data/projetos/fgv/portal-de-contratos/*.xlsx
+data/projetos/fgv/portal-de-contratos/*.pdf
+
+# LinkedIn Profile export (dados pessoais)
+data/linkedin/Profile.pdf
+
+# Imagens temporárias de verificação de layout
+verify_layout*.png
+
+# Imagens em formato legado
+*.jfif
+
+# Claude Code session files
+.claude/
+
+# Environment / secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>myCV — Guia de Utilização</title>
+  <style>
+    :root {
+      --teal:       #1abc9c;
+      --teal-dark:  #16a085;
+      --blue:       #2980b9;
+      --blue-dark:  #1a6fa3;
+      --navy:       #2c3e50;
+      --navy-light: #34495e;
+      --gray-bg:    #f4f6f8;
+      --gray-card:  #ffffff;
+      --gray-border:#dde3ea;
+      --gray-text:  #555e6b;
+      --code-bg:    #1e2535;
+      --code-text:  #e8eaf0;
+      --code-green: #1abc9c;
+      --code-yellow:#f1c40f;
+      --code-blue:  #74b9ff;
+      --sidebar-w:  260px;
+      --header-h:   60px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--gray-bg);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ────────────────────────────────────── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: var(--header-h);
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    }
+    header .logo {
+      display: flex; align-items: center; gap: 12px;
+    }
+    header .logo-icon {
+      width: 34px; height: 34px;
+      background: var(--teal);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; color: #fff; font-size: 16px;
+    }
+    header .logo-text { color: #fff; font-size: 18px; font-weight: 600; }
+    header .logo-text span { color: var(--teal); }
+    header .version {
+      font-size: 12px; color: #8899aa;
+      border: 1px solid #445566;
+      padding: 3px 10px; border-radius: 20px;
+    }
+
+    /* ── SIDEBAR ───────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: var(--header-h); left: 0; bottom: 0;
+      width: var(--sidebar-w);
+      background: var(--navy-light);
+      overflow-y: auto;
+      padding: 20px 0;
+      z-index: 90;
+    }
+    nav .nav-group { margin-bottom: 6px; }
+    nav .nav-group-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 1.2px;
+      color: #8899aa; text-transform: uppercase;
+      padding: 12px 20px 4px;
+    }
+    nav a {
+      display: block;
+      padding: 8px 20px;
+      color: #c8d4e0;
+      text-decoration: none;
+      font-size: 13.5px;
+      border-left: 3px solid transparent;
+      transition: all .15s;
+    }
+    nav a:hover  { color: #fff; background: rgba(255,255,255,.06); }
+    nav a.active { color: var(--teal); border-left-color: var(--teal); background: rgba(26,188,156,.08); }
+    nav a .icon  { margin-right: 8px; font-size: 14px; }
+
+    /* ── MAIN CONTENT ──────────────────────────────── */
+    main {
+      margin-left: var(--sidebar-w);
+      margin-top: var(--header-h);
+      padding: 40px 48px;
+      max-width: 960px;
+    }
+
+    /* ── SECTIONS ──────────────────────────────────── */
+    section {
+      margin-bottom: 56px;
+      scroll-margin-top: calc(var(--header-h) + 20px);
+    }
+    section h2 {
+      font-size: 22px; font-weight: 700;
+      color: var(--navy);
+      border-bottom: 2px solid var(--teal);
+      padding-bottom: 10px; margin-bottom: 24px;
+    }
+    section h3 {
+      font-size: 16px; font-weight: 700;
+      color: var(--navy-light);
+      margin: 28px 0 12px;
+    }
+    section p, section li { font-size: 14.5px; color: var(--gray-text); margin-bottom: 8px; }
+    section ul { padding-left: 20px; }
+    section ul li { margin-bottom: 4px; }
+
+    /* ── CARDS ─────────────────────────────────────── */
+    .card {
+      background: var(--gray-card);
+      border: 1px solid var(--gray-border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .card-title {
+      font-size: 15px; font-weight: 700;
+      color: var(--navy); margin-bottom: 8px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .card-title .badge {
+      font-size: 11px; font-weight: 600;
+      padding: 2px 8px; border-radius: 20px;
+      background: var(--teal); color: #fff;
+    }
+    .card-title .badge.blue  { background: var(--blue); }
+    .card-title .badge.gray  { background: #8899aa; }
+    .card p { font-size: 13.5px; color: var(--gray-text); margin-bottom: 4px; }
+
+    /* ── GRID ───────────────────────────────────────── */
+    .grid-2 {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px; margin-bottom: 16px;
+    }
+    .grid-3 {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px; margin-bottom: 16px;
+    }
+    @media (max-width: 780px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      main { padding: 24px 20px; }
+    }
+
+    /* ── CODE BLOCKS ────────────────────────────────── */
+    pre {
+      background: var(--code-bg);
+      border-radius: 8px;
+      padding: 18px 20px;
+      overflow-x: auto;
+      margin: 12px 0 20px;
+      font-size: 13px;
+      line-height: 1.65;
+      border: 1px solid #2e3b50;
+    }
+    code { font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace; }
+    pre code { color: var(--code-text); }
+    .kw  { color: var(--code-blue); }
+    .cm  { color: #6272a4; font-style: italic; }
+    .str { color: var(--code-green); }
+    .arg { color: var(--code-yellow); }
+
+    /* inline code */
+    p code, li code, td code {
+      background: #e8eef4; color: #c0392b;
+      padding: 1px 5px; border-radius: 4px;
+      font-size: 12.5px;
+    }
+
+    /* ── COMMAND TABLE ──────────────────────────────── */
+    .cmd-table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 13.5px; }
+    .cmd-table th {
+      background: var(--navy); color: #fff;
+      text-align: left; padding: 10px 14px;
+      font-size: 12px; font-weight: 600; letter-spacing: .5px;
+    }
+    .cmd-table th:first-child { border-radius: 8px 0 0 0; }
+    .cmd-table th:last-child  { border-radius: 0 8px 0 0; }
+    .cmd-table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid var(--gray-border);
+      vertical-align: top;
+    }
+    .cmd-table tr:last-child td { border-bottom: none; }
+    .cmd-table tr:nth-child(even) td { background: #f9fafc; }
+    .cmd-table td:first-child code { color: var(--teal-dark); font-weight: 600; }
+
+    /* ── FILE TREE ──────────────────────────────────── */
+    .tree {
+      background: var(--code-bg);
+      border-radius: 8px;
+      padding: 18px 20px;
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      font-size: 12.5px;
+      line-height: 1.8;
+      color: var(--code-text);
+      border: 1px solid #2e3b50;
+    }
+    .tree .dir  { color: var(--code-blue); font-weight: 600; }
+    .tree .file { color: #c8d4e0; }
+    .tree .note { color: #6272a4; }
+
+    /* ── WORKFLOW ────────────────────────────────────── */
+    .flow {
+      display: flex; gap: 0; margin: 16px 0 24px;
+      overflow-x: auto;
+    }
+    .flow-step {
+      flex: 1; min-width: 140px;
+      background: var(--gray-card);
+      border: 1px solid var(--gray-border);
+      border-right: none;
+      padding: 14px 16px;
+      position: relative;
+      text-align: center;
+    }
+    .flow-step:first-child { border-radius: 8px 0 0 8px; }
+    .flow-step:last-child  { border-radius: 0 8px 8px 0; border-right: 1px solid var(--gray-border); }
+    .flow-step:not(:last-child)::after {
+      content: '›';
+      position: absolute; right: -12px; top: 50%; transform: translateY(-50%);
+      font-size: 20px; color: var(--teal); z-index: 1;
+      font-weight: 700;
+    }
+    .flow-step .step-num {
+      font-size: 11px; font-weight: 700; color: var(--teal);
+      text-transform: uppercase; letter-spacing: .8px;
+    }
+    .flow-step .step-label {
+      font-size: 13px; font-weight: 600; color: var(--navy);
+      margin: 4px 0;
+    }
+    .flow-step .step-sub {
+      font-size: 11.5px; color: var(--gray-text);
+    }
+
+    /* ── CALLOUT ─────────────────────────────────────── */
+    .callout {
+      border-left: 4px solid var(--teal);
+      background: #e8f8f4;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 13.5px;
+      color: #1a5c4a;
+    }
+    .callout.warn  { border-color: #f39c12; background: #fef9e7; color: #7d6608; }
+    .callout.info  { border-color: var(--blue); background: #eaf4fb; color: #1a4d6b; }
+    .callout strong { font-weight: 700; }
+
+    /* ── ROADMAP ─────────────────────────────────────── */
+    .roadmap-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--gray-border);
+    }
+    .roadmap-item:last-child { border-bottom: none; }
+    .rm-status {
+      min-width: 80px;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      padding: 3px 8px; border-radius: 20px; text-align: center; margin-top: 2px;
+    }
+    .rm-status.done    { background: #d5f5e3; color: #1e8449; }
+    .rm-status.next    { background: #d6eaf8; color: #1a5276; }
+    .rm-status.future  { background: #f2f3f4; color: #626567; }
+    .rm-body strong    { font-size: 14px; color: var(--navy); }
+    .rm-body p         { font-size: 13px; color: var(--gray-text); margin-top: 2px; }
+
+    /* ── FUNCTION SIGNATURE ─────────────────────────── */
+    .fn-sig {
+      background: #f0f4f8;
+      border: 1px solid var(--gray-border);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12.5px;
+      margin: 8px 0 4px;
+      color: var(--navy);
+    }
+    .fn-sig .fn-name { color: var(--teal-dark); font-weight: 700; }
+    .fn-sig .fn-param { color: #7d3c98; }
+    .fn-sig .fn-default { color: #888; }
+
+    /* ── QUICK REF CHIP ─────────────────────────────── */
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .chip {
+      background: var(--navy);
+      color: #d0dde8;
+      font-family: monospace;
+      font-size: 12px;
+      padding: 5px 12px; border-radius: 6px;
+      white-space: nowrap;
+    }
+    .chip span { color: var(--teal); }
+
+    /* ── TABLE OF CONTENTS FLOAT ────────────────────── */
+    .toc-mini {
+      float: right; margin: 0 0 20px 28px;
+      background: var(--gray-card); border: 1px solid var(--gray-border);
+      border-radius: 10px; padding: 14px 18px;
+      font-size: 13px; min-width: 200px;
+    }
+    .toc-mini strong { display: block; margin-bottom: 8px; color: var(--navy); }
+    .toc-mini a { display: block; color: var(--blue); text-decoration: none; padding: 2px 0; }
+    .toc-mini a:hover { text-decoration: underline; }
+
+    /* ── PRINT / SCROLL ──────────────────────────────── */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <div class="logo-icon">CV</div>
+    <div class="logo-text">my<span>CV</span> &mdash; Guia de Utilização</div>
+  </div>
+  <div class="version">v2 &nbsp;·&nbsp; Abril 2026</div>
+</header>
+
+<!-- SIDEBAR -->
+<nav id="sidebar">
+  <div class="nav-group">
+    <div class="nav-group-label">Início</div>
+    <a href="#visao-geral" class="active"><span class="icon">◈</span> Visão Geral</a>
+    <a href="#setup"><span class="icon">⚙</span> Configuração</a>
+    <a href="#estrutura"><span class="icon">🗂</span> Estrutura de Pastas</a>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Uso Diário</div>
+    <a href="#gerar-pdf"><span class="icon">📄</span> Gerar PDFs</a>
+    <a href="#atualizar-dados"><span class="icon">✏️</span> Atualizar Dados</a>
+    <a href="#snapshot"><span class="icon">📦</span> Criar Snapshot</a>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Assistente IA</div>
+    <a href="#ia-visao"><span class="icon">🤖</span> Como Funciona</a>
+    <a href="#ia-comandos"><span class="icon">⌨</span> Comandos CLI</a>
+    <a href="#ia-funcoes"><span class="icon">ƒ</span> Funções Python</a>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Referências</div>
+    <a href="#linkedin-ref"><span class="icon">🔗</span> LinkedIn</a>
+    <a href="#historico"><span class="icon">🕓</span> Histórico</a>
+    <a href="#yaml-guide"><span class="icon">📝</span> Guia YAML</a>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Visão Futura</div>
+    <a href="#roadmap"><span class="icon">🗺</span> Roadmap</a>
+    <a href="#arquitetura-futura"><span class="icon">🏗</span> Arquitetura</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="visao-geral">
+    <h2>◈ Visão Geral</h2>
+
+    <p>
+      O <strong>myCV</strong> é uma plataforma pessoal de gestão de carreira construída em Python.
+      Vai além de gerar um PDF — é o sistema central que mantém o histórico profissional de
+      <strong>Pedro Gentil</strong> estruturado, versionado e pronto para ser usado em qualquer canal:
+      currículo em PDF (PT/EN), perfil LinkedIn, posts e projetos.
+    </p>
+
+    <div class="grid-3" style="margin-top: 24px;">
+      <div class="card">
+        <div class="card-title">📄 Geração de CV <span class="badge">Ativo</span></div>
+        <p>Gera PDFs profissionais em PT e EN a partir de dados YAML. Layout com barra lateral, foto, destaques de impacto e depoimentos.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">🤖 Assistente IA <span class="badge">Ativo</span></div>
+        <p>Usa a API do Claude (Anthropic) para reescrever bullets, revisar seções, traduzir conteúdo e gerar rascunhos de posts.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">🔗 LinkedIn <span class="badge blue">Em breve</span></div>
+        <p>Seções do perfil salvas como referência. Publicação assistida por IA via LinkedIn API está no roadmap.</p>
+      </div>
+    </div>
+
+    <h3>Princípio central</h3>
+    <p>
+      <strong>Dados ficam em <code>data/</code>, código fica em <code>src/</code>.</strong><br/>
+      Para atualizar o CV, edite os arquivos YAML — não o código Python.
+      A IA ajuda a formular o texto; você decide o que entra.
+    </p>
+
+    <div class="flow">
+      <div class="flow-step">
+        <div class="step-num">1</div>
+        <div class="step-label">Evento</div>
+        <div class="step-sub">Novo projeto, conquista, certificação</div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">2</div>
+        <div class="step-label">IA sugere</div>
+        <div class="step-sub"><code>update_with_ai.py</code></div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">3</div>
+        <div class="step-label">Você revisa</div>
+        <div class="step-sub">Edita o YAML</div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">4</div>
+        <div class="step-label">Snapshot</div>
+        <div class="step-sub"><code>snapshot.py</code></div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">5</div>
+        <div class="step-label">Gera PDF</div>
+        <div class="step-sub"><code>generate_cv.py</code></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="setup">
+    <h2>⚙ Configuração</h2>
+
+    <h3>Pré-requisitos</h3>
+    <ul>
+      <li>Python 3.10+</li>
+      <li>Virtualenv ativo: <code>.venv/</code></li>
+      <li>Chave de API da Anthropic (para funcionalidades de IA)</li>
+    </ul>
+
+    <h3>Instalação</h3>
+    <pre><code><span class="cm"># 1. Ativar o ambiente virtual</span>
+.venv\Scripts\activate          <span class="cm"># Windows</span>
+source .venv/bin/activate       <span class="cm"># Linux/Mac</span>
+
+<span class="cm"># 2. Instalar dependências</span>
+pip install -r requirements.txt
+
+<span class="cm"># 3. Configurar a chave da API</span>
+<span class="cm"># Copie o arquivo de exemplo e preencha com sua chave</span>
+copy .env.example .env          <span class="cm"># Windows</span>
+cp .env.example .env            <span class="cm"># Linux/Mac</span>
+<span class="cm"># Depois abra .env e adicione: ANTHROPIC_API_KEY=sk-ant-...</span></code></pre>
+
+    <div class="callout warn">
+      <strong>Atenção:</strong> O arquivo <code>.env</code> nunca deve ser commitado no git.
+      Ele já está no <code>.gitignore</code>. Sua chave fica apenas na sua máquina.
+    </div>
+
+    <h3>Dependências</h3>
+    <table class="cmd-table">
+      <tr><th>Pacote</th><th>Versão</th><th>Para quê</th></tr>
+      <tr><td><code>fpdf2</code></td><td>≥ 2.7.0</td><td>Geração de PDF</td></tr>
+      <tr><td><code>pyyaml</code></td><td>≥ 6.0</td><td>Leitura dos arquivos de dados</td></tr>
+      <tr><td><code>anthropic</code></td><td>≥ 0.30.0</td><td>API do Claude</td></tr>
+      <tr><td><code>python-dotenv</code></td><td>≥ 1.0</td><td>Leitura do <code>.env</code></td></tr>
+      <tr><td><code>requests</code></td><td>≥ 2.31</td><td>Chamadas HTTP (LinkedIn — futuro)</td></tr>
+    </table>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="estrutura">
+    <h2>🗂 Estrutura de Pastas</h2>
+
+    <div class="tree">
+<span class="dir">myCV/</span>
+├── <span class="file">CLAUDE.md</span>              <span class="note"># Guia interno para Claude Code</span>
+├── <span class="file">docs/index.html</span>        <span class="note"># Este documento</span>
+├── <span class="file">requirements.txt</span>
+├── <span class="file">.env</span>                   <span class="note"># ANTHROPIC_API_KEY (não versionado)</span>
+├── <span class="file">.env.example</span>           <span class="note"># Template do .env</span>
+│
+├── <span class="dir">data/</span>                  <span class="note"># ← FONTE DA VERDADE — edite aqui</span>
+│   ├── <span class="file">profile_pt.yaml</span>    <span class="note"># Perfil completo em Português</span>
+│   ├── <span class="file">profile_en.yaml</span>    <span class="note"># Perfil completo em Inglês</span>
+│   │
+│   ├── <span class="dir">linkedin/</span>          <span class="note"># Seções do perfil LinkedIn</span>
+│   │   ├── <span class="file">headline_pt.txt</span>
+│   │   ├── <span class="file">headline_en.txt</span>
+│   │   ├── <span class="file">about_pt.md</span>
+│   │   ├── <span class="file">about_en.md</span>
+│   │   ├── <span class="dir">experience/</span>
+│   │   │   ├── <span class="file">fgv_pt.md</span>
+│   │   │   ├── <span class="file">fgv_en.md</span>
+│   │   │   ├── <span class="file">xerox_pt.md</span>
+│   │   │   └── <span class="file">consultoria_independente_pt.md</span>
+│   │   └── <span class="dir">posts/</span>             <span class="note"># Posts publicados arquivados</span>
+│   │       └── <span class="file">YYYY-MM_slug.md</span>
+│   │
+│   └── <span class="dir">history/</span>           <span class="note"># Snapshots versionados</span>
+│       ├── <span class="file">changelog.md</span>
+│       ├── <span class="dir">v1_2026-04-26/</span>
+│       └── <span class="dir">v2_2026-04-26/</span>
+│
+├── <span class="dir">src/</span>
+│   ├── <span class="dir">generators/</span>
+│   │   └── <span class="file">pdf_generator.py</span>   <span class="note"># Layout e renderização PDF</span>
+│   ├── <span class="dir">integrations/</span>
+│   │   └── <span class="file">linkedin.py</span>        <span class="note"># LinkedIn API (futuro)</span>
+│   └── <span class="dir">ai/</span>
+│       ├── <span class="file">cv_assistant.py</span>    <span class="note"># Funções Claude API</span>
+│       └── <span class="file">prompts.py</span>         <span class="note"># Templates de prompt</span>
+│
+├── <span class="dir">assets/</span>
+│   └── <span class="file">FotoLinkedin.png</span>   <span class="note"># Foto usada no PDF</span>
+│
+├── <span class="dir">output/</span>                <span class="note"># PDFs gerados (gitignored)</span>
+│   ├── <span class="file">Curriculo_Pedro_Gentil.pdf</span>
+│   └── <span class="file">Resume_Pedro_Gentil.pdf</span>
+│
+└── <span class="dir">scripts/</span>               <span class="note"># Entry points — execute estes</span>
+    ├── <span class="file">generate_cv.py</span>     <span class="note"># Gera os PDFs</span>
+    ├── <span class="file">update_with_ai.py</span>  <span class="note"># CLI do assistente IA</span>
+    └── <span class="file">snapshot.py</span>        <span class="note"># Versiona o CV</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="gerar-pdf">
+    <h2>📄 Gerar PDFs</h2>
+
+    <p>Os PDFs são gerados a partir dos arquivos <code>data/profile_pt.yaml</code> e <code>data/profile_en.yaml</code>.
+    O resultado vai para a pasta <code>output/</code>.</p>
+
+    <pre><code><span class="cm"># Gerar ambas as versões (PT e EN)</span>
+python scripts/generate_cv.py
+
+<span class="cm"># Gerar apenas Português</span>
+python scripts/generate_cv.py <span class="arg">--lang pt</span>
+
+<span class="cm"># Gerar apenas Inglês</span>
+python scripts/generate_cv.py <span class="arg">--lang en</span>
+
+<span class="cm"># Compatibilidade com o arquivo legado</span>
+python gerar_curriculo.py</code></pre>
+
+    <div class="callout">
+      <strong>Saída:</strong><br/>
+      <code>output/Curriculo_Pedro_Gentil.pdf</code> — versão em Português<br/>
+      <code>output/Resume_Pedro_Gentil.pdf</code> — versão em Inglês
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="atualizar-dados">
+    <h2>✏️ Atualizar Dados do CV</h2>
+
+    <p>Toda atualização de conteúdo é feita nos arquivos YAML. Nunca edite o código Python para mudar texto.</p>
+
+    <h3>Estrutura do <code>profile_pt.yaml</code></h3>
+    <table class="cmd-table">
+      <tr><th>Chave</th><th>Tipo</th><th>Descrição</th></tr>
+      <tr><td><code>nome</code></td><td>string</td><td>Nome completo</td></tr>
+      <tr><td><code>titulo</code></td><td>string</td><td>Título profissional</td></tr>
+      <tr><td><code>contato</code></td><td>string</td><td>Linha de contato do cabeçalho</td></tr>
+      <tr><td><code>linkedin_url</code></td><td>string</td><td>URL do perfil LinkedIn</td></tr>
+      <tr><td><code>resumo_titulo</code></td><td>string</td><td>Título da seção de resumo</td></tr>
+      <tr><td><code>resumo_texto</code></td><td>texto longo</td><td>Texto do perfil profissional</td></tr>
+      <tr><td><code>destaques</code></td><td>lista</td><td>Bullets de impacto (caixa verde)</td></tr>
+      <tr><td><code>experiencia</code></td><td>lista de objetos</td><td>Experiências profissionais</td></tr>
+      <tr><td><code>competencias</code></td><td>lista de grupos</td><td>Grupos de competências (barra lateral)</td></tr>
+      <tr><td><code>educacao</code></td><td>lista</td><td>Formações acadêmicas</td></tr>
+      <tr><td><code>idiomas</code></td><td>lista</td><td>Idiomas</td></tr>
+      <tr><td><code>publicacoes</code></td><td>lista</td><td>Publicações e artigos</td></tr>
+      <tr><td><code>depoimentos</code></td><td>lista de objetos</td><td>Depoimentos do LinkedIn</td></tr>
+    </table>
+
+    <h3>Como adicionar um novo destaque de impacto</h3>
+    <p>Abra <code>data/profile_pt.yaml</code> e adicione um item à lista <code>destaques</code>:</p>
+    <pre><code>destaques:
+  <span class="cm"># itens existentes...</span>
+  - <span class="str">"NOVO: Descrição do resultado com métrica quantificada (projeto X)."</span></code></pre>
+
+    <h3>Como adicionar uma nova experiência</h3>
+    <pre><code>experiencia:
+  - empresa: <span class="str">"NOME DA EMPRESA"</span>
+    periodo: <span class="str">"2024 - Atual"</span>
+    cargo: <span class="str">"Título do Cargo"</span>
+    detalhes:
+      - <span class="str">"Bullet 1 com verbo de ação e resultado."</span>
+      - <span class="str">"Bullet 2 com contexto e impacto."</span></code></pre>
+
+    <div class="callout info">
+      <strong>Dica:</strong> Use o comando <code>python scripts/update_with_ai.py bullet</code>
+      para que o Claude sugira o texto do bullet antes de você escrever manualmente.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="snapshot">
+    <h2>📦 Criar Snapshot (Histórico)</h2>
+
+    <p>Antes de qualquer atualização significativa, crie um snapshot para preservar a versão atual.</p>
+
+    <pre><code><span class="cm"># Criar snapshot com descrição</span>
+python scripts/snapshot.py <span class="arg">--message</span> <span class="str">"Adicionei projeto X na seção destaques"</span>
+
+<span class="cm"># Atalho -m</span>
+python scripts/snapshot.py <span class="arg">-m</span> <span class="str">"Antes de atualizar experiência FGV"</span></code></pre>
+
+    <p>O script cria uma pasta <code>data/history/vN_YYYY-MM-DD/</code> com os dois YAMLs e registra a entrada no <code>changelog.md</code>.</p>
+
+    <h3>Ver histórico</h3>
+    <pre><code><span class="cm"># Abrir o changelog</span>
+data/history/changelog.md
+
+<span class="cm"># Comparar duas versões (usando diff)</span>
+diff data/history/v1_2026-04-26/profile_pt.yaml data/profile_pt.yaml</code></pre>
+
+    <div class="callout">
+      <strong>Boa prática:</strong> Sempre crie um snapshot <em>antes</em> de editar os YAMLs.
+      O fluxo recomendado é: snapshot → editar YAML → gerar PDF → verificar.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="ia-visao">
+    <h2>🤖 Assistente IA — Como Funciona</h2>
+
+    <p>O assistente usa o modelo <strong>claude-sonnet-4-6</strong> via API da Anthropic.
+    Ele não altera os arquivos automaticamente — <strong>sugere texto e você decide o que entra</strong>.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">O que a IA faz</div>
+        <ul>
+          <li>Reescreve descrições informais como bullets profissionais</li>
+          <li>Traduz conteúdo PT → EN e EN → PT</li>
+          <li>Revisa seções e aponta melhorias</li>
+          <li>Gera rascunhos de posts para o LinkedIn</li>
+          <li>Sugere trechos YAML prontos para colar</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">O que a IA não faz</div>
+        <ul>
+          <li>Não edita os arquivos YAML diretamente</li>
+          <li>Não publica no LinkedIn sem sua aprovação</li>
+          <li>Não cria snapshots automaticamente</li>
+          <li>Não tem acesso ao seu histórico entre sessões</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout warn">
+      <strong>Custo:</strong> Cada chamada à API consome tokens.
+      Revise o texto produzido antes de fazer chamadas repetidas sobre o mesmo conteúdo.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="ia-comandos">
+    <h2>⌨ Comandos CLI do Assistente</h2>
+
+    <p>Todos os comandos são executados via <code>python scripts/update_with_ai.py &lt;comando&gt;</code>.</p>
+
+    <h3><code>bullet</code> — Reescrever uma descrição como bullet</h3>
+    <pre><code>python scripts/update_with_ai.py bullet</code></pre>
+    <p>Modo interativo: você descreve o que aconteceu informalmente e o Claude devolve um bullet orientado a resultado.</p>
+
+    <h3><code>review</code> — Revisar uma seção do CV</h3>
+    <pre><code>python scripts/update_with_ai.py review <span class="arg">--section</span> resumo_texto <span class="arg">--lang</span> pt
+python scripts/update_with_ai.py review <span class="arg">--section</span> destaques <span class="arg">--lang</span> en</code></pre>
+
+    <h3><code>translate</code> — Traduzir uma seção entre PT e EN</h3>
+    <pre><code><span class="cm"># Traduzir seção do PT para EN</span>
+python scripts/update_with_ai.py translate <span class="arg">--section</span> resumo_texto <span class="arg">--from-lang</span> pt
+
+<span class="cm"># Traduzir seção do EN para PT</span>
+python scripts/update_with_ai.py translate <span class="arg">--section</span> destaques <span class="arg">--from-lang</span> en</code></pre>
+
+    <h3><code>yaml-update</code> — Sugerir YAML para nova entrada</h3>
+    <pre><code>python scripts/update_with_ai.py yaml-update <span class="arg">--section</span> destaques
+python scripts/update_with_ai.py yaml-update <span class="arg">--section</span> experiencia
+python scripts/update_with_ai.py yaml-update <span class="arg">--section</span> publicacoes</code></pre>
+    <p>Modo interativo: você descreve o que aconteceu e o Claude devolve o bloco YAML pronto para colar no arquivo.</p>
+
+    <h3><code>post</code> — Gerar rascunho de post para o LinkedIn</h3>
+    <pre><code><span class="cm"># Case de resultado em Português</span>
+python scripts/update_with_ai.py post <span class="arg">--type</span> case <span class="arg">--lang</span> pt
+
+<span class="cm"># Post técnico em Inglês</span>
+python scripts/update_with_ai.py post <span class="arg">--type</span> technical <span class="arg">--lang</span> en
+
+<span class="cm"># Reflexão profissional</span>
+python scripts/update_with_ai.py post <span class="arg">--type</span> reflexao <span class="arg">--lang</span> pt</code></pre>
+
+    <table class="cmd-table" style="margin-top: 16px;">
+      <tr><th>Comando</th><th>Parâmetros</th><th>Interativo?</th></tr>
+      <tr><td><code>bullet</code></td><td>nenhum</td><td>Sim</td></tr>
+      <tr><td><code>review</code></td><td><code>--section</code>, <code>--lang</code></td><td>Não</td></tr>
+      <tr><td><code>translate</code></td><td><code>--section</code>, <code>--from-lang</code></td><td>Não</td></tr>
+      <tr><td><code>yaml-update</code></td><td><code>--section</code></td><td>Sim</td></tr>
+      <tr><td><code>post</code></td><td><code>--type</code>, <code>--lang</code></td><td>Sim</td></tr>
+    </table>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="ia-funcoes">
+    <h2>ƒ Funções Python do Assistente</h2>
+
+    <p>Para uso programático, importe diretamente de <code>src.ai.cv_assistant</code>:</p>
+
+    <pre><code><span class="kw">from</span> src.ai.cv_assistant <span class="kw">import</span> (
+    improve_bullet,
+    translate,
+    review_section,
+    draft_linkedin_post,
+    suggest_yaml_update,
+)</code></pre>
+
+    <div class="fn-sig"><span class="fn-name">improve_bullet</span>(<span class="fn-param">description</span>: str, <span class="fn-param">context</span>: str <span class="fn-default">= "experiência profissional"</span>, <span class="fn-param">lang</span>: str <span class="fn-default">= "pt"</span>) → str</div>
+    <p style="margin-bottom: 16px;">Recebe uma descrição informal e retorna um bullet de CV polido.</p>
+
+    <div class="fn-sig"><span class="fn-name">translate</span>(<span class="fn-param">text</span>: str, <span class="fn-param">target_lang</span>: str <span class="fn-default">= "en"</span>) → str</div>
+    <p style="margin-bottom: 16px;">Traduz texto de CV preservando tom e estrutura. <code>target_lang</code>: <code>"en"</code> ou <code>"pt"</code>.</p>
+
+    <div class="fn-sig"><span class="fn-name">review_section</span>(<span class="fn-param">section_name</span>: str, <span class="fn-param">content</span>: str, <span class="fn-param">lang</span>: str <span class="fn-default">= "pt"</span>) → str</div>
+    <p style="margin-bottom: 16px;">Analisa uma seção e retorna pontos fortes, sugestões e versão revisada.</p>
+
+    <div class="fn-sig"><span class="fn-name">draft_linkedin_post</span>(<span class="fn-param">achievement</span>: str, <span class="fn-param">post_type</span>: str <span class="fn-default">= "case"</span>, <span class="fn-param">lang</span>: str <span class="fn-default">= "pt"</span>) → str</div>
+    <p style="margin-bottom: 16px;"><code>post_type</code>: <code>"case"</code> | <code>"tecnico"</code> | <code>"reflexao"</code></p>
+
+    <div class="fn-sig"><span class="fn-name">suggest_yaml_update</span>(<span class="fn-param">section</span>: str, <span class="fn-param">description</span>: str, <span class="fn-param">example</span>: str <span class="fn-default">= ""</span>) → str</div>
+    <p>Retorna um bloco YAML pronto para inserir em <code>data/profile_pt.yaml</code>.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="linkedin-ref">
+    <h2>🔗 Referências LinkedIn</h2>
+
+    <p>Os arquivos em <code>data/linkedin/</code> são a fonte de verdade das seções do seu perfil LinkedIn.
+    Mantenha-os sincronizados com o que está publicado.</p>
+
+    <table class="cmd-table">
+      <tr><th>Arquivo</th><th>Seção no LinkedIn</th><th>Limite de caracteres</th></tr>
+      <tr><td><code>headline_pt.txt</code></td><td>Título profissional</td><td>220 chars</td></tr>
+      <tr><td><code>headline_en.txt</code></td><td>Professional headline</td><td>220 chars</td></tr>
+      <tr><td><code>about_pt.md</code></td><td>Sobre</td><td>2.600 chars</td></tr>
+      <tr><td><code>about_en.md</code></td><td>About</td><td>2.600 chars</td></tr>
+      <tr><td><code>experience/fgv_pt.md</code></td><td>Descrição FGV</td><td>2.000 chars</td></tr>
+      <tr><td><code>experience/xerox_pt.md</code></td><td>Descrição Xerox</td><td>2.000 chars</td></tr>
+    </table>
+
+    <h3>Arquivar posts publicados</h3>
+    <p>Salve cada post publicado em <code>data/linkedin/posts/</code> com o padrão de nome:</p>
+    <pre><code>YYYY-MM_slug-do-assunto.md
+
+<span class="cm"># Exemplos:</span>
+2025-12_learn-mate-multi-agent-tutor.md
+2026-05_governanca-dados-fgv.md</code></pre>
+
+    <p>Estrutura interna de cada arquivo de post:</p>
+    <pre><code><span class="cm"># Post LinkedIn — Título do Post</span>
+<span class="cm"># Data: Mês/Ano</span>
+<span class="cm"># Tipo: case | tecnico | reflexao</span>
+<span class="cm"># Idioma: PT | EN</span>
+<span class="cm"># URL: https://linkedin.com/posts/...</span>
+<span class="cm"># Engajamento: X curtidas, Y comentários</span>
+
+---
+
+(Texto completo do post aqui)
+
+#hashtag1 #hashtag2</code></pre>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="historico">
+    <h2>🕓 Sistema de Histórico</h2>
+
+    <p>Cada snapshot salva uma cópia dos dois YAMLs em <code>data/history/vN_YYYY-MM-DD/</code>
+    e registra uma entrada no <code>changelog.md</code>.</p>
+
+    <h3>Criar snapshot</h3>
+    <pre><code>python scripts/snapshot.py <span class="arg">-m</span> <span class="str">"Descrição do que mudou"</span></code></pre>
+
+    <h3>Ver o histórico</h3>
+    <pre><code><span class="cm"># Abrir o changelog no editor</span>
+code data/history/changelog.md
+
+<span class="cm"># Listar versões existentes (Windows)</span>
+dir data\history
+
+<span class="cm"># Comparar versão atual com v1</span>
+diff data/history/v1_2026-04-26/profile_pt.yaml data/profile_pt.yaml</code></pre>
+
+    <h3>Restaurar uma versão anterior</h3>
+    <pre><code><span class="cm"># Copiar versão v1 de volta (com cuidado — crie snapshot antes!)</span>
+python scripts/snapshot.py <span class="arg">-m</span> <span class="str">"Backup antes de restaurar v1"</span>
+copy data\history\v1_2026-04-26\profile_pt.yaml data\profile_pt.yaml
+copy data\history\v1_2026-04-26\profile_en.yaml data\profile_en.yaml</code></pre>
+
+    <div class="callout warn">
+      <strong>Atenção:</strong> Restaurar uma versão sobrescreve os YAMLs atuais.
+      Sempre crie um snapshot da versão corrente antes de restaurar.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="yaml-guide">
+    <h2>📝 Guia Rápido de YAML</h2>
+
+    <p>Alguns lembretes para editar os arquivos <code>.yaml</code> sem erros:</p>
+
+    <h3>Tipos de valores</h3>
+    <pre><code><span class="cm"># String simples</span>
+nome: <span class="str">"PEDRO GENTIL REGATO DE OLIVEIRA SOARES"</span>
+
+<span class="cm"># String com caracteres especiais (use aspas)</span>
+titulo: <span class="str">"ARQUITETO DE SOLUÇÕES | ML/NLP & GENAI"</span>
+
+<span class="cm"># Texto longo (use | para preservar quebras de linha)</span>
+resumo_texto: |
+  Primeiro parágrafo do texto.
+
+  Segundo parágrafo, separado por linha em branco.
+
+<span class="cm"># Lista simples</span>
+idiomas:
+  - <span class="str">"Português (Nativo)"</span>
+  - <span class="str">"Inglês (Avançado/Fluente)"</span>
+
+<span class="cm"># Lista de objetos</span>
+experiencia:
+  - empresa: <span class="str">"NOME DA EMPRESA"</span>
+    periodo: <span class="str">"2024 - Atual"</span>
+    cargo: <span class="str">"Título do Cargo"</span>
+    detalhes:
+      - <span class="str">"Bullet de resultado."</span></code></pre>
+
+    <h3>Erros comuns</h3>
+    <table class="cmd-table">
+      <tr><th>Erro</th><th>Causa</th><th>Solução</th></tr>
+      <tr><td>Texto cortado</td><td>Aspas não fechadas</td><td>Verifique que toda string tem <code>"</code> de abertura e fechamento</td></tr>
+      <tr><td>Indentação inválida</td><td>Mix de tabs e espaços</td><td>Use sempre 2 espaços, nunca tab</td></tr>
+      <tr><td>Caractere especial <code>:</code></td><td>Dois pontos no meio de string</td><td>Coloque a string entre aspas duplas</td></tr>
+    </table>
+
+    <div class="callout info">
+      <strong>Validar o YAML:</strong> Execute <code>python -c "import yaml; yaml.safe_load(open('data/profile_pt.yaml', encoding='utf-8'))"</code>
+      para verificar se o arquivo está bem formado antes de gerar o PDF.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="roadmap">
+    <h2>🗺 Roadmap</h2>
+
+    <div class="roadmap-item">
+      <div class="rm-status done">Concluído</div>
+      <div class="rm-body">
+        <strong>Refatoração dados/layout</strong>
+        <p>Separação dos textos do CV em YAML e gerador PDF modularizado. Base para todas as demais funcionalidades.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status done">Concluído</div>
+      <div class="rm-body">
+        <strong>Assistente IA (Claude API)</strong>
+        <p>CLI interativo para reescrever bullets, revisar seções, traduzir conteúdo e gerar posts para o LinkedIn.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status done">Concluído</div>
+      <div class="rm-body">
+        <strong>Referências LinkedIn + Sistema de Histórico</strong>
+        <p>Seções do perfil LinkedIn versionadas. Snapshots datados dos YAMLs com changelog.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status next">Próximo</div>
+      <div class="rm-body">
+        <strong>Catálogo de Projetos (<code>data/projects.yaml</code>)</strong>
+        <p>Registro estruturado de todos os projetos com contexto, tecnologias, métricas de resultado e status.
+        Fonte para gerar bullets, posts e seções do LinkedIn automaticamente.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status next">Próximo</div>
+      <div class="rm-body">
+        <strong>Testes do Assistente IA</strong>
+        <p>Validar todas as funções do <code>cv_assistant.py</code> com casos reais: bullet, review, translate, post e yaml-update.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status future">Futuro</div>
+      <div class="rm-body">
+        <strong>Integração LinkedIn API</strong>
+        <p>Publicação assistida de posts e atualização das seções de perfil (headline, about, experience) diretamente via API, com aprovação manual antes de publicar.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status future">Futuro</div>
+      <div class="rm-body">
+        <strong>CV Adaptável por Vaga</strong>
+        <p>Dado um link ou descrição de vaga, o assistente propõe uma versão do CV com os destaques e terminologia mais relevantes para aquela posição específica.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status future">Futuro</div>
+      <div class="rm-body">
+        <strong>Dashboard de Presença Digital</strong>
+        <p>Painel HTML local que consolida: CV atual, posts publicados, projetos do catálogo e métricas de engajamento do LinkedIn.</p>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="rm-status future">Futuro</div>
+      <div class="rm-body">
+        <strong>Exportação para Markdown / JSON</strong>
+        <p>Gerar versões do perfil em formatos alternativos para uso em portfólio web, GitHub Profile README ou APIs de recrutamento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="arquitetura-futura">
+    <h2>🏗 Arquitetura Futura</h2>
+
+    <p>À medida que o projeto evolui, a separação de responsabilidades se mantém:</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Dados (<code>data/</code>)</div>
+        <ul>
+          <li><code>profile_pt.yaml</code> / <code>profile_en.yaml</code> — perfil ativo</li>
+          <li><code>projects.yaml</code> — catálogo de projetos</li>
+          <li><code>linkedin/</code> — seções do perfil LinkedIn</li>
+          <li><code>history/</code> — snapshots versionados</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Código (<code>src/</code>)</div>
+        <ul>
+          <li><code>generators/</code> — renderização PDF, Markdown, JSON</li>
+          <li><code>ai/</code> — Claude API: revisão, tradução, geração</li>
+          <li><code>integrations/</code> — LinkedIn API, GitHub</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Fluxo de atualização futuro (com catálogo de projetos)</h3>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="step-num">1</div>
+        <div class="step-label">Novo projeto</div>
+        <div class="step-sub">Adiciona em <code>projects.yaml</code></div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">2</div>
+        <div class="step-label">IA processa</div>
+        <div class="step-sub">Extrai bullets e métricas</div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">3</div>
+        <div class="step-label">Atualiza perfil</div>
+        <div class="step-sub">PT + EN sincronizados</div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">4</div>
+        <div class="step-label">Gera saídas</div>
+        <div class="step-sub">PDF + LinkedIn + post</div>
+      </div>
+    </div>
+
+    <h3>Referências técnicas</h3>
+    <div class="chips">
+      <div class="chip">Claude <span>claude-sonnet-4-6</span></div>
+      <div class="chip">Python <span>3.10+</span></div>
+      <div class="chip">fpdf2 <span>≥ 2.7</span></div>
+      <div class="chip">anthropic SDK <span>≥ 0.30</span></div>
+      <div class="chip">pyyaml <span>≥ 6.0</span></div>
+      <div class="chip">python-dotenv <span>≥ 1.0</span></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // Highlight active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const active = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+# Catálogo de Projetos — Pedro Gentil
+# Fonte de verdade para projetos ativos e relevantes.
+# Alimenta: CV (destaques, experiência), LinkedIn (posts, about), docs/index.html (roadmap).
+# Atualizado: 2026-04-26
+
+# Status possíveis: ativo | concluido | pausado | em_concepcao
+# Visibilidade: publico | interno | privado
+
+projetos:
+
+  - id: myCV
+    nome: "myCV — Plataforma de Gestão de Carreira"
+    status: ativo
+    visibilidade: privado
+    inicio: "2026-04"
+    tecnologias: [Python, fpdf2, PyYAML, Anthropic API, LangGraph]
+    claude_code: true
+    caminho_local: "D:/PythonProjects/myCV"
+    descricao: >
+      Plataforma pessoal para geração de CV em PDF (PT/EN), gestão do perfil LinkedIn,
+      catálogo de projetos e assistente IA para atualização de conteúdo.
+    impacto: "Automatiza e centraliza a gestão da presença profissional."
+    notas_claude: "data/projetos/myCV.md"
+
+  - id: process2diagram
+    nome: "Process2Diagram"
+    status: ativo
+    visibilidade: publico
+    inicio: (preencher)
+    tecnologias: [Python, LangGraph, LLMs, BPMN 2.0]
+    claude_code: (preencher — true/false)
+    repositorio: (preencher URL GitHub)
+    descricao: >
+      Ferramenta open source que converte transcrições de reunião em diagramas BPMN 2.0,
+      atas estruturadas e requisitos IEEE 830 em uma única execução automatizada.
+    impacto: "Elimina trabalho manual de documentação pós-reunião."
+    notas_claude: "data/projetos/process2diagram.md"
+
+  - id: learn_mate
+    nome: "LEARN MATE — Multi-Agent AI Tutor"
+    status: (preencher)
+    visibilidade: (preencher)
+    inicio: "2025-12"
+    tecnologias: (preencher)
+    claude_code: (preencher)
+    repositorio: (preencher)
+    descricao: >
+      Sistema multi-agente de tutoria com IA. Publicado no LinkedIn em Dez/2025.
+    impacto: (preencher)
+    notas_claude: "data/projetos/learn_mate.md"
+
+  - id: sjur
+    nome: "SJUR — DataJud Monitor"
+    status: ativo
+    visibilidade: interno
+    inicio: "2022"
+    tecnologias: [Python, Streamlit, API DATAJUD/CNJ, NLP]
+    claude_code: (preencher)
+    descricao: >
+      Triagem inteligente de processos jurídicos via API DATAJUD/CNJ (Res. 331/2020).
+      Dashboard Streamlit para monitoramento contínuo e sinalização de risco.
+    impacto: "R$ 28M economizados. 4.980 processos saneados (2025). 3.765 novos em 2026 (1T)."
+    notas_claude: "data/projetos/sjur.md"
+
+  - id: se_suite_utils
+    nome: "SE-SUITE Utils"
+    status: ativo
+    visibilidade: interno
+    inicio: (preencher)
+    tecnologias: [Python, SOAP, FastAPI, D4Sign, OCR]
+    claude_code: (preencher)
+    descricao: >
+      Biblioteca Python para suprir lacunas da plataforma ECM corporativa (SE-Suite/FGV).
+      Wrappers SOAP para 4 módulos (22+ operações), pipeline de migração idempotente,
+      motor OCR para organogramas, API REST e integração D4Sign.
+    impacto: "Eliminação de centenas de horas manuais/ano na FGV."
+    notas_claude: "data/projetos/se_suite_utils.md"
