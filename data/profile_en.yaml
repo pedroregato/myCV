@@ -1,12 +1,20 @@
 nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
 linkedin_url: "https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823"
+kaggle_url: "https://www.kaggle.com/pedrogentil"
 
 titulo: "ANALYTICAL SOLUTIONS ARCHITECT | APPLIED STATISTICS | ML/NLP & GENAI | PYTHON | DATA & GOVERNANCE"
-contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn"
+contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn | Kaggle"
+
+sidebar_sobre: "ABOUT ME"
+wave_pro: "GenAI · BPM · ECM · ITIL"
+wave_pessoal: "Yoga · Music · Meditation"
+sidebar_contato: "CONTACT"
+sidebar_competencias: "SKILLS"
+sidebar_idiomas: "LANGUAGES"
 
 resumo_titulo: "PROFESSIONAL PROFILE | VALUE PROPOSITION"
 resumo_texto: |
-  I am a professional with a background in Statistics and a T-shaped profile: depth in quantitative modeling and analytical reasoning, with broad application in business processes, automation, and technology.
+  Statistician & Senior BPM | From process automation to AI in production - solutions that integrate model, flow and system.
 
   My trajectory evolved from solutions based on modeling and simulation (logistics/operational) to Data Science, Machine Learning, NLP, and Applied AI initiatives. Not every challenge required formal statistics - but the rigor of hypothesis, evidence, measurement, and risk has always guided my technical and business decisions.
 
@@ -16,8 +24,9 @@ destaques_titulo: "IMPACT HIGHLIGHTS"
 destaques:
   - "SJUR/FGV: R$ 28M monitored, 4,980 legal cases resolved (2025) + 11,998 Official Gazette emails classified via LLM with 88% accuracy  - detecting FGV citations as defendant before the case number is even known."
   - "96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents: automatic classification of FGV academic archive with ML/NLP + multi-engine OCR pipeline and API in production on FGV HPC (CIDA project)."
-  - "Process2Diagram (open source): meetings -> BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (Python · LangGraph · LLMs)."
+  - "Process2Diagram: meetings -> BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (Python · LangGraph · LLMs). Access available on request via LinkedIn."
   - "~30% reduction in remaining execution time on a critical project (Xerox Brasil), through an innovative solution  - delivered ahead of schedule."
+  - "Kaggle: 56 published datasets, 217 notebooks, Hull Tactical Market Prediction competition (S&P 500 excess returns, USD 100k prize) + GenAI Intensive Google/Kaggle capstone - 5 courses completed."
 
 experiencia_titulo: "PROFESSIONAL EXPERIENCE & RELEVANT PROJECTS"
 experiencia:
@@ -27,24 +36,26 @@ experiencia:
     nota: "FGV direct employee (CLT) since Apr/2022; Senior Consultant allocated via MGN Informática S.A. from Apr/2019 to Mar/2022  - same role and projects throughout."
     detalhes:
       - "Technical leadership on strategic AI/ML, automation, and systems integration projects for FGV's corporate areas (Legal, Audit, Academic, Contracts)."
-      - "SJUR: built a legal-AI ecosystem comprising (1) DataJud Monitor (Python · Streamlit) via CNJ API  - R$ 28M monitored, 4,980 cases resolved (2025), 3,765 flagged (Q1-2026); and (2) an Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama), processing 11,998 SERDON emails at 88% accuracy  - detecting FGV citations as defendant before the case number is known."
-      - "ECM & BPM: technical owner of content governance and process automation on SE-SUITE. Corporate Contracts Portal (DO/Procurement): 1,330 contractual instruments (Facilities, IT, Professional Services), 58 requesters, 13 buyers, end-to-end BPM pipeline with D4Sign e-signature. SE-SUITE Utils: SOAP wrappers (22+ operations), idempotent migration of 200+ documents across 28 units, FastAPI/Docker."
-      - "CIDA: ML/NLP pipeline for automatic academic document classification  - 96.82% accuracy (13 categories, 1,750 docs), multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, and Flask/JWT API in production on FGV HPC."
-      - "Process2Diagram (open source): meeting transcripts -> BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (LangGraph · LLMs)."
-      - "NDOC: Computer Vision (RetinaFace) for automatic captioning of institutional photo archive."
-  - empresa: "XEROX BRASIL (Consulting)"
-    periodo: "2012 - 2014"
-    cargo: "Senior Process & Statistics Consultant"
+      - "SJUR [GenAI/LLM]: legal-AI ecosystem comprising (1) DataJud Monitor (Python · Streamlit) via CNJ API  - R$ 28M monitored, 4,980 cases resolved (2025), 3,765 flagged (Q1-2026); and (2) Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama), processing 11,998 SERDON emails at 88% accuracy."
+      - "CIDA [ML/NLP]: pipeline for automatic academic document classification  - 96.82% accuracy (13 categories, 1,750 docs), multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, Flask/JWT API in production on FGV HPC."
+      - "Process2Diagram: meeting transcripts -> BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (LangGraph · LLMs). Access available on request via LinkedIn."
+      - "NDOC [Computer Vision]: RetinaFace for automatic captioning of institutional photo archive."
+      - "ECM & BPM [Automation/Integration]: technical owner of content governance and process automation on SE-SUITE. Contracts Portal: 1,330 contractual instruments, end-to-end BPM pipeline with D4Sign e-signature. SE-SUITE Utils: SOAP wrappers (22+ operations), migration of 200+ documents across 28 units, FastAPI/Docker."
+  - empresa: "TRUST BUSINESS CONSULTING (own company)"
+    periodo: "2013 - 2018"
+    cargo: "Founder & Senior Consultant"
     detalhes:
-      - "Action in critical print outsourcing and document management projects."
-      - "Application of statistical modeling for SLA optimization and resource sizing."
-      - "Recovery of a project in crisis (turnaround) through process redesign and scenario simulation."
+      - "EPE - Energy Research Company: mapping and automating 90 corporate processes (National Energy Plan, Procurement, Public Tenders) in BizAgi BPM Suite, in partnership with Microware."
+      - "PUC/Petrobras: team coordinator for development of a service management system for oil platforms (Groovy/Grails · Java · Oracle)."
+      - "Sanofi / Remer Villaça & Nogueira: design and implementation of Strategic KPI Management for Sanofi's Patent Support division - KPI diagnosis by segment (Innovative Healthcare, CHC, Generics), proactivity metrics and BizAgi automation."
   - empresa: "INDEPENDENT CONSULTING"
-    periodo: "2008 - 2012"
-    cargo: "Statistician & Business Consultant"
+    periodo: "2006 - 2013"
+    cargo: "Senior Consultant | BPM, ITIL & Process Automation"
+    nota: "Probank Inteligência e Tecnologia (2006-2008) · Path ITTS (2008-2011) · Partner IT (2011-2013)"
     detalhes:
-      - "Market intelligence, risk analysis, and financial modeling projects for mid-sized clients."
-      - "Development of dashboards and decision support tools."
+      - "Path ITTS (partner, 2008-2011): Master ITIL v3 Consultant at PMESP - Sao Paulo State Military Police (Change, Configuration and Service Catalog Management on IBM Tivoli Maximo SRM 7.1); similar projects for Grupo Pague Menos and Multiterminais."
+      - "Partner IT (2011-2013) - RioCard TI / FETRANSPOR: IBM Maximo implementation with Environmental Management modules (licenses, permits, penalties, appeals), Mobile Health Clinic management (CVS fleet) and SLA breach prediction algorithms (SQL/DB2); full ITIL v3 processes (Change, Problem, Configuration, Service Level)."
+      - "Probank (2006-2008) - Xerox Brasil: IT Asset Management process redesign and development on Oracle Applications/PLSQL/Java. Turnaround with ~30% reduction in remaining execution time, delivered ahead of schedule."
 
 competencias_titulo: "KEY SKILLS"
 competencias:
@@ -69,24 +80,63 @@ competencias:
       - "Process Automation & Systems Integration"
       - "Data/AI Governance · ISO 9000"
       - "Agile Methodologies (Scrum/Kanban)"
+  - grupo: "BPM & AUTOMATION"
+    itens:
+      - "BizAgi BPM Suite · IBM Maximo SRM"
+      - "ITIL v3 · Oracle Applications"
+      - "PL/SQL · Java · Groovy/Grails"
 
 educacao_titulo: "ACADEMIC BACKGROUND"
 educacao:
   - "MBA in Strategic and Economic Business Management\nInstitution: Fundação Getúlio Vargas - FGV, August/2014"
   - "Extension in Structured Systems Analysis and Design\nInstitution: Rio de Janeiro State University - UERJ, Dec/1990"
-  - "B.S. in Statistics\nInstitution: Department of Mathematics and Statistics, Rio de Janeiro State University - UERJ, Dec/1990"
+  - "B.S. in Statistics\nInstitution: Department of Mathematics and Statistics, Rio de Janeiro State University - UERJ"
 
 idiomas_titulo: "LANGUAGES"
 idiomas:
   - "Portuguese (Native)"
-  - "English (Advanced/Fluent)"
+  - "English (Advanced - Reading)"
+
+sidebar_formacao_comp: "ADDITIONAL TRAINING"
+formacao_comp:
+  - "5-Day Gen AI Intensive - Google/Kaggle (Apr/2025)"
+  - "5-Day AI Agents Intensive - Google/Kaggle (Nov/2025)"
+  - "Kaggle Learn: Intro to ML · Intermediate ML · Feature Engineering · Intro to Deep Learning · Computer Vision (5 courses)"
+
+sidebar_interesses: "INTERESTS"
+interesses:
+  - "Yoga & meditation (regular practice)"
+  - "Cooking"
+  - "Indian mythology applied to business"
+  - "Chess / strategic thinking"
+  - "Music"
+
+sidebar_comunidade: "COMMUNITY ENGAGEMENT"
+comunidade:
+  - "Director Member - Centro Ramakrishna Vedanta Rio de Janeiro (vedantarj.org.br)"
+  - "Musical group leader at the center"
+
+sidebar_publicacoes_side: "RECENT PUBLICATIONS"
+publicacoes_side:
+  - "LearnMate: Multi-Agent AI Tutor (Nov/2025) - Kaggle/Google AI Agents Intensive"
+  - "Echoes of Climate: Politics & Planet (Apr/2025) - Kaggle/Google GenAI Intensive"
+  - "Indian Mythology & Business (article in preparation - LinkedIn)"
 
 publicacoes_titulo: "PUBLICATIONS"
 publicacoes:
-  - "LEARN MATE - Multi Agent AI Tutor (LinkedIn, Dec/2025)"
+  - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) — kaggle.com/pedrogentil"
+  - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Apr/2025) — kaggle.com/pedrogentil"
   - "Vision and Mission (LinkedIn, Jul/2018)"
   - "Subjective Liabilities (LinkedIn, Jul/2018)"
   - "Strategy in Action (LinkedIn, Jun/2018)"
+
+resultados_titulo: "VERIFIED RESULTS"
+resultados:
+  - "1,330 contractual instruments in end-to-end BPM pipeline with D4Sign digital signature (FGV Contracts Portal)"
+  - "~30% reduction in remaining project execution time - delivered ahead of schedule, confirmed in project manager testimonial (Xerox Brasil)"
+  - "90+ corporate processes mapped and automated in BizAgi BPM Suite for EPE (National Energy Plan)"
+  - "SLA breach prediction (SQL/DB2) + Environmental Management IBM Maximo - RioCard / FETRANSPOR"
+  - "ITIL v3 implemented at PMESP - pioneering IT Service Management project in Sao Paulo State"
 
 depoimentos_titulo: "TESTIMONIALS"
 depoimentos:
@@ -96,9 +146,3 @@ depoimentos:
   - texto: "\"Business-solution driven professional, highly committed to results and technical rigor. Delivers simple and brilliant solutions, with vision, ethics, reliability, and strong relationship and leadership skills.\""
     autor: "Joaquim Santos Neto - CIO | Digital Transformation"
     link: "https://www.linkedin.com/in/joaquimsantosneto/"
-  - texto: "\"Consultant with vast experience in IT solutions, recognized for professionalism and responsibility. Acted in a pioneering ICT Service Management (ITIL v3) project at PMESP, designing and implementing the management model.\""
-    autor: "Aércio Dornelas - MBA, PMP, CBPP - Client"
-    link: "https://www.linkedin.com/in/aerciodornelas/"
-  - texto: "\"Professional attentive to details, focused on results, patient, and engaged in problem-solving.\""
-    autor: "Marcel Dubiella - IBM Maximo Senior Consultant"
-    link: "https://www.linkedin.com/in/marceldf/"

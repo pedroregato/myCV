@@ -1,0 +1,100 @@
+nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
+linkedin_url: "https://www.linkedin.com/in/pedro-regato-0b6b3b13/"
+
+titulo: "ANALYTICAL SOLUTIONS ARCHITECT | APPLIED STATISTICS | ML/NLP & GENAI | PYTHON | DATA & GOVERNANCE"
+contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn"
+
+resumo_titulo: "PROFESSIONAL PROFILE | VALUE PROPOSITION"
+resumo_texto: |
+  I am a professional with a background in Statistics and a T-shaped profile: depth in quantitative modeling and analytical reasoning, with broad application in business processes, automation, and technology.
+
+  My trajectory evolved from solutions based on modeling and simulation (logistics/operational) to Data Science, Machine Learning, NLP, and Applied AI initiatives. Not every challenge required formal statistics - but the rigor of hypothesis, evidence, measurement, and risk has always guided my technical and business decisions.
+
+  My differentiator lies in integrating Model -> System -> Process. Instead of isolated analyses, I design operable solutions (data, automation, governance, observability, and cost) that are sustainable from an institutional perspective.
+
+destaques_titulo: "IMPACT HIGHLIGHTS"
+destaques:
+  - "R$ 27.3 million: reduction in legal provisions with 4,977 lawsuits cleansed and 92% accuracy in critical classifications (SJUR project)."
+  - ">97% accuracy: and >50% reduction in human effort in academic document classification, with governed operation at scale (CIDA project)."
+  - "~30% reduction: in remaining execution time on a critical project (Xerox Brasil consulting), through an innovative solution applied in a real-world scenario."
+  - "Governance Transformation: Migration of 'static' flows (SharePoint/email) to integrated operation (BPMN/Workflow/ECM + AI) in FGV Internal Audit."
+
+experiencia_titulo: "PROFESSIONAL EXPERIENCE & RELEVANT PROJECTS"
+experiencia:
+  - empresa: "FUNDAÇÃO GETÚLIO VARGAS (FGV)"
+    periodo: "2014 - Present"
+    cargo: "Senior Statistician | Analytical Solutions Architect"
+    detalhes:
+      - "Technical leadership in AI/ML and automation projects for corporate areas (Legal, Audit, Academic), acting from conception (PoC) to productization and governance."
+      - "Development of data pipelines and predictive/classificatory models (Python, Scikit-learn, NLP) integrated with management systems (BPMN/ECM)."
+      - "Technical mentorship and dissemination of Data-Driven culture for business and IT teams."
+  - empresa: "XEROX BRASIL (Consulting)"
+    periodo: "2012 - 2014"
+    cargo: "Senior Process & Statistics Consultant"
+    detalhes:
+      - "Action in critical print outsourcing and document management projects."
+      - "Application of statistical modeling for SLA optimization and resource sizing."
+      - "Recovery of a project in crisis (turnaround) through process redesign and scenario simulation."
+  - empresa: "INDEPENDENT CONSULTING"
+    periodo: "2008 - 2012"
+    cargo: "Statistician & Business Consultant"
+    detalhes:
+      - "Market intelligence, risk analysis, and financial modeling projects for mid-sized clients."
+      - "Development of dashboards and decision support tools."
+
+competencias_titulo: "KEY SKILLS"
+competencias:
+  - grupo: "STATISTICS & MODELING"
+    itens:
+      - "Descriptive/Inferential Statistics"
+      - "Hypothesis Testing & Validation"
+      - "Probabilistic/Predictive Modeling"
+      - "Time Series"
+      - "Discriminant Analysis"
+  - grupo: "AI & DATA ENGINEERING"
+    itens:
+      - "Machine Learning (Scikit-learn)"
+      - "Deep Learning (PyTorch/Keras)"
+      - "NLP & LLMs (OpenAI, Llama, RAG)"
+      - "Prompt Engineering"
+      - "ETL/ELT & Advanced SQL"
+  - grupo: "DEVELOPMENT & GOVERNANCE"
+    itens:
+      - "Python (Pandas, NumPy, FastAPI)"
+      - "R (Tidyverse, Shiny)"
+      - "BPMN & Process Automation"
+      - "Data/AI Governance"
+      - "Agile Methodologies (Scrum/Kanban)"
+
+educacao_titulo: "ACADEMIC BACKGROUND"
+educacao:
+  - "MBA in Strategic and Economic Business Management\nInstitution: Fundação Getúlio Vargas - FGV, August/2014"
+  - "Extension in Structured Systems Analysis and Design\nInstitution: Rio de Janeiro State University - UERJ, Dec/1990"
+  - "B.S. in Statistics\nInstitution: Department of Mathematics and Statistics, Rio de Janeiro State University - UERJ, Dec/1990"
+
+idiomas_titulo: "LANGUAGES"
+idiomas:
+  - "Portuguese (Native)"
+  - "English (Advanced/Fluent)"
+
+publicacoes_titulo: "PUBLICATIONS"
+publicacoes:
+  - "LEARN MATE - Multi Agent AI Tutor (LinkedIn, Dec/2025)"
+  - "Vision and Mission (LinkedIn, Jul/2018)"
+  - "Subjective Liabilities (LinkedIn, Jul/2018)"
+  - "Strategy in Action (LinkedIn, Jun/2018)"
+
+depoimentos_titulo: "TESTIMONIALS"
+depoimentos:
+  - texto: "\"Decisive innovation at a critical moment: proposed and executed a solution with controlled technical risk, generating ~30% savings in remaining time and allowing delivery ahead of schedule. Brilliant and reliable professional.\""
+    autor: "Rodrigo Monteiro Gaio - PMP | IT Project Manager (Xerox Brasil)"
+    link: "https://www.linkedin.com/in/rodrigogaiopmp/"
+  - texto: "\"Business-solution driven professional, highly committed to results and technical rigor. Delivers simple and brilliant solutions, with vision, ethics, reliability, and strong relationship and leadership skills.\""
+    autor: "Joaquim Santos Neto - CIO | Digital Transformation"
+    link: "https://www.linkedin.com/in/joaquimsantosneto/"
+  - texto: "\"Consultant with vast experience in IT solutions, recognized for professionalism and responsibility. Acted in a pioneering ICT Service Management (ITIL v3) project at PMESP, designing and implementing the management model.\""
+    autor: "Aércio Dornelas - MBA, PMP, CBPP - Client"
+    link: "https://www.linkedin.com/in/aerciodornelas/"
+  - texto: "\"Professional attentive to details, focused on results, patient, and engaged in problem-solving.\""
+    autor: "Marcel Dubiella - IBM Maximo Senior Consultant"
+    link: "https://www.linkedin.com/in/marceldf/"

@@ -1,12 +1,20 @@
 nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
 linkedin_url: "https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823"
+kaggle_url: "https://www.kaggle.com/pedrogentil"
 
 titulo: "ARQUITETO DE SOLUÇÕES ANALÍTICAS | ESTATÍSTICA APLICADA | ML/NLP & GENAI | PYTHON | DADOS & GOVERNANÇA"
-contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn"
+contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn | Kaggle"
+
+sidebar_sobre: "SOBRE MIM"
+wave_pro: "GenAI · BPM · ECM · ITIL"
+wave_pessoal: "Yoga · Música · Meditação"
+sidebar_contato: "CONTATO"
+sidebar_competencias: "COMPETENCIAS"
+sidebar_idiomas: "IDIOMAS"
 
 resumo_titulo: "PERFIL PROFISSIONAL | PROPOSTA DE VALOR"
 resumo_texto: |
-  Sou profissional com formação em Estatística e perfil T-shaped: profundidade em modelagem quantitativa e raciocínio analítico, com atuação ampla em processos de negócio, automação e tecnologia.
+  Estatístico e BPM Sênior | Da automação de processos à IA em produção - soluções que integram modelo, fluxo e sistema.
 
   Minha trajetória evoluiu de soluções baseadas em modelagem e simulação (logística/operacional) para iniciativas de Ciência de Dados, Machine Learning, NLP e IA aplicada. Nem todo desafio exigiu estatística formal - mas o rigor de hipótese, evidência, medição e risco sempre orientou minhas decisões técnicas e de negócio.
 
@@ -16,8 +24,9 @@ destaques_titulo: "DESTAQUES DE IMPACTO"
 destaques:
   - "SJUR/FGV: R$ 28M monitorados, 4.980 processos juridicos saneados (2025) + 11.998 e-mails de Diarios Oficiais classificados via LLM com 88% de acuracia  - detectando citacoes da FGV como re antes que o processo seja conhecido."
   - "96,82% de acuracia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos: classificacao automatica de acervo academico FGV com pipeline ML/NLP + OCR multi-engine e API em producao no HPC FGV (projeto CIDA)."
-  - "Process2Diagram (open source): reuniões -> diagramas BPMN 2.0 + atas estruturadas + requisitos IEEE 830 em execução automatizada (Python · LangGraph · LLMs)."
+  - "Process2Diagram: reuniões -> diagramas BPMN 2.0 + atas estruturadas + requisitos IEEE 830 em execução automatizada (Python · LangGraph · LLMs). Acesso sob solicitação via LinkedIn."
   - "~30% de redução: do tempo restante de execução em projeto crítico (Xerox Brasil), por solução inovadora aplicada em cenário real  - entrega antecipada ao cliente."
+  - "Kaggle: 56 datasets publicados, 217 notebooks, competicao Hull Tactical Market Prediction (S&P 500, premio USD 100k) + capstone GenAI Intensive Google/Kaggle - 5 cursos concluídos."
 
 experiencia_titulo: "EXPERIÊNCIA PROFISSIONAL & PROJETOS RELEVANTES"
 experiencia:
@@ -27,24 +36,26 @@ experiencia:
     nota: "CLT FGV desde abr/2022; Consultor Sênior alocado via MGN Informática S.A. de abr/2019 a mar/2022  - mesma função e projetos durante todo o período."
     detalhes:
       - "Liderança técnica em projetos estratégicos de IA/ML, automação e integração de sistemas para áreas corporativas da DTI/FGV (Jurídico, Auditoria, Acadêmico, Contratos)."
-      - "SJUR: ecossistema juridico-IA composto por (1) DataJud Monitor (Python · Streamlit) via API CNJ  - R$ 28M monitorados, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026); e (2) classificador de citacoes em Diarios Oficiais via LLM (DeepSeek · Gemini · Llama), processando 11.998 e-mails SERDON com 88% de acuracia  - detectando citacoes da FGV como re antes que o processo seja conhecido."
-      - "ECM & BPM: responsavel tecnico por governanca de conteudo e processos no SE-SUITE. Portal de Contratos DO/Compras: 1.330 instrumentos contratuais (Facilities, TI, Servicos Profissionais), 58 solicitantes, 13 compradores, pipeline BPM end-to-end com D4Sign. SE-SUITE Utils: wrappers SOAP (22+ operacoes), migracao idempotente de 200+ documentos para 28 unidades, API FastAPI/Docker."
-      - "CIDA: pipeline ML/NLP para classificacao automatica de documentos academicos  - 96,82% de acuracia (13 categorias, 1.750 docs), extracao multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integracao SOAP com SGC FGV e API Flask/JWT em producao no HPC FGV."
-      - "Process2Diagram (open source): transcrições de reunião -> diagramas BPMN 2.0, atas estruturadas e requisitos IEEE 830 em execução automatizada (LangGraph · LLMs)."
-      - "NDOC: Visão Computacional (RetinaFace) para legendagem automática de acervo fotográfico institucional."
-  - empresa: "XEROX BRASIL (Consultoria)"
-    periodo: "2012 - 2014"
-    cargo: "Consultor Sênior de Processos & Estatística"
+      - "SJUR [GenAI/LLM]: ecossistema juridico-IA composto por (1) DataJud Monitor (Python · Streamlit) via API CNJ  - R$ 28M monitorados, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026); e (2) classificador de citacoes em Diarios Oficiais via LLM (DeepSeek · Gemini · Llama), processando 11.998 e-mails SERDON com 88% de acuracia."
+      - "CIDA [ML/NLP]: pipeline para classificacao automatica de documentos academicos  - 96,82% de acuracia (13 categorias, 1.750 docs), extracao multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integracao SOAP com SGC FGV e API Flask/JWT em producao no HPC FGV."
+      - "Process2Diagram: transcrições de reunião -> diagramas BPMN 2.0, atas estruturadas e requisitos IEEE 830 em execução automatizada (LangGraph · LLMs). Acesso sob solicitação via LinkedIn."
+      - "NDOC [Visão Computacional]: RetinaFace para legendagem automática de acervo fotográfico institucional."
+      - "ECM & BPM [Automação/Integração]: responsavel tecnico por governanca de conteudo e processos no SE-SUITE. Portal de Contratos DO/Compras: 1.330 instrumentos contratuais, pipeline BPM end-to-end com D4Sign. SE-SUITE Utils: wrappers SOAP (22+ operacoes), migracao de 200+ documentos para 28 unidades, FastAPI/Docker."
+  - empresa: "TRUST BUSINESS CONSULTING (empresa própria)"
+    periodo: "2013 - 2018"
+    cargo: "Fundador & Consultor Sênior"
     detalhes:
-      - "Atuação em projetos críticos de outsourcing de impressão e gestão documental."
-      - "Aplicação de modelagem estatística para otimização de SLA e dimensionamento de recursos."
-      - "Recuperação de projeto em crise (turnaround) através de redesenho de processos e simulação de cenários."
+      - "EPE - Empresa de Pesquisa Energética: levantamento, diagramação e automação de 90 processos corporativos (Plano Decenal de Energia, Contratação de Bens/Serviços/Obras, Licitações) em BizAgi BPM Suite, em parceria com a Microware."
+      - "PUC/Petrobras: coordenação de equipe técnica para desenvolvimento de sistema de gestão de serviços em plataformas de petróleo (Groovy/Grails · Java · Oracle)."
+      - "Sanofi / Remer Villaça & Nogueira: design e implantação de Gestão de Indicadores Estratégicos para a divisão de Patent Support da Sanofi - diagnóstico de KPIs por segmento (Innovative Healthcare, CHC, Generics), proposição de métricas de pró-atividade e automação em BizAgi."
   - empresa: "CONSULTORIA INDEPENDENTE"
-    periodo: "2008 - 2012"
-    cargo: "Estatístico & Consultor de Negócios"
+    periodo: "2006 - 2013"
+    cargo: "Consultor Sênior | BPM, ITIL & Automação de Processos"
+    nota: "Probank Inteligência e Tecnologia (2006-2008) · Path ITTS (2008-2011) · Partner IT (2011-2013)"
     detalhes:
-      - "Projetos de inteligência de mercado, análise de risco e modelagem financeira para clientes de médio porte."
-      - "Desenvolvimento de dashboards e ferramentas de apoio à decisão."
+      - "Path ITTS (sócio, 2008-2011): Consultor Master ITIL v3 na PMESP - Polícia Militar do Estado de São Paulo (Gestão de Mudanças, Configuração e Catálogo de Serviços no IBM Tivoli Maximo SRM 7.1); projetos similares para Grupo Pague Menos e Multiterminais."
+      - "Partner IT (2011-2013) - RioCard TI / FETRANSPOR: implementação IBM Maximo com módulos de Gestão Ambiental (licenças, outorgas, penalidades, recursos), Consultórios Volantes de Saúde (CVS) para frota FETRANSPOR e algoritmos de predição de quebra de SLA (SQL/DB2); processos ITIL v3 completos (Mudanças, Problemas, Configuração, Nível de Serviço)."
+      - "Probank (2006-2008) - Xerox Brasil: redesenho do processo de Gestão de Ativos de TI e desenvolvimento em Oracle Applications/PLSQL/Java. Turnaround com ~30% de redução no tempo restante, entrega antecipada ao cliente."
 
 competencias_titulo: "COMPETÊNCIAS-CHAVE"
 competencias:
@@ -69,24 +80,63 @@ competencias:
       - "Automação de Processos & Integração"
       - "Governança de Dados/IA · ISO 9000"
       - "Metodologias Ágeis (Scrum/Kanban)"
+  - grupo: "BPM & AUTOMAÇÃO"
+    itens:
+      - "BizAgi BPM Suite · IBM Maximo SRM"
+      - "ITIL v3 · Oracle Applications"
+      - "PL/SQL · Java · Groovy/Grails"
 
 educacao_titulo: "FORMAÇÃO ACADÊMICA"
 educacao:
   - "MBA em Gestão Estratégica e Econômica de Negócios\nInstituição: Fundação Getúlio Vargas - FGV, Agosto/2014"
   - "Extensão em Análise e Projeto Estruturado de Sistemas\nInstituição: Universidade do Estado do Rio de Janeiro - UERJ, Dez /1990"
-  - "Graduação em Estatística\nInstituição: Departamento de Matemática e Estatística da Universidade do Estado do Rio de Janeiro - UERJ, Dez /1990"
+  - "Graduação em Estatística\nInstituição: Departamento de Matemática e Estatística da Universidade do Estado do Rio de Janeiro - UERJ"
 
 idiomas_titulo: "IDIOMAS"
 idiomas:
   - "Português (Nativo)"
-  - "Inglês (Avançado/Fluente)"
+  - "Inglês (Avançado - leitura)"
+
+sidebar_formacao_comp: "FORMAÇÃO COMPLEMENTAR"
+formacao_comp:
+  - "5-Day Gen AI Intensive - Google/Kaggle (Abr/2025)"
+  - "5-Day AI Agents Intensive - Google/Kaggle (Nov/2025)"
+  - "Kaggle Learn: Intro to ML · Intermediate ML · Feature Engineering · Intro to Deep Learning · Computer Vision (5 cursos)"
+
+sidebar_interesses: "INTERESSES"
+interesses:
+  - "Yoga e meditação (prática regular)"
+  - "Culinária"
+  - "Mitologia indiana aplicada a negócios"
+  - "Xadrez / pensamento estratégico"
+  - "Música"
+
+sidebar_comunidade: "ATUAÇÃO COMUNITÁRIA"
+comunidade:
+  - "Membro Diretor - Centro Ramakrishna Vedanta Rio de Janeiro (vedantarj.org.br)"
+  - "Líder do grupo musical do centro"
+
+sidebar_publicacoes_side: "PUBLICAÇÕES RECENTES"
+publicacoes_side:
+  - "LearnMate: Multi-Agent AI Tutor (Nov/2025) - Kaggle/Google AI Agents Intensive"
+  - "Echoes of Climate: Politics & Planet (Abr/2025) - Kaggle/Google GenAI Intensive"
+  - "Mitologia Indiana & Negocios (artigo em preparacao - LinkedIn)"
 
 publicacoes_titulo: "PUBLICAÇÕES"
 publicacoes:
-  - "LEARN MATE - Multi Agent AI Tutor (LinkedIn, Dez/2025)"
+  - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) — kaggle.com/pedrogentil"
+  - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Abr/2025) — kaggle.com/pedrogentil"
   - "Visão e Missão (LinkedIn, Jul/2018)"
   - "Passivos Subjetivos (LinkedIn, Jul/2018)"
   - "Estratégia em Ação (LinkedIn, Jun/2018)"
+
+resultados_titulo: "RESULTADOS VERIFICÁVEIS"
+resultados:
+  - "1.330 instrumentos contratuais em pipeline BPM end-to-end com assinatura digital D4Sign (Portal de Contratos FGV)"
+  - "~30% de reducao no tempo restante de projeto critico - entrega antecipada confirmada em depoimento de gestor (Xerox Brasil)"
+  - "90+ processos corporativos mapeados e automatizados em BizAgi BPM Suite para a EPE (Plano Decenal de Energia Nacional)"
+  - "Predicao de quebra de SLA (SQL/DB2) + Gestao Ambiental IBM Maximo - RioCard / FETRANSPOR"
+  - "ITIL v3 implementado na PMESP - projeto pioneiro de Gestao de Servicos de TIC no Estado de Sao Paulo"
 
 depoimentos_titulo: "DEPOIMENTOS"
 depoimentos:
@@ -96,9 +146,3 @@ depoimentos:
   - texto: "\"Profissional business-solution driven, altamente comprometido com resultado e rigor técnico. Entrega soluções simples e brilhantes, com visão, ética, confiabilidade e forte capacidade de relacionamento e liderança.\""
     autor: "Joaquim Santos Neto - CIO | Transformação Digital"
     link: "https://www.linkedin.com/in/joaquimsantosneto/"
-  - texto: "\"Consultor com vasta experiência em soluções de TI, reconhecido por profissionalismo e responsabilidade. Atuou em projeto pioneiro de Gestão de Serviços de TIC (ITIL v3) na PMESP, desenhando e implementando o modelo de gerenciamento.\""
-    autor: "Aércio Dornelas - MBA, PMP, CBPP - Cliente"
-    link: "https://www.linkedin.com/in/aerciodornelas/"
-  - texto: "\"Profissional atento a detalhes, focado em resultados, paciente e engajado na solução de problemas.\""
-    autor: "Marcel Dubiella - IBM Maximo Senior Consultant"
-    link: "https://www.linkedin.com/in/marceldf/"

@@ -19,7 +19,7 @@ from src.generators.pdf_generator import create_cv
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), '..', 'output')
-PHOTO_PATH = os.path.join(os.path.dirname(__file__), '..', 'assets', 'FotoLinkedin.png')
+PHOTO_PATH = os.path.join(os.path.dirname(__file__), '..', 'assets', 'FotoCV.png')
 
 CONFIGS = {
     'pt': {

@@ -1,20 +1,27 @@
 # LinkedIn — "About" Section (EN)
-# Limit: 2,600 characters | Updated: 2026-04-26
+# Limit: 2,600 characters | Updated: 2026-04-28
+# Characters this version: ~1,250
 
 ---
 
-I am a professional with a background in Statistics and a T-shaped profile: depth in quantitative modeling and analytical reasoning, with broad application in business processes, automation, and technology.
+Statistician | Analytical Solutions Architect | Applied AI & Automation | Python
 
-My trajectory evolved from solutions based on modeling and simulation (logistics/operational) to Data Science, Machine Learning, NLP, and Applied AI initiatives. Not every challenge required formal statistics — but the rigor of hypothesis, evidence, measurement, and risk has always guided my technical and business decisions.
+I build systems where method and execution are inseparable.
 
-My differentiator lies in integrating Model → System → Process. Instead of isolated analyses, I design operable solutions (data, automation, governance, observability, and cost) that are sustainable from an institutional perspective.
+30-year trajectory in three phases:
+▸ Critical process automation — ITIL v3/IBM Maximo (PMESP, FETRANSPOR), 90 processes of Brazil's National Energy Plan (EPE/MME), strategic KPIs (Sanofi)
+▸ Data engineering and statistical modeling — analytical solutions for large organizations
+▸ AI in production — LLMs, ML/NLP, Computer Vision, GenAI (FGV, 2019–present)
 
-🎯 Impact highlights:
-• R$ 27.3M in legal provision reduction — 4,977 lawsuits cleansed with 92% accuracy (SJUR/FGV project)
-• >97% accuracy and >50% reduction in human effort for academic document classification at scale (CIDA/FGV project)
-• ~30% reduction in remaining execution time on a critical project in crisis (Xerox Brasil) — turnaround via process redesign and simulation
-• Governance transformation: migration from static flows (SharePoint/email) to integrated operation (BPMN/ECM + AI) at FGV Internal Audit
+Recent results at FGV:
+▸ R$ 28M tracked and 4,980 lawsuits resolved; 11,998 emails classified via LLM at 88% accuracy (SJUR)
+▸ 96.82% accuracy for automatic classification of 1,750 academic documents in production (CIDA)
+▸ 1,330 corporate contracts in end-to-end BPM pipeline with digital signature (FGV Contracts Portal)
 
-🔧 Core stack: Python · Scikit-learn · NLP/LLMs · RAG · FastAPI · SQL · R · BPMN
+Independent published projects:
+▸ LearnMate — multi-agent tutor with Google ADK + Gemini + RAG + LLM-as-Judge (AI Agents Intensive Google/Kaggle capstone, Nov/2025)
+▸ Echoes of Climate — 20 years of headlines analyzed with RAG + sentiment analysis + DeepSeek (GenAI Intensive Google/Kaggle capstone, Apr/2025)
 
-📍 Rio de Janeiro, RJ
+Areas of expertise: Generative AI · AI Agents · Document Classification · BPM Automation · Data/AI Governance · Systems Integration · Statistical Modeling
+
+Open to conversations about applied AI projects, intelligent automation, or analytical architecture.

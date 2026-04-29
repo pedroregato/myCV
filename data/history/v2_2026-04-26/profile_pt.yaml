@@ -1,0 +1,100 @@
+nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
+linkedin_url: "https://www.linkedin.com/in/pedro-regato-0b6b3b13/"
+
+titulo: "ARQUITETO DE SOLUÇÕES ANALÍTICAS | ESTATÍSTICA APLICADA | ML/NLP & GENAI | PYTHON | DADOS & GOVERNANÇA"
+contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn"
+
+resumo_titulo: "PERFIL PROFISSIONAL | PROPOSTA DE VALOR"
+resumo_texto: |
+  Sou profissional com formação em Estatística e perfil T-shaped: profundidade em modelagem quantitativa e raciocínio analítico, com atuação ampla em processos de negócio, automação e tecnologia.
+
+  Minha trajetória evoluiu de soluções baseadas em modelagem e simulação (logística/operacional) para iniciativas de Ciência de Dados, Machine Learning, NLP e IA aplicada. Nem todo desafio exigiu estatística formal - mas o rigor de hipótese, evidência, medição e risco sempre orientou minhas decisões técnicas e de negócio.
+
+  Meu diferencial está em integrar Modelo -> Sistema -> Processo. Em vez de análises isoladas, desenho soluções operáveis (dados, automação, governança, observabilidade e custo), sustentáveis do ponto de vista institucional.
+
+destaques_titulo: "DESTAQUES DE IMPACTO"
+destaques:
+  - "R$ 27,3 milhões: redução de provisões jurídicas com 4.977 processos saneados e 92% de acurácia em classificações críticas (projeto SJUR)."
+  - ">97% de acurácia: e >50% de redução de esforço humano na classificação de documentos acadêmicos, com operação governada em escala (projeto CIDA)."
+  - "~30% de redução: do tempo restante de execução em projeto crítico (consultoria Xerox Brasil), por solução inovadora aplicada em cenário real."
+  - "Transformação de Governança: Migração de fluxos 'estáticos' (SharePoint/e-mail) para operação integrada (BPMN/Workflow/ECM + IA) na Auditoria Interna da FGV."
+
+experiencia_titulo: "EXPERIÊNCIA PROFISSIONAL & PROJETOS RELEVANTES"
+experiencia:
+  - empresa: "FUNDAÇÃO GETÚLIO VARGAS (FGV)"
+    periodo: "2014 - Atual"
+    cargo: "Estatístico Sênior | Arquiteto de Soluções Analíticas"
+    detalhes:
+      - "Liderança técnica em projetos de IA/ML e automação para áreas corporativas (Jurídico, Auditoria, Acadêmico), atuando desde a concepção (PoC) até a produtização e governança."
+      - "Desenvolvimento de pipelines de dados e modelos preditivos/classificatórios (Python, Scikit-learn, NLP) integrados a sistemas de gestão (BPMN/ECM)."
+      - "Mentoria técnica e disseminação de cultura Data-Driven para equipes de negócio e TI."
+  - empresa: "XEROX BRASIL (Consultoria)"
+    periodo: "2012 - 2014"
+    cargo: "Consultor Sênior de Processos & Estatística"
+    detalhes:
+      - "Atuação em projetos críticos de outsourcing de impressão e gestão documental."
+      - "Aplicação de modelagem estatística para otimização de SLA e dimensionamento de recursos."
+      - "Recuperação de projeto em crise (turnaround) através de redesenho de processos e simulação de cenários."
+  - empresa: "CONSULTORIA INDEPENDENTE"
+    periodo: "2008 - 2012"
+    cargo: "Estatístico & Consultor de Negócios"
+    detalhes:
+      - "Projetos de inteligência de mercado, análise de risco e modelagem financeira para clientes de médio porte."
+      - "Desenvolvimento de dashboards e ferramentas de apoio à decisão."
+
+competencias_titulo: "COMPETÊNCIAS-CHAVE"
+competencias:
+  - grupo: "ESTATÍSTICA & MODELAGEM"
+    itens:
+      - "Estatística Descritiva/Inferencial"
+      - "Testes de Hipóteses & Validação"
+      - "Modelagem Probabilística/Preditiva"
+      - "Séries Temporais"
+      - "Análise Discriminante"
+  - grupo: "IA & ENGENHARIA DE DADOS"
+    itens:
+      - "Machine Learning (Scikit-learn)"
+      - "Deep Learning (PyTorch/Keras)"
+      - "NLP & LLMs (OpenAI, Llama, RAG)"
+      - "Engenharia de Prompt"
+      - "ETL/ELT & SQL Avançado"
+  - grupo: "DESENVOLVIMENTO & GOVERNANÇA"
+    itens:
+      - "Python (Pandas, NumPy, FastAPI)"
+      - "R (Tidyverse, Shiny)"
+      - "BPMN & Automação de Processos"
+      - "Governança de Dados/IA"
+      - "Metodologias Ágeis (Scrum/Kanban)"
+
+educacao_titulo: "FORMAÇÃO ACADÊMICA"
+educacao:
+  - "MBA em Gestão Estratégica e Econômica de Negócios\nInstituição: Fundação Getúlio Vargas - FGV, Agosto/2014"
+  - "Extensão em Análise e Projeto Estruturado de Sistemas\nInstituição: Universidade do Estado do Rio de Janeiro - UERJ, Dez /1990"
+  - "Graduação em Estatística\nInstituição: Departamento de Matemática e Estatística da Universidade do Estado do Rio de Janeiro - UERJ, Dez /1990"
+
+idiomas_titulo: "IDIOMAS"
+idiomas:
+  - "Português (Nativo)"
+  - "Inglês (Avançado/Fluente)"
+
+publicacoes_titulo: "PUBLICAÇÕES"
+publicacoes:
+  - "LEARN MATE - Multi Agent AI Tutor (LinkedIn, Dez/2025)"
+  - "Visão e Missão (LinkedIn, Jul/2018)"
+  - "Passivos Subjetivos (LinkedIn, Jul/2018)"
+  - "Estratégia em Ação (LinkedIn, Jun/2018)"
+
+depoimentos_titulo: "DEPOIMENTOS"
+depoimentos:
+  - texto: "\"Inovação decisiva em momento crítico: propôs e executou solução com risco técnico controlado, gerando ~30% de economia no tempo restante e permitindo entrega antes do prazo. Profissional brilhante e confiável.\""
+    autor: "Rodrigo Monteiro Gaio - PMP | IT Project Manager (Xerox Brasil)"
+    link: "https://www.linkedin.com/in/rodrigogaiopmp/"
+  - texto: "\"Profissional business-solution driven, altamente comprometido com resultado e rigor técnico. Entrega soluções simples e brilhantes, com visão, ética, confiabilidade e forte capacidade de relacionamento e liderança.\""
+    autor: "Joaquim Santos Neto - CIO | Transformação Digital"
+    link: "https://www.linkedin.com/in/joaquimsantosneto/"
+  - texto: "\"Consultor com vasta experiência em soluções de TI, reconhecido por profissionalismo e responsabilidade. Atuou em projeto pioneiro de Gestão de Serviços de TIC (ITIL v3) na PMESP, desenhando e implementando o modelo de gerenciamento.\""
+    autor: "Aércio Dornelas - MBA, PMP, CBPP - Cliente"
+    link: "https://www.linkedin.com/in/aerciodornelas/"
+  - texto: "\"Profissional atento a detalhes, focado em resultados, paciente e engajado na solução de problemas.\""
+    autor: "Marcel Dubiella - IBM Maximo Senior Consultant"
+    link: "https://www.linkedin.com/in/marceldf/"
