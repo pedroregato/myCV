@@ -1,10 +1,13 @@
-# Generated PDFs
-output/
-!output/.gitkeep
+# Dados confidenciais de clientes antigos
+data/clientes-antigos/
 
 # PDFs soltos na raiz (devem ficar em output/)
 Curriculo_Pedro_Gentil.pdf
 Resume_Pedro_Gentil.pdf
+
+# Generated PDFs — rastrear os currículos gerados
+# output/ é versionado intencionalmente
+
 
 # Documentos pessoais (CPF, RG, CTPS — dados sensíveis)
 data/gov_br/
