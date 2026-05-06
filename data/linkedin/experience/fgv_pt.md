@@ -1,30 +1,27 @@
 # LinkedIn — Experiência: FGV (PT)
-# Fonte: Profile.pdf exportado em Abr/2026
-# Empresa: Fundação Getulio Vargas
-# Cargo: Analista de Dados Sênior & IA Aplicada
-# Período: abril de 2019 - Present (7 anos 1 mês)
+# Empresa: Fundação Getúlio Vargas (FGV)
+# Cargo: Responsável Técnico | IA Aplicada, Automação & Integração de Sistemas
+# Período: abril de 2019 – Atual
 # Local: Rio de Janeiro, Brasil
+# Atualizado: 2026-05-05
 
 ---
 
-Responsável técnico por iniciativas estratégicas de automação, IA aplicada e integração de sistemas na DTI/FGV. Atuo na interseção entre engenharia de dados, ML e arquitetura de soluções — do modelo ao processo.
+Nota: CLT FGV desde abr/2022; Consultor Sênior alocado via MGN Informática S.A. de abr/2019 a mar/2022 — mesma função e projetos durante todo o período.
 
-▸ SJUR — Triagem Inteligente de Processos Jurídicos
-DataJud Monitor (Python · Streamlit) via API DATAJUD/CNJ (Res. 331/2020).
-→ 2025: 4.980 processos saneados · R$ 103M monitorados · R$ 28M de economia real
-→ 2026 (1º tri): 3.765 novos casos sinalizados
+Liderança técnica em projetos estratégicos de IA/ML, automação e integração de sistemas para áreas corporativas da DTI/FGV (Jurídico, Auditoria, Acadêmico, Contratos).
 
-▸ ECM & BPM — Governança de Conteúdo e Processos Corporativos
-Responsável técnico principal por ECM e BPM na FGV (Auditoria, SRA, NDOC, Portal de Contratos/DO).
-Automação de processos, taxonomia documental, governança de conteúdo e dashboards analíticos para os
-níveis estratégico, tático e operacional — conformidade ISO 9000.
-Desenvolvimento do SE-SUITE Utils (Python): wrappers SOAP para 4 módulos (22+ operações), pipeline de
-migração idempotente (PDF, Word, Visio), motor OCR para organogramas, API REST via FastAPI e integração D4Sign.
+▸ SJUR [GenAI/LLM] — Ecossistema jurídico-IA:
+→ DataJud Monitor (Python · Streamlit): R$ 28M monitorados, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026)
+→ Classificador de citações em Diários Oficiais via LLM (DeepSeek · Gemini · Llama): 11.998 e-mails processados com 88% de acurácia
 
-▸ CIDA — pipeline ML/NLP para classificação automática de documentos acadêmicos
+▸ CIDA [ML/NLP] — Classificação automática de documentos acadêmicos:
+96,82% de acurácia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos. Pipeline com extração multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integração SOAP com SGC FGV e API Flask/JWT em produção no HPC FGV.
 
-▸ NDOC — Visão Computacional (RetinaFace) para legendagem de acervo fotográfico institucional
+▸ Process2Diagram [GenAI] — Reuniões → diagramas BPMN 2.0 + atas estruturadas + requisitos IEEE 830 em execução automatizada (LangGraph · LLMs). Acesso sob solicitação.
 
-▸ D&I — desenho estatístico e análise da pesquisa institucional de Diversidade & Inclusão da FGV
+▸ ECM & BPM — Portal de Contratos: 1.330 instrumentos contratuais em pipeline BPM end-to-end com assinatura digital D4Sign. SE-SUITE Utils: wrappers SOAP (22+ operações), migração de 200+ documentos para 28 unidades, FastAPI/Docker.
+
+▸ NDOC [Visão Computacional] — RetinaFace para legendagem automática de acervo fotográfico institucional.
 
 Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · NLP · FastAPI · SOAP · BPMN · Docker · D4Sign

@@ -1,17 +1,21 @@
 # LinkedIn — Experiência: Trust Business Consulting (PT)
-# Fonte: Profile.pdf exportado em Abr/2026
 # Empresa: Trust Business Consulting - EIRELI (empresa própria)
-# Cargo: Consultor Sênior em Gestão de Processos, Negócios e Serviços
-# Período: maio de 2012 - Present (14 anos)
+# Cargo: Fundador & Consultor Sênior
+# Período: 2013 – 2018
 # Local: Rio de Janeiro
+# Atualizado: 2026-05-05
 
 ---
 
-Consultoria independente em gestão de processos de negócios e processos de gerenciamento de serviços.
+Consultoria especializada em BPM, engenharia de processos e soluções analíticas para grandes organizações.
 
-- Treinamento em Liderança e Gestão de Equipes
-- Treinamento em Gestão de Processos de Negócios
-- Treinamento em Notação de Processos de Negócios (BPMN)
+▸ EPE — Empresa de Pesquisa Energética (parceria Microware):
+Levantamento, diagramação e automação de 90 processos corporativos (Plano Decenal de Energia, Contratação de Bens/Serviços/Obras, Licitações) em BizAgi BPM Suite.
 
-Nota: empresa fundada em 2013. Projetos realizados incluem atuação na Xerox Brasil (2012-2014) como
-Consultor Sênior de Processos & Estatística — registrado no CV como "XEROX BRASIL (Consultoria)".
+▸ PUC / Petrobras:
+Coordenação de equipe técnica para desenvolvimento de sistema de gestão de serviços em plataformas de petróleo (Groovy/Grails · Java · Oracle).
+
+▸ Sanofi / Remer Villaça & Nogueira:
+Design e implantação de Gestão de Indicadores Estratégicos para a divisão de Patent Support da Sanofi — diagnóstico de KPIs por segmento (Innovative Healthcare, CHC, Generics), proposição de métricas de pró-atividade e automação em BizAgi.
+
+Stack: BizAgi BPM Suite · BPMN · Groovy/Grails · Java · Oracle · Modelagem Estatística
