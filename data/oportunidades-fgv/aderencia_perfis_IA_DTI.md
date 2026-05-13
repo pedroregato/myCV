@@ -155,32 +155,34 @@ Com base no cruzamento do meu perfil real com os três JDs analisados, proponho 
 
 ---
 
-### ESPECIALISTA EM INTELIGÊNCIA ARTIFICIAL APLICADA & ARQUITETURA DE SOLUÇÕES CORPORATIVAS
+### ESPECIALISTA EM IA APLICADA — SOLUÇÕES INTELIGENTES PARA ÁREAS CORPORATIVAS
 
 **Posicionamento estratégico:**
-Este cargo não é sinônimo de Arquiteto de Sistemas — é distinto e complementar a ele. Enquanto a Arquitetura de Sistemas cuida da infraestrutura, padrões de código e integração de plataformas, este perfil cuida da **camada de inteligência**: onde e como os modelos de IA se encaixam nos processos de negócio, com que arquitetura, com que governança e com que resultado mensurável.
+Este cargo opera exclusivamente na **camada de negócio e resultado**: identifica oportunidades de uso de IA nas áreas corporativas, especifica os requisitos funcionais das soluções e lidera sua implementação junto às áreas demandantes. A infraestrutura de plataformas, a seleção e governança de ferramentas de IA e os padrões de integração corporativa permanecem sob responsabilidade da equipe de Arquitetura de Sistemas — com quem este perfil atua em estreita colaboração, como cliente qualificado e parceiro técnico.
+
+Em termos práticos: a Arquitetura define **como** a IA pode ser usada na empresa; este cargo define **onde** ela deve ser usada e **garante que gere resultado mensurável**.
 
 **Por que este cargo aproveita ao máximo o que tenho:**
 
-1. **Base estatística + IA aplicada** — Não sou apenas um engenheiro que usa LLMs. Sou um estatístico que entende distribuições, erro, risco e evidência. Isso é raro em perfis de IA corporativa e produz decisões de melhor qualidade sobre quando confiar num modelo, quando não confiar e como medir.
+1. **Base estatística + IA aplicada** — Não sou apenas um engenheiro que usa LLMs. Sou um estatístico que entende distribuições, erro, risco e evidência. Isso é raro em perfis de IA corporativa e produz decisões mais sólidas sobre quando confiar num modelo, quando não confiar e como medir seu desempenho em produção.
 
-2. **Visão de processo + automação inteligente** — Process2Diagram é a síntese desta competência: transformar reuniões em BPMN, atas e requisitos automaticamente não é um projeto de TI — é uma reengenharia de processo habilitada por IA. Isso exige simultaneamente domínio de BPM e de orquestração de LLMs.
+2. **Visão de processo + automação inteligente** — Process2Diagram é a síntese desta competência: transformar reuniões em BPMN, atas e requisitos automaticamente não é um projeto de TI — é uma reengenharia de processo habilitada por IA. Isso exige simultaneamente domínio de BPM e de orquestração de LLMs, e não se confunde com arquitetura de infraestrutura.
 
-3. **Histórico de entrega em produção** — SJUR, CIDA, NDOC e Process2Diagram são sistemas em operação real, com métricas reais (R$ 28M monitorados, >96% de acurácia, 11.998 e-mails classificados). Não são POCs ou pilotos.
+3. **Histórico de entrega em produção, com métricas de negócio** — SJUR, CIDA, NDOC e Process2Diagram são sistemas em operação real, com resultados verificáveis: R$ 28M monitorados, >96% de acurácia em classificação documental, 11.998 e-mails classificados com 88% de acurácia. Não são POCs ou pilotos.
 
-4. **Capacidade de pontar negócio e tecnologia** — Atuo com conforto tanto na conversa com a Diretoria Jurídica quanto na depuração de um pipeline LangGraph. Esse trânsito bidirecional é a competência central do perfil proposto.
+4. **Trânsito entre negócio e tecnologia** — Atuo com igual fluência na conversa com a Diretoria Jurídica e na depuração de um pipeline LangGraph. Esse trânsito bidirecional é exatamente o que este cargo exige: traduzir problemas de negócio em soluções técnicas viáveis e comunicar resultados de volta às lideranças em linguagem de impacto.
 
-5. **Governança e institucionalização** — Minha experiência ITIL, BPM e ISO 20000 me permite pensar IA não como experimento, mas como serviço gerenciado: com SLA, rastreabilidade, política de uso e continuidade operacional.
+5. **Capacidade de institucionalizar sem criar dependência** — Minha experiência em ITIL, BPM e ISO 20000 me permite projetar soluções de IA que se tornam serviços sustentáveis — com documentação, rastreabilidade e handover — e não iniciativas pessoais que morrem quando o especialista sai.
 
 **Responsabilidades sugeridas para o cargo:**
-- Definir e liderar a estratégia de uso de IA aplicada nas áreas corporativas da FGV (Jurídico, Contratos, Acadêmico, Auditoria, RH)
-- Avaliar casos de uso de IA propostos pelas áreas de negócio: viabilidade técnica, custo, risco e retorno esperado
-- Arquitetar e implementar soluções IA em produção (LLMs, RAG, agentes, visão computacional) — ou supervisionar tecnicamente equipes que o façam
-- Estabelecer padrões de integração com APIs de IA e política de uso responsável (LGPD, auditabilidade, qualidade de output)
-- Ser referência técnica interna em IA generativa, agentes e orquestração de modelos
-- Atuar como elo entre a DTI e as áreas de negócio na identificação de oportunidades de automação inteligente
+- Mapear e priorizar oportunidades de uso de IA nas áreas corporativas da FGV (Jurídico, Contratos, Acadêmico, Auditoria, RH), com análise de viabilidade e retorno esperado
+- Especificar os requisitos funcionais das soluções de IA demandadas pelas áreas de negócio, em colaboração com a equipe de Arquitetura de Sistemas
+- Liderar a implementação e operação de soluções de IA aplicada (LLMs, RAG, agentes, ML/NLP, visão computacional) dentro dos padrões técnicos definidos pela Arquitetura
+- Medir e reportar os resultados das soluções implementadas: acurácia, economia gerada, processos automatizados, satisfação das áreas
+- Atuar como elo qualificado entre as áreas de negócio e a DTI, traduzindo necessidades em requisitos técnicos e resultados em linguagem executiva
+- Apoiar a equipe de Arquitetura com insumos práticos sobre uso de modelos, APIs e ferramentas de IA, a partir da experiência em produção
 
-**Nível sugerido:** Especialista Sênior / Coordenador Técnico (equivalente ao nível do Arquiteto de Soluções, com escopo específico em IA)
+**Nível sugerido:** Especialista Sênior / Analista de Sistemas Sênior com foco em IA Aplicada
 
 ---
 
