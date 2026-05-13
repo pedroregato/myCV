@@ -1,7 +1,7 @@
 # Índice de Certificados e Diplomas
 # Este arquivo é a fonte de verdade para a seção de certificações do CV.
 # Estrutura legível por código: futuramente alimentará o gerador de PDF automaticamente.
-# Atualizado: 2026-04-26
+# Atualizado: 2026-05-13
 
 academicos:
   - titulo: "Master of Business Administration (MBA)"
@@ -44,3 +44,10 @@ online:
     ano: (preencher)
     url: "https://www.kaggle.com/learn/certification/(username)/feature-engineering"
     arquivo: "online/kaggle_feature_engineering.pdf"
+
+  - titulo: "Introduction to Model Context Protocol"
+    emissor: "Anthropic"
+    ano: 2026
+    data_emissao: "2026-05-08"
+    certificado_no: "7byzgoqai27x"
+    arquivo: "Anthropic/certificate-7byzgoqai27x-1778254481.pdf"
