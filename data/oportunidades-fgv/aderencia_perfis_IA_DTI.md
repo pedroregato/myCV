@@ -158,15 +158,15 @@ Com base no cruzamento do meu perfil real com os três JDs analisados, proponho 
 ### ESPECIALISTA EM IA APLICADA — SOLUÇÕES INTELIGENTES PARA ÁREAS CORPORATIVAS
 
 **Posicionamento estratégico:**
-Este cargo opera exclusivamente na **camada de negócio e resultado**: identifica oportunidades de uso de IA nas áreas corporativas, especifica os requisitos funcionais das soluções e lidera sua implementação junto às áreas demandantes. A infraestrutura de plataformas, a seleção e governança de ferramentas de IA e os padrões de integração corporativa permanecem sob responsabilidade da equipe de Arquitetura de Sistemas — com quem este perfil atua em estreita colaboração, como cliente qualificado e parceiro técnico.
+Este cargo existe para transformar o potencial da Inteligência Artificial em **resultado concreto para as áreas corporativas da FGV**. Seu centro de gravidade é o negócio: identificar onde a IA pode gerar impacto real, especificar o que precisa ser construído e estar à frente da sua implementação junto às áreas clientes da SOLCORP — com responsabilidade sobre entrega, adoção e resultado mensurável.
 
-Em termos práticos: a Arquitetura define **como** a IA pode ser usada na empresa; este cargo define **onde** ela deve ser usada e **garante que gere resultado mensurável**.
+A IA aplicada a processos corporativos é uma disciplina própria. Exige fluência técnica em modelos, pipelines e integração de dados, combinada com leitura precisa do negócio, dos processos e das pessoas envolvidas. É essa combinação — rara no mercado — que justifica um perfil dedicado, com foco, metodologia e histórico de entrega comprovados.
 
 **Por que este cargo aproveita ao máximo o que tenho:**
 
 1. **Base estatística + IA aplicada** — Não sou apenas um engenheiro que usa LLMs. Sou um estatístico que entende distribuições, erro, risco e evidência. Isso é raro em perfis de IA corporativa e produz decisões mais sólidas sobre quando confiar num modelo, quando não confiar e como medir seu desempenho em produção.
 
-2. **Visão de processo + automação inteligente** — Process2Diagram é a síntese desta competência: transformar reuniões em BPMN, atas e requisitos automaticamente não é um projeto de TI — é uma reengenharia de processo habilitada por IA. Isso exige simultaneamente domínio de BPM e de orquestração de LLMs, e não se confunde com arquitetura de infraestrutura.
+2. **Visão de processo + automação inteligente** — Process2Diagram é a síntese desta competência: transformar reuniões em BPMN, atas e requisitos automaticamente não é um projeto de TI — é uma reengenharia de processo habilitada por IA. Isso exige simultaneamente domínio de BPM e de orquestração de LLMs.
 
 3. **Histórico de entrega em produção, com métricas de negócio** — SJUR, CIDA, NDOC e Process2Diagram são sistemas em operação real, com resultados verificáveis: R$ 28M monitorados, >96% de acurácia em classificação documental, 11.998 e-mails classificados com 88% de acurácia. Não são POCs ou pilotos.
 
@@ -176,11 +176,10 @@ Em termos práticos: a Arquitetura define **como** a IA pode ser usada na empres
 
 **Responsabilidades sugeridas para o cargo:**
 - Mapear e priorizar oportunidades de uso de IA nas áreas corporativas da FGV (Jurídico, Contratos, Acadêmico, Auditoria, RH), com análise de viabilidade e retorno esperado
-- Especificar os requisitos funcionais das soluções de IA demandadas pelas áreas de negócio, em colaboração com a equipe de Arquitetura de Sistemas
-- Liderar a implementação e operação de soluções de IA aplicada (LLMs, RAG, agentes, ML/NLP, visão computacional) dentro dos padrões técnicos definidos pela Arquitetura
+- Especificar os requisitos funcionais das soluções de IA demandadas pelas áreas de negócio, estando à frente da sua implementação junto às áreas clientes da SOLCORP
+- Projetar, implementar e operar soluções de IA aplicada (LLMs, RAG, agentes, ML/NLP, visão computacional) com responsabilidade sobre resultado e continuidade operacional
 - Medir e reportar os resultados das soluções implementadas: acurácia, economia gerada, processos automatizados, satisfação das áreas
 - Atuar como elo qualificado entre as áreas de negócio e a DTI, traduzindo necessidades em requisitos técnicos e resultados em linguagem executiva
-- Apoiar a equipe de Arquitetura com insumos práticos sobre uso de modelos, APIs e ferramentas de IA, a partir da experiência em produção
 
 **Nível sugerido:** Especialista Sênior / Analista de Sistemas Sênior com foco em IA Aplicada
 
