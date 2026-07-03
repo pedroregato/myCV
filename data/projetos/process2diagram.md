@@ -104,7 +104,7 @@ Em producao continua no Streamlit Cloud com auto-deploy no push para `main`.
 
 ## Referencias no CV/LinkedIn
 
-- Portfolio de Projetos Pessoais em `profile_pt.yaml` / `profile_en.yaml`: "Process2Diagram
+- Portfolio de Projetos Autorais em `profile_pt.yaml` / `profile_en.yaml`: "Process2Diagram
   (P2D): plataforma de IA multi-agente (9 agentes - LangGraph - Supabase)..."
 - Mencionado em `data/linkedin/about_pt.md`
 - Fonte dos numeros revisados: `data/projetos/P2D_fonte_2026-07-03.md` (nota original de Pedro)

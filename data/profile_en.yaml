@@ -27,7 +27,7 @@ destaques:
   - "Process2Diagram: meetings -> BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (Python · LangGraph · LLMs). Access available on request via LinkedIn."
   - "~30% reduction in remaining execution time on a critical project (Xerox Brasil), through an innovative solution  - delivered ahead of schedule."
 
-publicacoes_titulo: "PERSONAL PROJECTS PORTFOLIO"
+publicacoes_titulo: "AUTHORED PROJECTS PORTFOLIO"
 publicacoes:
   - "Process2Diagram (P2D): multi-agent AI platform (9 agents · LangGraph · Supabase) turning meetings into 12 formal artifacts (BPMN 2.0, IEEE 830, SBVR, DMN, cross-meeting knowledge graph) - independently authored, 345 automated tests, in continuous production. Demo access available on request via LinkedIn."
   - "DataJud Monitor (SJUR/FGV): legal case monitoring system via CNJ/DataJud API (Python · Streamlit) - independently authored, R$28M in annual accounting-provision savings."
