@@ -14,7 +14,7 @@ I build systems where method and execution are inseparable.
 ▸ AI in production — LLMs, ML/NLP, Computer Vision, GenAI (FGV, 2019–present)
 
 Recent results at FGV:
-▸ R$ 28M tracked and 4,980 lawsuits resolved; 11,998 emails classified via LLM at 88% accuracy (SJUR)
+▸ R$ 28M in annual accounting-provision savings (legal risk reclassification) and 4,980 lawsuits resolved; 11,998 emails classified via LLM at 88% accuracy (SJUR)
 ▸ 96.82% accuracy for automatic classification of 1,750 academic documents in production (CIDA)
 ▸ 1,330 corporate contracts in end-to-end BPM pipeline with digital signature (FGV Contracts Portal)
 

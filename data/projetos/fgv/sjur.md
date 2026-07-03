@@ -34,7 +34,8 @@ Python - Requests (API CNJ/DataJud) - Streamlit - pandas - SQLite/PostgreSQL
 
 ## Impacto mensuravel
 
-- Monitoramento de R$28M em processos em 2025
+- R$28M em economia de provisionamento contabil anual (CPC 25), via reclassificacao mais precisa
+  do risco juridico dos processos monitorados
 - 4.980 processos acompanhados em 2025
 - 3.765 novos processos no 1T2026
 - Reducao do tempo de triagem manual (preencher % ou horas/semana)
@@ -54,7 +55,8 @@ Ex: geracao do cliente API, modelagem do banco, dashboard Streamlit, etc.)
 ## Bullet CV (rascunho)
 
 Desenvolvi ecossistema juridico-IA para o SJUR/FGV: (1) monitor do DataJud/CNJ
-acompanhando +4.900 processos e R$28M em demandas; (2) classificador de citacoes
+acompanhando +4.900 processos, gerando R$28M em economia de provisionamento contabil
+anual via reclassificacao de risco; (2) classificador de citacoes
 em Diarios Oficiais via LLM (DeepSeek/GPT/Gemini/Llama), processando 11.998 e-mails
 da SERDON com 88% de acuracia — detectando processos desconhecidos antes que prazos
 processuais comecem a correr.
@@ -119,7 +121,7 @@ ciclo completo: descoberta de citacao -> identificacao do processo -> monitorame
 
 ## Notas para sincronizacao
 
-- Dados de volume (R$28M, 4.980 processos) sao publicos/internos FGV - ok para CV
+- Dados de volume (R$28M em economia de provisionamento anual, 4.980 processos) sao publicos/internos FGV - ok para CV
 - Nao mencionar detalhes de processos especificos ou partes envolvidas
 - Titulo "SJUR" pode precisar de expansao para quem nao conhece a FGV
 

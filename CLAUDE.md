@@ -37,9 +37,14 @@ myCV/
 │   │   │   ├── fgv_en.md
 │   │   │   ├── xerox_pt.md
 │   │   │   └── consultoria_independente_pt.md
-│   │   └── posts/                   # Posts publicados (arquivo)
-│   │       ├── 2025-12_learn-mate-multi-agent-tutor.md
-│   │       └── 2018-07_visao-e-missao.md
+│   │   ├── posts/                   # Posts publicados (arquivo)
+│   │   │   ├── 2025-12_learn-mate-multi-agent-tutor.md
+│   │   │   └── 2018-07_visao-e-missao.md
+│   │   ├── Profile.pdf              # Export do perfil LinkedIn (referência)
+│   │   ├── FotoLinkedin.png         # Foto de perfil do LinkedIn
+│   │   └── FotoLinkedin.jfif        # Foto de perfil do LinkedIn (original, alta resolução)
+│   │
+│   ├── arquivo/                     # Referências antigas arquivadas (não usadas ativamente)
 │   │
 │   └── history/                     # Snapshots versionados do CV
 │       ├── changelog.md             # O que mudou em cada versão
@@ -56,7 +61,7 @@ myCV/
 │       └── prompts.py               # Templates de prompt
 │
 ├── assets/
-│   └── FotoLinkedin.png             # Foto usada no CV
+│   └── FotoCV.png                   # Foto usada no CV (gerada por scripts/generate_cv.py)
 │
 ├── output/                          # PDFs gerados (gitignored)
 │   ├── Curriculo_Pedro_Gentil.pdf

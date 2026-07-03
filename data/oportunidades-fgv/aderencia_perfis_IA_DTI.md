@@ -168,7 +168,7 @@ A IA aplicada a processos corporativos é uma disciplina própria. Exige fluênc
 
 2. **Visão de processo + automação inteligente** — Process2Diagram é a síntese desta competência: transformar reuniões em BPMN, atas e requisitos automaticamente não é um projeto de TI — é uma reengenharia de processo habilitada por IA. Isso exige simultaneamente domínio de BPM e de orquestração de LLMs.
 
-3. **Histórico de entrega em produção, com métricas de negócio** — SJUR, CIDA, NDOC e Process2Diagram são sistemas em operação real, com resultados verificáveis: R$ 28M monitorados, >96% de acurácia em classificação documental, 11.998 e-mails classificados com 88% de acurácia. Não são POCs ou pilotos.
+3. **Histórico de entrega em produção, com métricas de negócio** — SJUR, CIDA, NDOC e Process2Diagram são sistemas em operação real, com resultados verificáveis: R$ 28M em economia de provisionamento contábil anual, >96% de acurácia em classificação documental, 11.998 e-mails classificados com 88% de acurácia. Não são POCs ou pilotos.
 
 4. **Trânsito entre negócio e tecnologia** — Atuo com igual fluência na conversa com a Diretoria Jurídica e na depuração de um pipeline LangGraph. Esse trânsito bidirecional é exatamente o que este cargo exige: traduzir problemas de negócio em soluções técnicas viáveis e comunicar resultados de volta às lideranças em linguagem de impacto.
 

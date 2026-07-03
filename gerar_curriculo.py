@@ -484,7 +484,7 @@ def create_cv(filename, language="pt"):
     # Desenhar Barra Lateral
     # Desativar quebra de página automática para a barra lateral para evitar que ela empurre o conteúdo
     pdf.set_auto_page_break(False)
-    pdf.draw_sidebar(sidebar_width, page_height, "FotoLinkedin.png", 
+    pdf.draw_sidebar(sidebar_width, page_height, "data/linkedin/FotoLinkedin.png", 
                      t_comp_tit, t_comp_grupos, t_edu_tit, t_edu_lista, t_idiomas_tit, t_idiomas_lista, t_pub_tit, t_pub_lista)
     
     # Reativar quebra de página automática para o conteúdo principal
@@ -608,7 +608,7 @@ def create_cv(filename, language="pt"):
         # Verificar quebra de página
         if pdf.get_y() > 250:
             pdf.add_page()
-            pdf.draw_sidebar(sidebar_width, page_height, "FotoLinkedin.png", 
+            pdf.draw_sidebar(sidebar_width, page_height, "data/linkedin/FotoLinkedin.png", 
                      t_comp_tit, t_comp_grupos, t_edu_tit, t_edu_lista, t_idiomas_tit, t_idiomas_lista, t_pub_tit, t_pub_lista)
             pdf.set_xy(main_content_x, 20)
 
@@ -636,7 +636,7 @@ def create_cv(filename, language="pt"):
     # Verificar espaço para título
     if pdf.get_y() > 240:
         pdf.add_page()
-        pdf.draw_sidebar(sidebar_width, page_height, "FotoLinkedin.png", 
+        pdf.draw_sidebar(sidebar_width, page_height, "data/linkedin/FotoLinkedin.png", 
                      t_comp_tit, t_comp_grupos, t_edu_tit, t_edu_lista, t_idiomas_tit, t_idiomas_lista, t_pub_tit, t_pub_lista)
         pdf.set_xy(main_content_x, 20)
 
@@ -654,7 +654,7 @@ def create_cv(filename, language="pt"):
         # Verificar quebra de página para cada depoimento
         if pdf.get_y() > 260:
             pdf.add_page()
-            pdf.draw_sidebar(sidebar_width, page_height, "FotoLinkedin.png", 
+            pdf.draw_sidebar(sidebar_width, page_height, "data/linkedin/FotoLinkedin.png", 
                      t_comp_tit, t_comp_grupos, t_edu_tit, t_edu_lista, t_idiomas_tit, t_idiomas_lista, t_pub_tit, t_pub_lista)
             pdf.set_xy(main_content_x, 20)
 

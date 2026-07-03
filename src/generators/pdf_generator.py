@@ -311,7 +311,7 @@ class CV(FPDF):
 
 
 # ── Public entry point ───────────────────────────────────────────────────────
-def create_cv(filename, data, photo_path="assets/FotoLinkedin.png"):
+def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
     pdf = CV()
     pdf.set_auto_page_break(False)
     pdf.add_page()
@@ -342,6 +342,17 @@ def create_cv(filename, data, photo_path="assets/FotoLinkedin.png"):
         pdf._bullet(ix, y, iw, 4.5, item)
         y = pdf.get_y() + 1.5
     y += 4
+
+    # ── PORTFÓLIO DE PROJETOS PESSOAIS ────────────────────────────────────────
+    if data.get("publicacoes"):
+        check_page(20)
+        y = pdf._main_section(y, data["publicacoes_titulo"])
+        pdf.set_font("Arial", "", 8.5)
+        for item in data["publicacoes"]:
+            check_page(10)
+            pdf._bullet(ix, y, iw, 4.5, item)
+            y = pdf.get_y() + 1.5
+        y += 4
 
     # ── EXPERIENCIA ──────────────────────────────────────────────────────────
     check_page(20)

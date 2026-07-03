@@ -59,7 +59,7 @@ projetos:
     descricao: >
       Triagem inteligente de processos jurídicos via API DATAJUD/CNJ (Res. 331/2020).
       Dashboard Streamlit para monitoramento contínuo e sinalização de risco.
-    impacto: "R$ 28M economizados. 4.980 processos saneados (2025). 3.765 novos em 2026 (1T)."
+    impacto: "R$ 28M em economia de provisionamento contábil anual (reclassificação de risco). 4.980 processos saneados (2025). 3.765 novos em 2026 (1T)."
     notas_claude: "data/projetos/sjur.md"
 
   - id: se_suite_utils

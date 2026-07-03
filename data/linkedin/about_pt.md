@@ -14,7 +14,7 @@ Trajetória de 30 anos em três fases:
 ▸ IA aplicada em produção — LLMs, ML/NLP, Visão Computacional, GenAI (FGV, 2019–hoje)
 
 Resultados recentes na FGV:
-▸ R$ 28M monitorados e 4.980 processos jurídicos saneados; 11.998 e-mails classificados via LLM com 88% de acurácia (SJUR)
+▸ R$ 28M em economia de provisionamento contábil anual (reclassificação de risco jurídico) e 4.980 processos saneados; 11.998 e-mails classificados via LLM com 88% de acurácia (SJUR)
 ▸ 96,82% de acurácia na classificação automática de 1.750 documentos acadêmicos em produção (CIDA)
 ▸ 1.330 contratos corporativos em pipeline BPM end-to-end com assinatura digital (Portal de Contratos FGV)
 ▸ Process2Diagram: reuniões → diagramas BPMN 2.0 + atas estruturadas + requisitos IEEE 830 em execução automatizada (LangGraph · LLMs)

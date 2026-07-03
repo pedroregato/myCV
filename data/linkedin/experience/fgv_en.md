@@ -1,22 +1,27 @@
 # LinkedIn — Experience: FGV (EN)
-# Company: Fundação Getúlio Vargas
-# Title: Senior Statistician | Analytical Solutions Architect
-# Period: Jan 2014 – Present
-# Updated: 2026-04-26
+# Company: Fundação Getúlio Vargas (FGV)
+# Title: Technical Lead | Applied AI, Automation & Systems Integration
+# Period: April 2019 – Present
+# Location: Rio de Janeiro, Brazil
+# Updated: 2026-07-03
 
 ---
 
-Technical leadership in AI/ML and automation projects for corporate areas (Legal, Audit, Academic), acting from conception (PoC) to productization and governance.
+Note: FGV direct employee (CLT) since Apr/2022; Senior Consultant allocated via MGN Informática S.A. from Apr/2019 to Mar/2022 — same role and projects throughout.
 
-Key projects:
+Technical leadership on strategic AI/ML, automation, and systems integration projects for FGV's corporate areas (Legal, Audit, Academic, Contracts).
 
-▸ SJUR — Intelligent Legal Case Classification
-NLP model for categorizing 4,977 lawsuits with 92% accuracy, generating R$ 27.3M in legal provision reductions. Full pipeline: extraction, preprocessing, training, validation, and governed operation.
+▸ SJUR [GenAI/LLM] — Legal-AI ecosystem:
+→ DataJud Monitor (Python · Streamlit): R$28M in annual accounting-provision savings (legal risk reclassification), 4,980 cases resolved (2025), 3,765 flagged (Q1-2026)
+→ Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama): 11,998 emails processed at 88% accuracy
 
-▸ CIDA — AI-Powered Academic Document Management
-Automatic classification solution with >97% accuracy and >50% reduction in human effort. Integration with ECM systems and BPMN-based approval workflows.
+▸ CIDA [ML/NLP] — Automatic classification of academic documents:
+96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents. Pipeline with multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, and Flask/JWT API in production on FGV HPC.
 
-▸ Internal Audit — Governance Transformation
-Migration from static processes (SharePoint/email) to integrated operation with BPMN/Workflow/ECM and an AI layer for triage and prioritization.
+▸ Process2Diagram [GenAI] — Meetings → BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (LangGraph · LLMs). Access available on request.
 
-Stack: Python · Scikit-learn · NLP · Transformers · RAG · FastAPI · SQL · BPMN · ECM
+▸ ECM & BPM — Contracts Portal: 1,330 contractual instruments in an end-to-end BPM pipeline with D4Sign e-signature. SE-SUITE Utils: SOAP wrappers (22+ operations), migration of 200+ documents across 28 units, FastAPI/Docker.
+
+▸ NDOC [Computer Vision] — RetinaFace for automatic captioning of institutional photo archive.
+
+Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · NLP · FastAPI · SOAP · BPMN · Docker · D4Sign

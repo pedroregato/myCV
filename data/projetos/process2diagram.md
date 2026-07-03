@@ -1,8 +1,15 @@
-# Career Card — Process2Diagram
+# Career Card — Process2Diagram (P2D)
 # Status: Ativo | Visibilidade: Publico (open source)
 # Repositorio: https://github.com/pedroregato/Process2Diagram
 # Claude Code: Sim
-# Atualizado: 2026-04-27
+# Atualizado: 2026-07-03 (numeros revisados - ver nota abaixo)
+
+**Nota de atualizacao (2026-07-03):** os numeros deste card estavam desatualizados
+(106 testes, 5 providers, 7 artefatos). Valores corrigidos abaixo com base em dados
+fornecidos diretamente por Pedro. A secao "Arquitetura" (lista de agentes) ainda reflete
+a versao anterior (7 papeis nomeados) - **preencher** os 2 agentes/papeis que faltam
+para fechar em 9, e detalhar o assistente conversacional (~125 ferramentas) e a camada
+de conformidade LGPD, nenhum dos quais esta descrito na secao de Arquitetura ainda.
 
 ---
 
@@ -47,8 +54,8 @@ como fonte unica de verdade entre agentes):
 
 ## Tecnologias
 
-Python 3.13 - Streamlit - LangGraph - spaCy (`pt_core_news_lg`) -
-Anthropic Claude (claude-sonnet-4-20250514) - DeepSeek - OpenAI - Groq - Gemini -
+Python 3.13 - Streamlit - LangGraph - Supabase - spaCy (`pt_core_news_lg`) -
+Anthropic Claude (claude-sonnet-4-20250514) - DeepSeek - OpenAI - Groq - Gemini - Grok -
 ThreadPoolExecutor - python-docx - PyMuPDF - BPMN 2.0 XML
 
 ## Uso do Claude Code
@@ -79,20 +86,32 @@ Desenvolvido integralmente com Claude Code como parceiro de desenvolvimento:
 
 ## Status atual
 
-**v4.14** - Em producao no Streamlit Cloud com auto-deploy no push para `main`.
-106 testes unitarios passando (~0.5s de execucao, zero chamadas LLM).
-Repositorio criado em marco/2026, evolucao ativa.
+Em producao continua no Streamlit Cloud com auto-deploy no push para `main`.
+345 testes automatizados passando. Repositorio criado em marco/2026, evolucao ativa.
 
 ## Impacto / Metricas
 
-- 7 tipos de artefato gerados em execucao unica a partir de uma transcricao
-- 106 testes unitarios sem mock de LLM (cobertura de auto-repair, validacao estrutural,
-  scoring 4-dimensional, geracao Mermaid)
+- 12 artefatos formais gerados em execucao unica a partir de uma transcricao: diagramas
+  BPMN 2.0 e Mermaid, atas estruturadas, requisitos IEEE 830, vocabulario SBVR, modelo BMM,
+  tabelas DMN 1.4 e grafo de conhecimento entre reunioes
+- Pipeline de 9 agentes especializados orquestrados (Python - LangGraph - Supabase)
+- Assistente conversacional com ~125 ferramentas de consulta/escrita sobre o historico do projeto
+- Suporte a 6 provedores LLM (DeepSeek, Claude, OpenAI, Gemini, Groq, Grok)
+- Camada de conformidade LGPD nativa
+- 345 testes automatizados, em producao continua
 - Deploy continuo: Streamlit Cloud com CI/CD automatico no push
 - (Preencher: numero de usuarios? transcricoes processadas? feedback coletado?)
 
 ## Referencias no CV/LinkedIn
 
-- Destaque em `profile_pt.yaml`: "Process2Diagram (open source): reunioes -> BPMN 2.0..."
+- Portfolio de Projetos Pessoais em `profile_pt.yaml` / `profile_en.yaml`: "Process2Diagram
+  (P2D): plataforma de IA multi-agente (9 agentes - LangGraph - Supabase)..."
 - Mencionado em `data/linkedin/about_pt.md`
+- Fonte dos numeros revisados: `data/projetos/P2D_fonte_2026-07-03.md` (nota original de Pedro)
 - Publicar post no LinkedIn sobre o projeto
+
+## Nota sobre exposicao tecnica (autor)
+
+Ao contrario do material comercial (onde detalhes tecnicos ficam ocultos por protecao
+competitiva), no CV a especificidade de stack (LangGraph, Supabase, contagem de ferramentas)
+e mantida de proposito - e sinal de profundidade tecnica, nao risco de exposicao.

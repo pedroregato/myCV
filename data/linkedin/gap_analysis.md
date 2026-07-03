@@ -14,10 +14,16 @@ e os dados atualmente em data/profile_pt.yaml. Serve de guia para decidir o que 
 - **LinkedIn real:** `https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823`
 - **Ação:** Atualizar `linkedin_url` em profile_pt.yaml e profile_en.yaml
 
-### 1.2 Números do projeto SJUR (desatualizados)
-- **CV atual:** R$ 27,3 milhões · 4.977 processos · 92% acurácia
-- **LinkedIn real:** R$ 28 milhões · 4.980 processos saneados em 2025 · R$ 103M monitorados · 3.765 novos em 2026 (1º tri)
-- **Ação:** Atualizar bullet em `destaques` e descrição em `experiencia[FGV].detalhes`
+### 1.2 Números do projeto SJUR (RESOLVIDO em 2026-07-03)
+- **CV atual (era):** R$ 27,3 milhões · 4.977 processos · 92% acurácia
+- **LinkedIn real (Abr/2026):** R$ 28 milhões · 4.980 processos saneados em 2025 · R$ 103M monitorados · 3.765 novos em 2026 (1º tri)
+- **Definição final:** R$28M refere-se a economia de provisionamento contábil anual (CPC 25),
+  gerada por reclassificação mais precisa do risco jurídico dos processos monitorados — não
+  ao valor total de exposição monitorada (esse é um número distinto, ~R$103M).
+- **Ação:** Concluída — bullet em `destaques`, `experiencia[FGV].detalhes`, `linkedin/experience/fgv_pt.md`,
+  `linkedin/experience/fgv_en.md`, `linkedin/about_pt.md`, `linkedin/about_en.md`, `projetos/fgv/sjur.md`
+  e `projetos/catalog.yaml` atualizados para deixar explícito que o valor é economia de
+  provisionamento anual, não exposição monitorada.
 
 ---
 
@@ -114,7 +120,7 @@ Experiências omitidas do CV (todas registradas em `data/linkedin/experience/his
 | Prioridade | Item | Esforço |
 |---|---|---|
 | ALTA | Corrigir LinkedIn URL nos YAMLs | Mínimo |
-| ALTA | Atualizar números SJUR (R$ 28M, 4.980, 3.765) | Mínimo |
+| ~~ALTA~~ | ~~Atualizar números SJUR (R$ 28M, 4.980, 3.765)~~ | ~~Mínimo~~ — concluído 2026-07-03 |
 | MÉDIA | Adicionar Process2Diagram como destaque | Baixo |
 | MÉDIA | Atualizar stack: LangGraph, Streamlit, Docker | Baixo |
 | MÉDIA | Decidir cargo/período FGV (2014 vs 2019) | Editorial |

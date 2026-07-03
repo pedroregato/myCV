@@ -22,10 +22,17 @@ resumo_texto: |
 
 destaques_titulo: "IMPACT HIGHLIGHTS"
 destaques:
-  - "SJUR/FGV: R$ 28M monitored, 4,980 legal cases resolved (2025) + 11,998 Official Gazette emails classified via LLM with 88% accuracy  - detecting FGV citations as defendant before the case number is even known."
+  - "SJUR/FGV: R$28M in annual accounting-provision savings (legal risk reclassification), 4,980 legal cases resolved (2025) + 11,998 Official Gazette emails classified via LLM with 88% accuracy  - detecting FGV citations as defendant before the case number is even known."
   - "96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents: automatic classification of FGV academic archive with ML/NLP + multi-engine OCR pipeline and API in production on FGV HPC (CIDA project)."
   - "Process2Diagram: meetings -> BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (Python · LangGraph · LLMs). Access available on request via LinkedIn."
   - "~30% reduction in remaining execution time on a critical project (Xerox Brasil), through an innovative solution  - delivered ahead of schedule."
+
+publicacoes_titulo: "PERSONAL PROJECTS PORTFOLIO"
+publicacoes:
+  - "Process2Diagram (P2D): multi-agent AI platform (9 agents · LangGraph · Supabase) turning meetings into 12 formal artifacts (BPMN 2.0, IEEE 830, SBVR, DMN, cross-meeting knowledge graph) - independently authored, 345 automated tests, in continuous production. Demo access available on request via LinkedIn."
+  - "DataJud Monitor (SJUR/FGV): legal case monitoring system via CNJ/DataJud API (Python · Streamlit) - independently authored, R$28M in annual accounting-provision savings."
+  - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) - kaggle.com/pedrogentil."
+  - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Apr/2025) - kaggle.com/pedrogentil."
   - "Kaggle: 56 published datasets, 217 notebooks, Hull Tactical Market Prediction competition (S&P 500 excess returns, USD 100k prize) + GenAI Intensive Google/Kaggle capstone - 5 courses completed."
 
 experiencia_titulo: "PROFESSIONAL EXPERIENCE & RELEVANT PROJECTS"
@@ -36,7 +43,7 @@ experiencia:
     nota: "FGV direct employee (CLT) since Apr/2022; Senior Consultant allocated via MGN Informática S.A. from Apr/2019 to Mar/2022  - same role and projects throughout."
     detalhes:
       - "Technical leadership on strategic AI/ML, automation, and systems integration projects for FGV's corporate areas (Legal, Audit, Academic, Contracts)."
-      - "SJUR [GenAI/LLM]: legal-AI ecosystem comprising (1) DataJud Monitor (Python · Streamlit) via CNJ API  - R$ 28M monitored, 4,980 cases resolved (2025), 3,765 flagged (Q1-2026); and (2) Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama), processing 11,998 SERDON emails at 88% accuracy."
+      - "SJUR [GenAI/LLM]: legal-AI ecosystem comprising (1) DataJud Monitor (Python · Streamlit) via CNJ API  - R$28M in annual accounting-provision savings via legal risk reclassification, 4,980 cases resolved (2025), 3,765 flagged (Q1-2026); and (2) Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama), processing 11,998 SERDON emails at 88% accuracy."
       - "CIDA [ML/NLP]: pipeline for automatic academic document classification  - 96.82% accuracy (13 categories, 1,750 docs), multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, Flask/JWT API in production on FGV HPC."
       - "Process2Diagram: meeting transcripts -> BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (LangGraph · LLMs). Access available on request via LinkedIn."
       - "NDOC [Computer Vision]: RetinaFace for automatic captioning of institutional photo archive."
@@ -117,19 +124,12 @@ comunidade:
   - "Director Member - Centro Ramakrishna Vedanta Rio de Janeiro (vedantarj.org.br)"
   - "Musical group leader at the center"
 
-sidebar_publicacoes_side: "RECENT PUBLICATIONS"
+sidebar_publicacoes_side: "AUTHORED PORTFOLIO"
 publicacoes_side:
+  - "Process2Diagram: meetings -> BPMN 2.0 diagrams + minutes + IEEE 830 requirements (Python · LangGraph · LLMs), independently authored"
+  - "DataJud Monitor (SJUR/FGV): legal case monitoring via CNJ API, independently authored - R$28M in annual provisioning savings"
   - "LearnMate: Multi-Agent AI Tutor (Nov/2025) - Kaggle/Google AI Agents Intensive"
   - "Echoes of Climate: Politics & Planet (Apr/2025) - Kaggle/Google GenAI Intensive"
-  - "Indian Mythology & Business (article in preparation - LinkedIn)"
-
-publicacoes_titulo: "PUBLICATIONS"
-publicacoes:
-  - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) — kaggle.com/pedrogentil"
-  - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Apr/2025) — kaggle.com/pedrogentil"
-  - "Vision and Mission (LinkedIn, Jul/2018)"
-  - "Subjective Liabilities (LinkedIn, Jul/2018)"
-  - "Strategy in Action (LinkedIn, Jun/2018)"
 
 resultados_titulo: "VERIFIED RESULTS"
 resultados:
