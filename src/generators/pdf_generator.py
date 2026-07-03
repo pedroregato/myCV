@@ -25,6 +25,9 @@ M_CONT_W  = MAIN_W - 2 * M_MARGIN
 
 BULLET_INDENT = 3.5   # mm: space reserved for bullet + gap
 
+# Competencia group deferred to the sidebar continuation page (page 1 doesn't have room for it)
+DEFERRED_COMPETENCIA_GROUPS = {"DESENVOLVIMENTO & GOVERNANÇA", "DEVELOPMENT & GOVERNANCE"}
+
 
 # ── Helper ───────────────────────────────────────────────────────────────────
 def _rgb(pdf, color, target="text"):
@@ -204,9 +207,21 @@ class CV(FPDF):
             y = self.get_y() + 0.5
         y += 4
 
-        # COMPETENCIAS
+        # PORTFÓLIO AUTORAL (destaque, logo apos CONTATO)
+        if data.get("publicacoes_side"):
+            y = self._sidebar_section(y, data.get("sidebar_publicacoes_side", "PORTFÓLIO AUTORAL"))
+            self.set_font("Arial", "", 7.5)
+            for item in data["publicacoes_side"]:
+                self._bullet(S_MARGIN, y, S_CONT_W, 3.8, item,
+                             text_color=LIGHT_GRAY, bullet_color=AMBER, sq=1.1)
+                y = self.get_y()
+            y += 4
+
+        # COMPETENCIAS (o grupo em DEFERRED_COMPETENCIA_GROUPS continua na pagina 2)
         y = self._sidebar_section(y, data.get("sidebar_competencias", "COMPETENCIAS"))
         for grupo in data.get("competencias", []):
+            if grupo["grupo"] in DEFERRED_COMPETENCIA_GROUPS:
+                continue
             self.set_xy(S_MARGIN, y)
             self.set_font("Arial", "B", 7.5)
             _rgb(self, AMBER, "text")
@@ -219,15 +234,6 @@ class CV(FPDF):
                 y = self.get_y()
             y += 3
 
-        # IDIOMAS
-        if y < PAGE_H - 55:
-            y = self._sidebar_section(y, data.get("sidebar_idiomas", "IDIOMAS"))
-            self.set_font("Arial", "", 8)
-            for item in data.get("idiomas", []):
-                self._bullet(S_MARGIN, y, S_CONT_W, 4.5, item,
-                             text_color=LIGHT_GRAY, bullet_color=LIGHT_GRAY, sq=1.1)
-                y = self.get_y()
-
         self._draw_wave(data)
 
     # ── Continuation sidebar (page 2+) ───────────────────────────────────────
@@ -237,6 +243,24 @@ class CV(FPDF):
         if data:
             y = 12
             if page == 1:
+                # COMPETENCIAS (continuacao) - grupo(s) que nao couberam na pagina 1
+                deferred = [g for g in data.get("competencias", [])
+                            if g["grupo"] in DEFERRED_COMPETENCIA_GROUPS]
+                if deferred:
+                    y = self._sidebar_section(y, data.get("sidebar_competencias", "COMPETENCIAS"))
+                    for grupo in deferred:
+                        self.set_xy(S_MARGIN, y)
+                        self.set_font("Arial", "B", 7.5)
+                        _rgb(self, AMBER, "text")
+                        self.multi_cell(S_CONT_W, 4, grupo["grupo"])
+                        y = self.get_y() + 1
+                        self.set_font("Arial", "", 7.5)
+                        for item in grupo["itens"]:
+                            self._bullet(S_MARGIN, y, S_CONT_W, 3.8, item,
+                                         text_color=LIGHT_GRAY, bullet_color=AMBER, sq=1.1)
+                            y = self.get_y()
+                        y += 3
+                    y += 1
                 # FORMAÇÃO COMPLEMENTAR
                 if data.get("formacao_comp"):
                     y = self._sidebar_section(y, data.get("sidebar_formacao_comp", "FORMAÇÃO COMPL."))
@@ -270,15 +294,15 @@ class CV(FPDF):
                                      text_color=LIGHT_GRAY, bullet_color=AMBER, sq=1.1)
                         y = self.get_y()
                     y += 4
-                # PUBLICAÇÕES RECENTES
-                if data.get("publicacoes_side") and y < PAGE_H - 55:
-                    y = self._sidebar_section(y, data.get("sidebar_publicacoes_side", "PUBLICAÇÕES"))
-                    self.set_font("Arial", "", 7.5)
-                    for item in data["publicacoes_side"]:
-                        if y > PAGE_H - 38:
+                # IDIOMAS
+                if data.get("idiomas") and y < PAGE_H - 40:
+                    y = self._sidebar_section(y, data.get("sidebar_idiomas", "IDIOMAS"))
+                    self.set_font("Arial", "", 8)
+                    for item in data["idiomas"]:
+                        if y > PAGE_H - 20:
                             break
-                        self._bullet(S_MARGIN, y, S_CONT_W, 3.8, item,
-                                     text_color=LIGHT_GRAY, bullet_color=AMBER, sq=1.1)
+                        self._bullet(S_MARGIN, y, S_CONT_W, 4.5, item,
+                                     text_color=LIGHT_GRAY, bullet_color=LIGHT_GRAY, sq=1.1)
                         y = self.get_y()
 
         self._draw_wave(data)
@@ -334,6 +358,14 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
             pdf.draw_sidebar_continuation(data, page=continuation_page[0])
             y = 12
 
+    def force_new_page():
+        nonlocal y
+        if y > 12.5:
+            pdf.add_page()
+            continuation_page[0] += 1
+            pdf.draw_sidebar_continuation(data, page=continuation_page[0])
+            y = 12
+
     # ── DESTAQUES ────────────────────────────────────────────────────────────
     y = pdf._main_section(y, data["destaques_titulo"])
     pdf.set_font("Arial", "", 8.5)
@@ -354,8 +386,8 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
             y = pdf.get_y() + 1.5
         y += 4
 
-    # ── EXPERIENCIA ──────────────────────────────────────────────────────────
-    check_page(20)
+    # ── EXPERIENCIA (sempre comeca em pagina nova) ────────────────────────────
+    force_new_page()
     y = pdf._main_section(y, data["experiencia_titulo"])
 
     for exp in data["experiencia"]:

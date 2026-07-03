@@ -4,7 +4,7 @@
 
 ---
 
-AI Product Builder | Statistician | Analytical Solutions Architect | GenAI & AI Agents | Python
+AI Product Builder | Statistician | Analytical Solutions Architect | GenAI & AI Agents | Senior BPM: End-to-End Automation
 
 I build systems where method and execution are inseparable. I prefer to code with AI to solve real problems rather than just document them - and I own, alone, every project I build, from discovery to production deployment.
 

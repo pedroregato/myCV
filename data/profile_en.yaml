@@ -2,7 +2,7 @@ nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
 linkedin_url: "https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823"
 kaggle_url: "https://www.kaggle.com/pedrogentil"
 
-titulo: "AI PRODUCT BUILDER | ANALYTICAL SOLUTIONS ARCHITECT | GENAI & AI AGENTS | PYTHON | END-TO-END AUTOMATION"
+titulo: "AI PRODUCT BUILDER | STATISTICIAN | ANALYTICAL SOLUTIONS ARCHITECT | GENAI & AI AGENTS | SENIOR BPM: END-TO-END AUTOMATION"
 contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn | Kaggle"
 
 sidebar_sobre: "ABOUT ME"
@@ -38,7 +38,7 @@ publicacoes:
   - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Apr/2025) - kaggle.com/pedrogentil."
   - "Kaggle: 56 published datasets, 217 notebooks, Hull Tactical Market Prediction competition (S&P 500 excess returns, USD 100k prize) + GenAI Intensive Google/Kaggle capstone - 5 courses completed."
 
-experiencia_titulo: "PROFESSIONAL EXPERIENCE & RELEVANT PROJECTS"
+experiencia_titulo: "PROFESSIONAL EXPERIENCE"
 experiencia:
   - empresa: "FUNDAÇÃO GETÚLIO VARGAS (FGV)"
     periodo: "2019 - Present"
@@ -130,10 +130,10 @@ comunidade:
 
 sidebar_publicacoes_side: "AUTHORED PORTFOLIO"
 publicacoes_side:
-  - "Process2Diagram: meetings -> BPMN 2.0 diagrams + minutes + IEEE 830 requirements (Python · LangGraph · LLMs), independently authored"
-  - "DataJud Monitor: independently authored web platform for multi-court lookup via the DataJud/CNJ API - TPU classification, Statute of Limitations Radar, plans/quotas (Python · Streamlit · Supabase)"
-  - "LearnMate: Multi-Agent AI Tutor (Nov/2025) - Kaggle/Google AI Agents Intensive"
-  - "Echoes of Climate: Politics & Planet (Apr/2025) - Kaggle/Google GenAI Intensive"
+  - "Process2Diagram - multi-agent, independently authored (Python · LangGraph)"
+  - "DataJud Monitor - multi-court legal platform, independently authored (Streamlit · Supabase)"
+  - "LearnMate - multi-agent tutor (Kaggle/Google, Nov/2025)"
+  - "Echoes of Climate - RAG-based analysis (Kaggle/Google, Apr/2025)"
 
 resultados_titulo: "VERIFIED RESULTS"
 resultados:

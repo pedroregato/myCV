@@ -2,7 +2,7 @@ nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
 linkedin_url: "https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823"
 kaggle_url: "https://www.kaggle.com/pedrogentil"
 
-titulo: "IA PRODUCT BUILDER | ARQUITETO DE SOLUÇÕES ANALÍTICAS | GENAI & AGENTES DE IA | PYTHON | AUTOMAÇÃO PONTA A PONTA"
+titulo: "IA PRODUCT BUILDER | ESTATÍSTICO | ARQUITETO DE SOLUÇÕES ANALÍTICAS | GENAI & AGENTES DE IA | BPM SÊNIOR: AUTOMAÇÃO PONTA A PONTA"
 contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn | Kaggle"
 
 sidebar_sobre: "SOBRE MIM"
@@ -38,7 +38,7 @@ publicacoes:
   - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Abr/2025) - kaggle.com/pedrogentil."
   - "Kaggle: 56 datasets publicados, 217 notebooks, competicao Hull Tactical Market Prediction (S&P 500, premio USD 100k) + capstone GenAI Intensive Google/Kaggle - 5 cursos concluídos."
 
-experiencia_titulo: "EXPERIÊNCIA PROFISSIONAL & PROJETOS RELEVANTES"
+experiencia_titulo: "EXPERIÊNCIA PROFISSIONAL"
 experiencia:
   - empresa: "FUNDAÇÃO GETÚLIO VARGAS (FGV)"
     periodo: "2019 - Atual"
@@ -130,10 +130,10 @@ comunidade:
 
 sidebar_publicacoes_side: "PORTFÓLIO AUTORAL"
 publicacoes_side:
-  - "Process2Diagram: reuniões -> diagramas BPMN 2.0 + atas + requisitos IEEE 830 (Python · LangGraph · LLMs), autoria própria"
-  - "DataJud Monitor: plataforma web autoral de consulta multi-tribunal via API DataJud/CNJ - TPU, Radar de Prescrição, planos/cotas (Python · Streamlit · Supabase)"
-  - "LearnMate: Multi-Agent AI Tutor (Nov/2025) - Kaggle/Google AI Agents Intensive"
-  - "Echoes of Climate: Politics & Planet (Abr/2025) - Kaggle/Google GenAI Intensive"
+  - "Process2Diagram - multi-agente, autoral (Python · LangGraph)"
+  - "DataJud Monitor - plataforma jurídica multi-tribunal, autoral (Streamlit · Supabase)"
+  - "LearnMate - tutor multi-agente (Kaggle/Google, Nov/2025)"
+  - "Echoes of Climate - análise com RAG (Kaggle/Google, Abr/2025)"
 
 resultados_titulo: "RESULTADOS VERIFICÁVEIS"
 resultados:

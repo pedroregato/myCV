@@ -4,7 +4,7 @@
 
 ---
 
-IA Product Builder | Estatístico | Arquiteto de Soluções Analíticas | GenAI & Agentes de IA | Python
+IA Product Builder | Estatístico | Arquiteto de Soluções Analíticas | GenAI & Agentes de IA | BPM Sênior: Automação Ponta a Ponta
 
 Construo sistemas onde método e execução não se separam. Prefiro codar com IA para resolver problemas reais a apenas documentá-los - e assino, sozinho, do discovery ao deploy em produção, os projetos que construo.
 
