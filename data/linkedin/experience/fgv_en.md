@@ -12,7 +12,7 @@ Note: FGV direct employee (CLT) since Apr/2022; Senior Consultant allocated via 
 Technical leadership on strategic AI/ML, automation, and systems integration projects for FGV's corporate areas (Legal, Audit, Academic, Contracts).
 
 ▸ SJUR [GenAI/LLM] — Legal-AI ecosystem:
-→ DataJud Monitor (Python · Streamlit): R$28M in annual accounting-provision savings (legal risk reclassification), 4,980 cases resolved (2025), 3,765 flagged (Q1-2026)
+→ Case monitoring and triage via CNJ/DataJud API (Python · Streamlit): R$28M in annual accounting-provision savings (legal risk reclassification), 4,980 cases resolved (2025), 3,765 flagged (Q1-2026)
 → Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama): 11,998 emails processed at 88% accuracy
 
 ▸ CIDA [ML/NLP] — Automatic classification of academic documents:

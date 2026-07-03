@@ -50,17 +50,33 @@ projetos:
     notas_claude: "data/projetos/learn_mate.md"
 
   - id: sjur
-    nome: "SJUR — DataJud Monitor"
+    nome: "SJUR — Monitoramento Processual & IA Jurídica"
     status: ativo
     visibilidade: interno
     inicio: "2022"
     tecnologias: [Python, Streamlit, API DATAJUD/CNJ, NLP]
     claude_code: (preencher)
     descricao: >
-      Triagem inteligente de processos jurídicos via API DATAJUD/CNJ (Res. 331/2020).
-      Dashboard Streamlit para monitoramento contínuo e sinalização de risco.
+      Triagem inteligente de processos jurídicos via API DATAJUD/CNJ (Res. 331/2020)
+      para a Superintendência Jurídica da FGV. Dashboard Streamlit para monitoramento
+      contínuo e sinalização de risco.
     impacto: "R$ 28M em economia de provisionamento contábil anual (reclassificação de risco). 4.980 processos saneados (2025). 3.765 novos em 2026 (1T)."
-    notas_claude: "data/projetos/sjur.md"
+    notas_claude: "data/projetos/fgv/sjur.md"
+
+  - id: datajud_monitor
+    nome: "DataJud Monitor"
+    status: ativo
+    visibilidade: publico
+    inicio: (preencher)
+    tecnologias: [Python, Streamlit, Supabase, API DATAJUD/CNJ]
+    claude_code: (preencher)
+    descricao: >
+      Projeto autoral (individual, do zero ao deploy em produção): plataforma web para
+      consulta e monitoramento em lote de processos judiciais em todos os tribunais
+      brasileiros, com classificação TPU, Radar de Prescrição, exportação Excel/PDF/JSON
+      e painel administrativo com planos e cotas. Ainda não comercializado.
+    impacto: (preencher)
+    notas_claude: "data/projetos/datajud_monitor.md"
 
   - id: se_suite_utils
     nome: "SE-SUITE Utils"

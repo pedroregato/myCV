@@ -31,7 +31,7 @@ Sem código proprietário, sem dados sensíveis da FGV.
 
 | Arquivo | Projeto | Status |
 |---|---|---|
-| `sjur.md` | SJUR — DataJud Monitor | Ativo |
+| `sjur.md` | SJUR — Monitoramento Processual & IA Jurídica | Ativo |
 | `ecm_bpm.md` | ECM & BPM / SE-SUITE Utils | Ativo |
 | `cida.md` | CIDA — Classificação Acadêmica | (verificar) |
 | `ndoc.md` | NDOC — Visão Computacional | (verificar) |

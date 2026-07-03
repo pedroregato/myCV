@@ -2,7 +2,7 @@ nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
 linkedin_url: "https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823"
 kaggle_url: "https://www.kaggle.com/pedrogentil"
 
-titulo: "ARQUITETO DE SOLUÇÕES ANALÍTICAS | ESTATÍSTICA APLICADA | ML/NLP & GENAI | PYTHON | DADOS & GOVERNANÇA"
+titulo: "IA PRODUCT BUILDER | ARQUITETO DE SOLUÇÕES ANALÍTICAS | GENAI & AGENTES DE IA | PYTHON | AUTOMAÇÃO PONTA A PONTA"
 contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn | Kaggle"
 
 sidebar_sobre: "SOBRE MIM"
@@ -20,8 +20,11 @@ resumo_texto: |
 
   Meu diferencial está em integrar Modelo -> Sistema -> Processo. Em vez de análises isoladas, desenho soluções operáveis (dados, automação, governança, observabilidade e custo), sustentáveis do ponto de vista institucional.
 
+  Atuo como IA Product Builder: idealizo, prototipo e construo sozinho - da concepção ao deploy em produção, sem equipe de desenvolvimento dedicada - sistemas de IA que resolvem dores reais de negócio e se traduzem em métrica de valor (ex: R$28M em economia de provisionamento contábil anual, no caso do SJUR/FGV). Prefiro codar com IA para resolver problemas reais a apenas documentá-los.
+
 destaques_titulo: "DESTAQUES DE IMPACTO"
 destaques:
+  - "IA Product Builder: SJUR, Process2Diagram e DataJud Monitor - tres produtos de IA concebidos, construidos e operados individualmente, do discovery ao deploy em producao, sem squad dedicado."
   - "SJUR/FGV: R$ 28M em economia de provisionamento contabil anual (reclassificacao de risco juridico), 4.980 processos saneados (2025) + 11.998 e-mails de Diarios Oficiais classificados via LLM com 88% de acuracia  - detectando citacoes da FGV como re antes que o processo seja conhecido."
   - "96,82% de acuracia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos: classificacao automatica de acervo academico FGV com pipeline ML/NLP + OCR multi-engine e API em producao no HPC FGV (projeto CIDA)."
   - "Process2Diagram: reuniões -> diagramas BPMN 2.0 + atas estruturadas + requisitos IEEE 830 em execução automatizada (Python · LangGraph · LLMs). Acesso sob solicitação via LinkedIn."
@@ -30,7 +33,7 @@ destaques:
 publicacoes_titulo: "PORTFÓLIO DE PROJETOS AUTORAIS"
 publicacoes:
   - "Process2Diagram (P2D): plataforma de IA multi-agente (9 agentes · LangGraph · Supabase) que transforma reuniões em 12 artefatos formais (BPMN 2.0, IEEE 830, SBVR, DMN, grafo de conhecimento) - projeto autoral, 345 testes automatizados, em produção contínua. Acesso sob solicitação via LinkedIn."
-  - "DataJud Monitor (SJUR/FGV): sistema de monitoramento jurídico via API CNJ/DataJud (Python · Streamlit) - autoria própria, R$28M em economia de provisionamento contábil anual."
+  - "DataJud Monitor: plataforma web autoral para consulta e monitoramento em lote de processos judiciais em todos os tribunais brasileiros (STJ, TRFs, TJs, TRTs, TREs) via API pública do DataJud/CNJ - classificação automática pela Tabela Processual Unificada (TPU), Radar de Prescrição (art. 485 CPC), exportação Excel/PDF/JSON, sistema de planos/cotas e painel administrativo (Python · Streamlit · Supabase)."
   - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) - kaggle.com/pedrogentil."
   - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Abr/2025) - kaggle.com/pedrogentil."
   - "Kaggle: 56 datasets publicados, 217 notebooks, competicao Hull Tactical Market Prediction (S&P 500, premio USD 100k) + capstone GenAI Intensive Google/Kaggle - 5 cursos concluídos."
@@ -43,7 +46,7 @@ experiencia:
     nota: "CLT FGV desde abr/2022; Consultor Sênior alocado via MGN Informática S.A. de abr/2019 a mar/2022  - mesma função e projetos durante todo o período."
     detalhes:
       - "Liderança técnica em projetos estratégicos de IA/ML, automação e integração de sistemas para áreas corporativas da DTI/FGV (Jurídico, Auditoria, Acadêmico, Contratos)."
-      - "SJUR [GenAI/LLM]: ecossistema juridico-IA composto por (1) DataJud Monitor (Python · Streamlit) via API CNJ  - R$ 28M em economia de provisionamento contabil anual via reclassificacao de risco, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026); e (2) classificador de citacoes em Diarios Oficiais via LLM (DeepSeek · Gemini · Llama), processando 11.998 e-mails SERDON com 88% de acuracia."
+      - "SJUR [GenAI/LLM]: ecossistema juridico-IA para a Superintendencia Juridica da FGV, composto por (1) monitoramento e triagem processual via API CNJ/DataJud (Python · Streamlit)  - R$ 28M em economia de provisionamento contabil anual via reclassificacao de risco, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026); e (2) classificador de citacoes em Diarios Oficiais via LLM (DeepSeek · Gemini · Llama), processando 11.998 e-mails SERDON com 88% de acuracia."
       - "CIDA [ML/NLP]: pipeline para classificacao automatica de documentos academicos  - 96,82% de acuracia (13 categorias, 1.750 docs), extracao multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integracao SOAP com SGC FGV e API Flask/JWT em producao no HPC FGV."
       - "Process2Diagram: transcrições de reunião -> diagramas BPMN 2.0, atas estruturadas e requisitos IEEE 830 em execução automatizada (LangGraph · LLMs). Acesso sob solicitação via LinkedIn."
       - "NDOC [Visão Computacional]: RetinaFace para legendagem automática de acervo fotográfico institucional."
@@ -106,6 +109,7 @@ idiomas:
 
 sidebar_formacao_comp: "FORMAÇÃO COMPLEMENTAR"
 formacao_comp:
+  - "5-Day AI Agents: Intensive Vibe Coding Course with Google - Google/Kaggle (Jul/2026)"
   - "Introduction to Model Context Protocol - Anthropic (Mai/2026)"
   - "5-Day Gen AI Intensive - Google/Kaggle (Abr/2025)"
   - "5-Day AI Agents Intensive - Google/Kaggle (Nov/2025)"
@@ -127,7 +131,7 @@ comunidade:
 sidebar_publicacoes_side: "PORTFÓLIO AUTORAL"
 publicacoes_side:
   - "Process2Diagram: reuniões -> diagramas BPMN 2.0 + atas + requisitos IEEE 830 (Python · LangGraph · LLMs), autoria própria"
-  - "DataJud Monitor (SJUR/FGV): monitoramento jurídico via API CNJ, autoria própria - R$28M em economia de provisionamento anual"
+  - "DataJud Monitor: plataforma web autoral de consulta multi-tribunal via API DataJud/CNJ - TPU, Radar de Prescrição, planos/cotas (Python · Streamlit · Supabase)"
   - "LearnMate: Multi-Agent AI Tutor (Nov/2025) - Kaggle/Google AI Agents Intensive"
   - "Echoes of Climate: Politics & Planet (Abr/2025) - Kaggle/Google GenAI Intensive"
 

@@ -1,12 +1,18 @@
-# Career Card — SJUR: DataJud Monitor
+# Career Card — SJUR (Superintendencia Juridica FGV)
 # Projeto FGV | Status: Ativo
-# Atualizado: 2026-04-26
+# Atualizado: 2026-07-03
+
+**Nota de nomenclatura (2026-07-03):** este projeto NAO deve ser confundido com o
+"DataJud Monitor", projeto autoral pessoal (plataforma web multi-tribunal com planos/cotas,
+ainda nao comercializada) documentado em `data/projetos/datajud_monitor.md`. Ambos consultam
+a mesma API publica do DataJud/CNJ, mas sao sistemas distintos: este aqui e o trabalho feito
+para a Superintendencia Juridica da FGV (monitoramento processual + classificador SERDON via IA).
 
 ---
 
 ## Identificacao
 
-- **Projeto:** SJUR - DataJud Monitor
+- **Projeto:** SJUR (Superintendencia Juridica FGV) - Monitoramento Processual & Classificacao de Diarios Oficiais
 - **Periodo:** 2023 - atual
 - **Status:** Em andamento
 - **Minha funcao:** Desenvolvedor principal / Responsavel tecnico
@@ -103,10 +109,10 @@ em tres categorias:
   Streamlit - SQLite - spaCy (`pt_core_news_lg`) - BeautifulSoup4 - Docker
 - **Status:** POC funcional com pipeline completo (maio/2025)
 - **11.998 e-mails SERDON processados** com **88% de acuracia** na classificacao
-- **(Preencher: integracao futura com DataJud Monitor apos identificar o numero do processo?)**
+- **(Preencher: integracao futura com o monitoramento de processos do SJUR apos identificar o numero do processo?)**
 
-**Por que e complementar ao DataJud Monitor:**
-O DataJud Monitor rastreia processos **conhecidos**. O classificador SERDON detecta
+**Por que e complementar ao monitoramento de processos do SJUR:**
+O monitoramento de processos do SJUR rastreia processos **conhecidos**. O classificador SERDON detecta
 processos **desconhecidos** a partir da citacao no Diario Oficial. Juntos cobrem o
 ciclo completo: descoberta de citacao -> identificacao do processo -> monitoramento continuo.
 
@@ -115,7 +121,7 @@ ciclo completo: descoberta de citacao -> identificacao do processo -> monitorame
 ## Proximos passos
 
 - Classificacao de recortes SERDON (POC em andamento — FGV-SJUR-POC-VOILA)
-- (Preencher: integracao entre o DataJud Monitor e o classificador de recortes?)
+- (Preencher: integracao entre o monitoramento de processos do SJUR e o classificador de recortes?)
 - (Preencher: machine learning para priorizacao de processos por perfil de risco?)
 - (Preencher: expansao do monitoramento para outros setores da FGV?)
 
