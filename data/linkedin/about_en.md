@@ -1,6 +1,6 @@
 # LinkedIn — "About" Section (EN)
-# Limit: 2,600 characters | Updated: 2026-07-12
-# Characters this version: ~2,444
+# Limit: 2,600 characters | Updated: 2026-07-13
+# Characters this version: ~2,458
 
 ---
 
@@ -15,7 +15,7 @@ I build systems where method and execution are inseparable. I prefer to code wit
 
 Recent results at FGV:
 ▸ R$ 28M in annual accounting-provision savings (legal risk reclassification) and 4,980 lawsuits resolved; 11,998 emails classified via LLM at 88% accuracy (SJUR)
-▸ 96.82% accuracy for automatic classification of 1,750 academic documents in production (CIDA)
+▸ 96.82% accuracy for automatic classification of 1,750 academic documents (PyTorch/GPU) in production (CIDA)
 ▸ 1,330 corporate contracts in end-to-end BPM pipeline with digital signature (FGV Contracts Portal)
 
 Authored projects:

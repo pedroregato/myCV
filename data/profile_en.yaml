@@ -28,7 +28,7 @@ destaques_titulo: "IMPACT HIGHLIGHTS"
 destaques:
   - "AI Product Builder: SJUR (commissioned by FGV) and Process2Diagram and DataJud Monitor (authored projects, with no formal demand) - three AI products conceived, built, and operated individually, from discovery to production deployment, with no dedicated squad."
   - "SJUR/FGV: R$28M in annual accounting-provision savings (legal risk reclassification), 4,980 legal cases resolved (2025) + 11,998 Official Gazette emails classified via LLM with 88% accuracy  - detecting FGV citations as defendant before the case number is even known."
-  - "96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents: automatic classification of FGV academic archive with ML/NLP + multi-engine OCR pipeline and API in production on FGV HPC (CIDA project)."
+  - "96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents: automatic classification of FGV academic archive with ML/NLP (PyTorch/GPU) + multi-engine OCR pipeline and API in production on FGV HPC (CIDA project)."
   - "Process2Diagram (self-authored project, identified before any demand): 13 AI agents turn a meeting into 12 formal artifacts (BPMN 2.0, IEEE 830, IBIS, knowledge graph) in under 5 minutes - a 90% reduction in process formalization time and automatic contradiction detection across meetings. Access available on request via LinkedIn."
   - "~30% reduction in remaining execution time on a critical project (Xerox Brasil), through an innovative solution  - delivered ahead of schedule."
 
@@ -49,7 +49,7 @@ experiencia:
     detalhes:
       - "Technical leadership on strategic AI/ML, automation, and systems integration projects for FGV's corporate areas (Legal, Audit, Academic, Contracts)."
       - "SJUR [GenAI/LLM]: legal-AI ecosystem for FGV's Legal Affairs Office (Superintendência Jurídica), comprising (1) case monitoring and triage via CNJ/DataJud API (Python · Streamlit)  - R$28M in annual accounting-provision savings via legal risk reclassification, 4,980 cases resolved (2025), 3,765 flagged (Q1-2026); and (2) Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama), processing 11,998 SERDON emails at 88% accuracy."
-      - "CIDA [ML/NLP]: pipeline for automatic academic document classification  - 96.82% accuracy (13 categories, 1,750 docs), multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, Flask/JWT API in production on FGV HPC."
+      - "CIDA [ML/NLP]: pipeline for automatic academic document classification  - 96.82% accuracy (13 categories, 1,750 docs), GPU-accelerated training (PyTorch + CUDA), multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, Flask/JWT API in production on FGV HPC."
       - "NDOC [Computer Vision]: RetinaFace for automatic captioning of institutional photo archive."
       - "ECM & BPM [Automation/Integration]: technical owner of content governance and process automation on SE-SUITE. Contracts Portal: 1,330 contractual instruments, end-to-end BPM pipeline with D4Sign e-signature. SE-SUITE Utils: SOAP wrappers (22+ operations), migration of 200+ documents across 28 units, FastAPI/Docker."
   - empresa: "TRUST BUSINESS CONSULTING (own company)"
@@ -79,7 +79,7 @@ competencias:
       - "Discriminant Analysis"
   - grupo: "AI & DATA ENGINEERING"
     itens:
-      - "Machine Learning (Scikit-learn · XGBoost)"
+      - "Machine Learning (Scikit-learn · XGBoost · PyTorch)"
       - "LLMs · RAG · LangGraph · AI Agents"
       - "NLP & Computer Vision"
       - "Prompt Engineering"

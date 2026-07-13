@@ -16,7 +16,7 @@ Technical leadership on strategic AI/ML, automation, and systems integration pro
 → Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama): 11,998 emails processed at 88% accuracy
 
 ▸ CIDA [ML/NLP] — Automatic classification of academic documents:
-96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents. Pipeline with multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, and Flask/JWT API in production on FGV HPC.
+96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents. GPU-accelerated training (PyTorch + CUDA), pipeline with multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, and Flask/JWT API in production on FGV HPC.
 
 ▸ Process2Diagram [GenAI] — Meetings → BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (LangGraph · LLMs). Access available on request.
 
@@ -24,4 +24,4 @@ Technical leadership on strategic AI/ML, automation, and systems integration pro
 
 ▸ NDOC [Computer Vision] — RetinaFace for automatic captioning of institutional photo archive.
 
-Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · NLP · FastAPI · SOAP · BPMN · Docker · D4Sign
+Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · PyTorch · NLP · FastAPI · SOAP · BPMN · Docker · D4Sign

@@ -28,7 +28,7 @@ destaques_titulo: "DESTAQUES DE IMPACTO"
 destaques:
   - "IA Product Builder: SJUR (encomendado pela FGV) e Process2Diagram e DataJud Monitor (projetos autorais, sem demanda formal) - tres produtos de IA concebidos, construidos e operados individualmente, do discovery ao deploy em producao, sem squad dedicado."
   - "SJUR/FGV: R$ 28M em economia de provisionamento contabil anual (reclassificacao de risco juridico), 4.980 processos saneados (2025) + 11.998 e-mails de Diarios Oficiais classificados via LLM com 88% de acuracia  - detectando citacoes da FGV como re antes que o processo seja conhecido."
-  - "96,82% de acuracia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos: classificacao automatica de acervo academico FGV com pipeline ML/NLP + OCR multi-engine e API em producao no HPC FGV (projeto CIDA)."
+  - "96,82% de acuracia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos: classificacao automatica de acervo academico FGV com pipeline ML/NLP (PyTorch/GPU) + OCR multi-engine e API em producao no HPC FGV (projeto CIDA)."
   - "Process2Diagram (projeto autoral, identificado antes de qualquer demanda): 13 agentes de IA transformam reunião em 12 artefatos formais (BPMN 2.0, IEEE 830, IBIS, grafo de conhecimento) em menos de 5 minutos - reduz em 90% o tempo de formalização de processos e detecta contradições entre reuniões automaticamente. Acesso sob solicitação via LinkedIn."
   - "~30% de redução: do tempo restante de execução em projeto crítico (Xerox Brasil), por solução inovadora aplicada em cenário real  - entrega antecipada ao cliente."
 
@@ -49,7 +49,7 @@ experiencia:
     detalhes:
       - "Liderança técnica em projetos estratégicos de IA/ML, automação e integração de sistemas para áreas corporativas da DTI/FGV (Jurídico, Auditoria, Acadêmico, Contratos)."
       - "SJUR [GenAI/LLM]: ecossistema juridico-IA para a Superintendencia Juridica da FGV, composto por (1) monitoramento e triagem processual via API CNJ/DataJud (Python · Streamlit)  - R$ 28M em economia de provisionamento contabil anual via reclassificacao de risco, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026); e (2) classificador de citacoes em Diarios Oficiais via LLM (DeepSeek · Gemini · Llama), processando 11.998 e-mails SERDON com 88% de acuracia."
-      - "CIDA [ML/NLP]: pipeline para classificacao automatica de documentos academicos  - 96,82% de acuracia (13 categorias, 1.750 docs), extracao multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integracao SOAP com SGC FGV e API Flask/JWT em producao no HPC FGV."
+      - "CIDA [ML/NLP]: pipeline para classificacao automatica de documentos academicos  - 96,82% de acuracia (13 categorias, 1.750 docs), com treinamento acelerado por GPU (PyTorch + CUDA), extracao multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integracao SOAP com SGC FGV e API Flask/JWT em producao no HPC FGV."
       - "NDOC [Visão Computacional]: RetinaFace para legendagem automática de acervo fotográfico institucional."
       - "ECM & BPM [Automação/Integração]: responsavel tecnico por governanca de conteudo e processos no SE-SUITE. Portal de Contratos DO/Compras: 1.330 instrumentos contratuais, pipeline BPM end-to-end com D4Sign. SE-SUITE Utils: wrappers SOAP (22+ operacoes), migracao de 200+ documentos para 28 unidades, FastAPI/Docker."
   - empresa: "TRUST BUSINESS CONSULTING (empresa própria)"
@@ -79,7 +79,7 @@ competencias:
       - "Análise Discriminante"
   - grupo: "IA & ENGENHARIA DE DADOS"
     itens:
-      - "Machine Learning (Scikit-learn · XGBoost)"
+      - "Machine Learning (Scikit-learn · XGBoost · PyTorch)"
       - "LLMs · RAG · LangGraph · Agentes de IA"
       - "NLP & Visão Computacional"
       - "Engenharia de Prompt"

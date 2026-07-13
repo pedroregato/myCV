@@ -16,7 +16,7 @@ Liderança técnica em projetos estratégicos de IA/ML, automação e integraç�
 → Classificador de citações em Diários Oficiais via LLM (DeepSeek · Gemini · Llama): 11.998 e-mails processados com 88% de acurácia
 
 ▸ CIDA [ML/NLP] — Classificação automática de documentos acadêmicos:
-96,82% de acurácia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos. Pipeline com extração multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integração SOAP com SGC FGV e API Flask/JWT em produção no HPC FGV.
+96,82% de acurácia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos. Treinamento acelerado por GPU (PyTorch + CUDA), pipeline com extração multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integração SOAP com SGC FGV e API Flask/JWT em produção no HPC FGV.
 
 ▸ Process2Diagram [GenAI] — Reuniões → diagramas BPMN 2.0 + atas estruturadas + requisitos IEEE 830 em execução automatizada (LangGraph · LLMs). Acesso sob solicitação.
 
@@ -24,4 +24,4 @@ Liderança técnica em projetos estratégicos de IA/ML, automação e integraç�
 
 ▸ NDOC [Visão Computacional] — RetinaFace para legendagem automática de acervo fotográfico institucional.
 
-Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · NLP · FastAPI · SOAP · BPMN · Docker · D4Sign
+Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · PyTorch · NLP · FastAPI · SOAP · BPMN · Docker · D4Sign

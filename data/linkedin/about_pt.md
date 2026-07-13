@@ -1,6 +1,6 @@
 # LinkedIn — Seção "Sobre" (PT)
-# Limite: 2.600 caracteres | Atualizado: 2026-07-12
-# Caracteres desta versão: ~2.505
+# Limite: 2.600 caracteres | Atualizado: 2026-07-13
+# Caracteres desta versão: ~2.519
 
 ---
 
@@ -15,7 +15,7 @@ Trajetória de 30 anos em três fases:
 
 Resultados recentes na FGV:
 ▸ R$ 28M em economia de provisionamento contábil anual (reclassificação de risco jurídico) e 4.980 processos saneados; 11.998 e-mails classificados via LLM com 88% de acurácia (SJUR)
-▸ 96,82% de acurácia na classificação automática de 1.750 documentos acadêmicos em produção (CIDA)
+▸ 96,82% de acurácia na classificação automática de 1.750 documentos acadêmicos (PyTorch/GPU) em produção (CIDA)
 ▸ 1.330 contratos corporativos em pipeline BPM end-to-end com assinatura digital (Portal de Contratos FGV)
 
 Projetos autorais publicados:
