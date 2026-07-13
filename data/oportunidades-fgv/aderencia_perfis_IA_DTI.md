@@ -4,6 +4,11 @@
 **Data:** Maio de 2026
 **Referência:** Documento "Job Descriptions DTI v2 IA" — Modelos de JD, Área DTI/TI
 
+> **Nota (2026-07-12):** este documento tem um **Adendo v2** ao final, com atualização de
+> itens de Cloud, Governança de IA e Observabilidade/FinOps com base em verificação direta
+> do código-fonte do Process2Diagram (não inferência). O corpo original abaixo foi mantido
+> inalterado como registro do que foi enviado em Maio/2026.
+
 ---
 
 ## Apresentação
@@ -193,3 +198,122 @@ Estou à disposição para aprofundar qualquer ponto desta análise, apresentar 
 
 ---
 *Documento elaborado com apoio de Claude (Anthropic) | Maio de 2026*
+
+---
+
+# ADENDO v2 — Atualização por Verificação de Código (2026-07-12)
+
+**Elaborado por:** Pedro Gentil Regato de Oliveira Soares
+**Data:** 12 de julho de 2026
+**Origem da evidência:** Claude Code rodando diretamente no repositório do Process2Diagram
+(P2D), lendo código-fonte real — não é inferência nem atualização de intenção, é leitura
+de implementação existente e testada.
+**Objetivo:** Atualizar, com a mesma honestidade do documento original, os pontos da
+análise de Maio/2026 que mudaram de situação desde então — sem inflar o que não mudou.
+
+---
+
+## 1. Itens que evoluíram de "gap declarado" ou "parcialmente atendido" para evidência concreta
+
+### 1.1 Cloud / Azure AI Services — evoluiu, mas com nuance importante
+
+**Situação em Maio/2026:** "Gap a desenvolver... não tenho experiência formal com AWS
+Bedrock, Azure OpenAI ou Vertex AI como plataforma de infraestrutura."
+
+**Situação em 12/07/2026:**
+- **Azure OpenAI Service agora é capacidade real de produto**, não aspiracional: provider
+  implementado no P2D (`client_type="azure_openai"` em `modules/config.py`, client dedicado
+  `openai.AzureOpenAI`), coberto por 13 testes automatizados. O P2D orquestra hoje **7
+  provedores LLM intercambiáveis** (DeepSeek, Anthropic Claude, OpenAI, Azure OpenAI,
+  Google Gemini, Groq, xAI Grok).
+- **O que continua sendo gap real, sem atalho:** existe infraestrutura como código pronta
+  para Google Cloud Run (Docker multi-stage + Cloud Build), mas **nunca foi implantada em
+  produção** — o deploy real e ao vivo do P2D continua sendo Streamlit Cloud. Não afirmo
+  "experiência em produção com GCP"; afirmo "infraestrutura como código pronta para Cloud
+  Run, deploy real via CI/CD em outra plataforma".
+- **Leitura honesta:** o gap deixou de ser "nunca toquei nisso" e passou a ser "tenho a
+  peça de integração com a plataforma gerenciada (Azure OpenAI) funcionando em produção,
+  mas não tenho a peça de infraestrutura de nuvem (compute, rede, IAM) rodando ao vivo".
+  São gaps de natureza diferente — o segundo é bem menor que o primeiro.
+
+### 1.2 Governança de IA / Ética / LGPD — de prática informal para camada nomeada e auditável
+
+**Situação em Maio/2026:** "Defini critérios de qualidade, log de decisões e validação
+humana... Formalização explícita de política de IA corporativa ainda não realizada — mas
+a prática está presente."
+
+**Situação em 12/07/2026:** o P2D tem uma camada de compliance dedicada e nomeada como tal
+(`modules/compliance/`: `detector.py`, `audit.py`, `consent.py`), com tabelas próprias em
+produção (`compliance_consent`, `compliance_audit`):
+- Pseudonimização reversível de dados pessoais em duas camadas — dados estruturados via
+  regex e nomes próprios via reconhecimento de entidades (NER)
+- Trilha de consentimento e auditoria versionadas em banco, não apenas log informal
+
+**Caveat honesto que mantenho:** o isolamento multi-tenant (por `project_id`/`tenant_id`)
+é real na camada de aplicação, mas Row Level Security (RLS) no Postgres está inconsistente
+entre tabelas — algumas sem policy, outras com `USING(true)` permissivo, outras com RLS
+explicitamente desabilitada. Não afirmo "isolamento completo a nível de banco de dados";
+afirmo "isolamento multi-tenant na aplicação, com RLS parcial, item de hardening pendente".
+
+### 1.3 Observabilidade / Monitoramento de Modelo / FinOps para IA — de "sem evidência" para sistema funcionando
+
+**Situação em Maio/2026:** este item nem constava como atendido na análise original —
+não havia sido mapeado como competência declarada.
+
+**Situação em 12/07/2026:**
+- Telemetria de chamadas LLM com detecção de anomalia de taxa de erro por provedor
+- Rastreamento de taxa de saída bem-formada (schema validation) por agente e por versão
+  de prompt ao longo do tempo — fecha o ciclo entre chamada de modelo e sinal acionável
+- Ferramenta de modelagem de custo (`core/cost_model.py`) comparando 17 modelos em 6
+  provedores por cenário de uso, com projeção de custo antes da execução — decisão de
+  trade-off custo × qualidade orientada por dado, não por intuição
+
+### 1.4 Copilots corporativos / assistentes inteligentes — de menção genérica para número verificado
+
+O assistente conversacional do P2D tem **151 ferramentas** especializadas de consulta e
+escrita sobre o histórico do projeto (contagem real via `get_tool_schemas_openai()`, não
+estimativa), com busca semântica via pgvector e embeddings Matryoshka de 512 dimensões, e
+um modo de análise autônoma multi-etapa (até 15 rounds) — um copilot corporativo embutido
+no produto, não um wrapper genérico de chat.
+
+---
+
+## 2. O que continua honestamente em aberto — sem mudança
+
+- **Certificações formais** (Azure AI Engineer, AWS Solutions Architect, AWS ML Specialty,
+  Google Professional ML Engineer) — gap real, sem atalho de código. Continua exigindo
+  estudo e prova.
+- **Cloud em produção real como infraestrutura** (AWS/Azure/GCP hospedando a aplicação) —
+  o que existe é integração com um serviço gerenciado (Azure OpenAI) e IaC pronta para
+  Cloud Run, não uma operação viva nessas plataformas.
+- **RLS completo / isolamento a nível de banco** — parcial, não vender como resolvido.
+- **Data Lake / Data Warehouse** — o banco do P2D é Postgres transacional (OLTP) +
+  pgvector, não um DW. Não forçar isso artificialmente para preencher checklist.
+
+---
+
+## 3. Revisão da aderência estimada — Arquiteto de Soluções
+
+**Estimativa em Maio/2026:** 82%
+
+**Estimativa revisada em 12/07/2026: ~86%**
+
+**Racional da revisão:** o gap mais citado na análise original — "ausência de experiência
+formal com Cloud (AWS/Azure/GCP) e seus serviços de IA nativos" — deixou de ser um gap
+único e homogêneo. A parte "serviços de IA nativos" (Azure OpenAI Service) passou a ser
+atendida com evidência de código em produção. A parte "infraestrutura de nuvem" continua
+sendo gap real (IaC pronta, nunca implantada). Como o requisito original mistura as duas
+coisas, a aderência sobe, mas não para o teto — o gap de infraestrutura viva permanece.
+Os itens de governança de IA e observabilidade/FinOps, antes tratados como "prática
+presente mas não formalizada", agora têm evidência nomeada e testável, o que também
+reforça a nota sem depender de Cloud.
+
+As avaliações de **Analista de Sistemas/Negócio (91%)** e **Desenvolvedor Full Stack
+(72%)** não mudam de forma relevante com esta atualização — os gaps que definem essas
+notas (Confluence/Notion, certificação ágil, frontend React/Angular/Vue) não foram
+tocados pela verificação de código do P2D.
+
+---
+
+*Adendo elaborado com apoio de Claude Code (Anthropic), a partir de leitura direta do
+código-fonte do Process2Diagram | 12 de julho de 2026*

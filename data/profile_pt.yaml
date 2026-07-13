@@ -22,17 +22,19 @@ resumo_texto: |
 
   Atuo como IA Product Builder: idealizo, prototipo e construo sozinho - da concepção ao deploy em produção, sem equipe de desenvolvimento dedicada - sistemas de IA que resolvem dores reais de negócio e se traduzem em métrica de valor (ex: R$28M em economia de provisionamento contábil anual, no caso do SJUR/FGV). Prefiro codar com IA para resolver problemas reais a apenas documentá-los.
 
+  Nem sempre espero a demanda: quando reconheço um risco institucional antes de ele ser nomeado - como o custo do conhecimento perdido em reuniões corporativas -, assumo a construção da solução como projeto autoral, com a mesma disciplina de um projeto encomendado (caso Process2Diagram).
+
 destaques_titulo: "DESTAQUES DE IMPACTO"
 destaques:
-  - "IA Product Builder: SJUR, Process2Diagram e DataJud Monitor - tres produtos de IA concebidos, construidos e operados individualmente, do discovery ao deploy em producao, sem squad dedicado."
+  - "IA Product Builder: SJUR (encomendado pela FGV) e Process2Diagram e DataJud Monitor (projetos autorais, sem demanda formal) - tres produtos de IA concebidos, construidos e operados individualmente, do discovery ao deploy em producao, sem squad dedicado."
   - "SJUR/FGV: R$ 28M em economia de provisionamento contabil anual (reclassificacao de risco juridico), 4.980 processos saneados (2025) + 11.998 e-mails de Diarios Oficiais classificados via LLM com 88% de acuracia  - detectando citacoes da FGV como re antes que o processo seja conhecido."
   - "96,82% de acuracia (Macro F1: 0.9665) em 13 categorias e 1.750 documentos: classificacao automatica de acervo academico FGV com pipeline ML/NLP + OCR multi-engine e API em producao no HPC FGV (projeto CIDA)."
-  - "Process2Diagram: reuniões -> diagramas BPMN 2.0 + atas estruturadas + requisitos IEEE 830 em execução automatizada (Python · LangGraph · LLMs). Acesso sob solicitação via LinkedIn."
+  - "Process2Diagram (projeto autoral, identificado antes de qualquer demanda): 13 agentes de IA transformam reunião em 12 artefatos formais (BPMN 2.0, IEEE 830, IBIS, grafo de conhecimento) em menos de 5 minutos - reduz em 90% o tempo de formalização de processos e detecta contradições entre reuniões automaticamente. Acesso sob solicitação via LinkedIn."
   - "~30% de redução: do tempo restante de execução em projeto crítico (Xerox Brasil), por solução inovadora aplicada em cenário real  - entrega antecipada ao cliente."
 
 publicacoes_titulo: "PORTFÓLIO DE PROJETOS AUTORAIS"
 publicacoes:
-  - "Process2Diagram (P2D): plataforma de IA multi-agente (9 agentes · LangGraph · Supabase) que transforma reuniões em 12 artefatos formais (BPMN 2.0, IEEE 830, SBVR, DMN, grafo de conhecimento) - projeto autoral, 345 testes automatizados, em produção contínua. Acesso sob solicitação via LinkedIn."
+  - "Process2Diagram (P2D): plataforma de IA multi-agente (13 agentes · LangGraph · Supabase) que transforma reuniões em 12 artefatos formais (BPMN 2.0, IEEE 830, SBVR, DMN, IBIS, grafo de conhecimento) sobre 7 provedores LLM intercambiáveis (incl. Azure OpenAI), com governança LGPD nativa e telemetria de custo/erro por provedor (FinOps) - projeto autoral, identificado antes de qualquer demanda, 874 testes automatizados, em produção contínua. Acesso sob solicitação via LinkedIn."
   - "DataJud Monitor: plataforma web autoral para consulta e monitoramento em lote de processos judiciais em todos os tribunais brasileiros (STJ, TRFs, TJs, TRTs, TREs) via API pública do DataJud/CNJ - classificação automática pela Tabela Processual Unificada (TPU), Radar de Prescrição (art. 485 CPC), exportação Excel/PDF/JSON, sistema de planos/cotas e painel administrativo (Python · Streamlit · Supabase)."
   - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) - kaggle.com/pedrogentil."
   - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Abr/2025) - kaggle.com/pedrogentil."
@@ -48,7 +50,6 @@ experiencia:
       - "Liderança técnica em projetos estratégicos de IA/ML, automação e integração de sistemas para áreas corporativas da DTI/FGV (Jurídico, Auditoria, Acadêmico, Contratos)."
       - "SJUR [GenAI/LLM]: ecossistema juridico-IA para a Superintendencia Juridica da FGV, composto por (1) monitoramento e triagem processual via API CNJ/DataJud (Python · Streamlit)  - R$ 28M em economia de provisionamento contabil anual via reclassificacao de risco, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026); e (2) classificador de citacoes em Diarios Oficiais via LLM (DeepSeek · Gemini · Llama), processando 11.998 e-mails SERDON com 88% de acuracia."
       - "CIDA [ML/NLP]: pipeline para classificacao automatica de documentos academicos  - 96,82% de acuracia (13 categorias, 1.750 docs), extracao multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR), integracao SOAP com SGC FGV e API Flask/JWT em producao no HPC FGV."
-      - "Process2Diagram: transcrições de reunião -> diagramas BPMN 2.0, atas estruturadas e requisitos IEEE 830 em execução automatizada (LangGraph · LLMs). Acesso sob solicitação via LinkedIn."
       - "NDOC [Visão Computacional]: RetinaFace para legendagem automática de acervo fotográfico institucional."
       - "ECM & BPM [Automação/Integração]: responsavel tecnico por governanca de conteudo e processos no SE-SUITE. Portal de Contratos DO/Compras: 1.330 instrumentos contratuais, pipeline BPM end-to-end com D4Sign. SE-SUITE Utils: wrappers SOAP (22+ operacoes), migracao de 200+ documentos para 28 unidades, FastAPI/Docker."
   - empresa: "TRUST BUSINESS CONSULTING (empresa própria)"
@@ -130,7 +131,7 @@ comunidade:
 
 sidebar_publicacoes_side: "PORTFÓLIO AUTORAL"
 publicacoes_side:
-  - "Process2Diagram - multi-agente, autoral (Python · LangGraph)"
+  - "Process2Diagram - multi-agente multi-provedor, autoral (Python · LangGraph)"
   - "DataJud Monitor - plataforma jurídica multi-tribunal, autoral (Streamlit · Supabase)"
   - "LearnMate - tutor multi-agente (Kaggle/Google, Nov/2025)"
   - "Echoes of Climate - análise com RAG (Kaggle/Google, Abr/2025)"

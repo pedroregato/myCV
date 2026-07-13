@@ -27,12 +27,14 @@ projetos:
     status: ativo
     visibilidade: publico
     inicio: (preencher)
-    tecnologias: [Python, LangGraph, LLMs, BPMN 2.0]
-    claude_code: (preencher — true/false)
-    repositorio: (preencher URL GitHub)
+    tecnologias: [Python, LangGraph, LLMs, BPMN 2.0, Supabase, FastAPI, Docker, Azure OpenAI]
+    claude_code: true
+    repositorio: "https://github.com/pedroregato/Process2Diagram"
     descricao: >
       Ferramenta open source que converte transcrições de reunião em diagramas BPMN 2.0,
-      atas estruturadas e requisitos IEEE 830 em uma única execução automatizada.
+      atas estruturadas e requisitos IEEE 830 em uma única execução automatizada. Pipeline
+      multi-agente (13 agentes) sobre 7 provedores LLM, com camada de conformidade LGPD
+      e telemetria de custo/erro (FinOps).
     impacto: "Elimina trabalho manual de documentação pós-reunião."
     notas_claude: "data/projetos/process2diagram.md"
 
