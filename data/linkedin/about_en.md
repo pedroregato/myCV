@@ -1,30 +1,21 @@
 # LinkedIn — "About" Section (EN)
-# Limit: 2,600 characters | Updated: 2026-07-13
-# Characters this version: ~2,458
+# Limit: 2,600 characters | Updated: 2026-08-08
+# Characters this version: ~1,957
 
 ---
 
-AI Product Builder | Statistician | Analytical Solutions Architect | GenAI & AI Agents | Senior BPM: End-to-End Automation
+I'm an AI Product Builder and Analytical Solutions Architect at Fundação Getulio Vargas, with over seven years of experience applying artificial intelligence, automation, and systems integration to real business problems — and over 15 years in BPM and process engineering before that.
 
-I build systems where method and execution are inseparable. I prefer to code with AI to solve real problems rather than just document them - and I own, alone, every project I build, from discovery to production deployment. I solve what's entrusted to me - and when I recognize a risk before anyone names it, I also take on building the solution myself, as an authored project.
+I work at the intersection of data engineering, generative AI, and solutions architecture: from discovery to production deployment, alone as technical owner, within a rigorous corporate IT governance process (architecture, infrastructure, security, data, and change management).
 
-30-year trajectory in three phases:
-▸ Critical process automation — ITIL v3/IBM Maximo (PMESP, FETRANSPOR), 90 processes of Brazil's National Energy Plan (EPE/MME), strategic KPIs (Sanofi)
-▸ Data engineering and statistical modeling — analytical solutions for large organizations
-▸ AI in production — LLMs, ML/NLP, Computer Vision, GenAI (FGV, 2019–present)
+As technical owner at FGV, I lead:
 
-Recent results at FGV:
-▸ R$ 28M in annual accounting-provision savings (legal risk reclassification) and 4,980 lawsuits resolved; 11,998 emails classified via LLM at 88% accuracy (SJUR)
-▸ 96.82% accuracy for automatic classification of 1,750 academic documents (PyTorch/GPU) in production (CIDA)
-▸ 1,330 corporate contracts in end-to-end BPM pipeline with digital signature (FGV Contracts Portal)
+SJUR — legal-AI ecosystem with citation classification via multi-provider LLM (11,760 SERDON emails over 12 months, 88% accuracy) and cross-referencing via the DataJud/CNJ API investigating 19,560 cases, generating ~R$28M in annual provisioning savings and resolving nearly 5,000 cases in 2025.
+CIDA — academic document classifier (classic NLP/ML, scikit-learn + spaCy), 96% accuracy, in continuous production with a dedicated API and security hardening.
+NDOC — RetinaFace for automatic detection and captioning of multiple faces in FGV's institutional photo archive, with JSON metadata and interactive visualization via REST API (FastAPI).
+Contracts Portal (ECM/BPM) — end-to-end governance and automation of 1,330 corporate contractual instruments, with integrated digital signature (D4Sign).
+Process2Diagram (P2D) — self-authored multi-agent platform that turns meetings into formal process artifacts, cutting formalization time by 90%.
 
-Authored projects:
-▸ Process2Diagram — identified before any demand: 13 AI agents orchestrate 7 LLM providers (incl. Azure OpenAI) and turn a meeting into 12 formal artifacts (BPMN 2.0, IEEE 830, IBIS, knowledge graph) in under 5 minutes, with LGPD compliance, per-provider cost/error telemetry (FinOps) and a 90% reduction in process formalization time (LangGraph)
-▸ DataJud Monitor — multi-court web platform (STJ/TRFs/TJs/TRTs/TREs) via the DataJud/CNJ API, with Statute of Limitations Radar, TPU classification, and a plans/quota admin panel (Python · Streamlit · Supabase)
-▸ LearnMate — multi-agent tutor with Google ADK + Gemini + RAG + LLM-as-Judge (AI Agents Intensive Google/Kaggle capstone, Nov/2025)
-▸ Echoes of Climate — 20 years of headlines analyzed with RAG + sentiment analysis + DeepSeek (GenAI Intensive Google/Kaggle capstone, Apr/2025)
-▸ 5-Day AI Agents: Intensive Vibe Coding Course with Google (Google/Kaggle, Jul/2026)
+I've been evolving my own AI-assisted development practice — from simple chat interactions to an intent-architect role, guiding architecture, technical decisions, and quality validation with tools like Claude Code, while AI accelerates implementation.
 
-Areas of expertise: Generative AI · AI Agents · Document Classification · BPM Automation · Data/AI Governance · Systems Integration · Statistical Modeling
-
-Open to conversations about applied AI projects, intelligent automation, or analytical architecture.
+My mission: turning technical complexity into data products that generate measurable value — end-to-end automation, governance, and applied AI with real results.

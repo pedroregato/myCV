@@ -140,7 +140,8 @@ Em producao continua no Streamlit Cloud com auto-deploy no push para `main`.
 - 12 artefatos formais gerados em execucao unica a partir de uma transcricao: diagramas
   BPMN 2.0 e Mermaid, atas estruturadas, requisitos IEEE 830, vocabulario SBVR, modelo BMM,
   tabelas DMN 1.4 e grafo de conhecimento entre reunioes
-- Pipeline de 13 agentes especializados orquestrados (Python - LangGraph - Supabase)
+- Pipeline de 13 agentes especializados (Orchestrator proprio em Python, LangGraph restrito
+  a retry adaptativo de qualidade, validacao deterministica via AgentValidator sem LLM, Supabase)
 - Assistente conversacional com 151 ferramentas de consulta/escrita sobre o historico do projeto
 - Suporte a 7 provedores LLM (DeepSeek, Claude, OpenAI, Azure OpenAI, Gemini, Groq, Grok)
 - Camada de conformidade LGPD nativa (pseudonimizacao PII, consentimento e auditoria versionados)
@@ -153,7 +154,9 @@ Em producao continua no Streamlit Cloud com auto-deploy no push para `main`.
 ## Referencias no CV/LinkedIn
 
 - Portfolio de Projetos Autorais em `profile_pt.yaml` / `profile_en.yaml`: "Process2Diagram
-  (P2D): plataforma de IA multi-agente (13 agentes - LangGraph - Supabase)..."
+  (P2D): plataforma de IA multi-agente (13 agentes - Orchestrator proprio em Python -
+  LangGraph restrito a retry adaptativo de qualidade - Supabase) ... com validacao
+  deterministica de qualidade (AgentValidator, sem uso de LLM) ..."
 - Mencionado em `data/linkedin/about_pt.md`
 - Fonte dos numeros revisados: `data/projetos/P2D_fonte_2026-07-03.md` (nota original de Pedro,
   parcialmente superada pela verificacao de codigo de 2026-07-12 acima)

@@ -35,7 +35,9 @@ Ecossistema de dois repositorios com papeis distintos:
 
 2. **Pipeline de ML** - Naive Bayes + TF-IDF com GridSearchCV (cv=3, otimizando
    max_features [500-1500] e alpha [0.01-10.0]). Suporte a processamento paralelo
-   por CPU. Treinado com GPU (PyTorch + CUDA 11.8) no servidor HPC da FGV
+   por CPU. Treinado com scikit-learn (CPU) no servidor HPC da FGV - modelo classico,
+   nao usa GPU/PyTorch (correcao 2026-08-08: a mencao anterior a "treinamento
+   acelerado por GPU" nao se aplica a um classificador Naive Bayes)
 
 3. **Processamento avancado de PDFs** (`pdfinsight`) - multiplos extratores
    (PyMuPDF, pdfplumber, Tika), deteccao de escrita a mao, extracao de PDFs
@@ -53,7 +55,7 @@ Ecossistema de dois repositorios com papeis distintos:
    classe prevista + scores de probabilidade. Deploy em servidor Linux via Gunicorn + Docker
 
 **13 categorias de classificacao** com codigos internos FGV (ex: 01.134.332/01,
-01.144.44/02, 01.125.44/06...) — corpus de 1.750 documentos no conjunto de teste
+01.144.44/02, 01.125.44/06...) — corpus de 6.228 documentos processados
 
 ---
 
@@ -61,7 +63,6 @@ Ecossistema de dois repositorios com papeis distintos:
 
 - **Python 3** - logica principal
 - **scikit-learn** - pipeline ML (TfidfVectorizer + MultinomialNB + GridSearchCV)
-- **PyTorch + CUDA 11.8** - treinamento acelerado por GPU no HPC FGV
 - **spaCy** (`pt_core_news_lg` + `en_core_web_md`) - NLP, lemmatizacao, tokenizacao
 - **PyMuPDF / pdfplumber / Tesseract / EasyOCR / Apache Tika** - extracao multi-engine
 - **Llama 3.2 Vision (11B) via Ollama** - exploracao multimodal para metadados
@@ -74,9 +75,9 @@ Ecossistema de dois repositorios com papeis distintos:
 
 ## Impacto mensuravel
 
-- **96,82% de acuracia** no conjunto de teste (1.750 documentos, 13 categorias)
-- **Macro F1-Score: 0.9665** | Weighted F1-Score: 0.9681
-- Melhor classe: 99,67% F1 (01.134.332/04, 150 docs) | Pior: 90,85% F1 (01.134.332/02)
+- **96% de acuracia** (Macro F1: 0,96) sobre 6.228 documentos processados, 13 categorias
+- (Preencher: breakdown por classe apos a revisao de 2026-08-08 - os valores anteriores
+  de melhor/pior classe eram calculados sobre o corpus de 1.750 docs e ficaram desatualizados)
 - Eliminacao da classificacao manual de documentos academicos da FGV
 - API em producao com autenticacao JWT para consumo pelos sistemas internos
 - (Preencher: volume de documentos classificados em producao? Frequencia de uso?)
@@ -86,7 +87,7 @@ Ecossistema de dois repositorios com papeis distintos:
 ## Decisoes tecnicas importantes
 
 1. **Naive Bayes + TF-IDF como baseline solido** - escolhido pela eficiencia com corpus
-   moderado (96,82% de acuracia, superando a necessidade de modelos mais pesados);
+   moderado (96% de acuracia, superando a necessidade de modelos mais pesados);
    GridSearchCV otimiza max_features, alpha e n-grams com cv=3
 
 2. **Pipeline multi-engine de extracao de texto** - hierarquia de extratores (PyMuPDF ->
@@ -119,10 +120,12 @@ Ex: arquitetura da API, pipeline de pre-processamento, geracao de relatorio de a
 ## Bullet CV (rascunho)
 
 Desenvolveu ecossistema CIDA/FGV de classificacao inteligente de documentos academicos:
-pipeline ML (TF-IDF + Naive Bayes) com 96,82% de acuracia em 13 categorias e 1.750
-documentos de teste, extracao multi-engine de PDFs (PyMuPDF · Tesseract · EasyOCR),
-integracao SOAP com SGC FGV para aquisicao automatica de corpus, exploracao de Llama 3.2
-Vision para processamento multimodal, e API REST Flask/JWT em producao no HPC FGV.
+pipeline classico de NLP/ML (scikit-learn + spaCy, TF-IDF + Naive Bayes) com 96% de
+acuracia (Macro F1: 0,96) sobre 6.228 documentos, extracao multi-engine de PDFs
+(Tesseract · PyMuPDF · Tika), integracao SOAP com SGC FGV para aquisicao automatica de
+corpus, exploracao de Llama 3.2 Vision para processamento multimodal, e API REST
+Flask/JWT com hardening de producao (gunicorn, rate limiting, headers de seguranca) no
+HPC FGV.
 
 ---
 

@@ -2,7 +2,7 @@ nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
 linkedin_url: "https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823"
 kaggle_url: "https://www.kaggle.com/pedrogentil"
 
-titulo: "AI PRODUCT BUILDER | STATISTICIAN | ANALYTICAL SOLUTIONS ARCHITECT | GENAI & AI AGENTS | SENIOR BPM: END-TO-END AUTOMATION"
+titulo: "AI PRODUCT BUILDER | GENAI & AI AGENTS | ANALYTICAL SOLUTIONS ARCHITECT | STATISTICIAN | SENIOR BPM - END-TO-END AUTOMATION"
 contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn | Kaggle"
 
 sidebar_sobre: "ABOUT ME"
@@ -27,14 +27,14 @@ resumo_texto: |
 destaques_titulo: "IMPACT HIGHLIGHTS"
 destaques:
   - "AI Product Builder: SJUR (commissioned by FGV) and Process2Diagram and DataJud Monitor (authored projects, with no formal demand) - three AI products conceived, built, and operated individually, from discovery to production deployment, with no dedicated squad."
-  - "SJUR/FGV: R$28M in annual accounting-provision savings (legal risk reclassification), 4,980 legal cases resolved (2025) + 11,998 Official Gazette emails classified via LLM with 88% accuracy  - detecting FGV citations as defendant before the case number is even known."
-  - "96.82% accuracy (Macro F1: 0.9665) across 13 categories and 1,750 documents: automatic classification of FGV academic archive with ML/NLP (PyTorch/GPU) + multi-engine OCR pipeline and API in production on FGV HPC (CIDA project)."
-  - "Process2Diagram (self-authored project, identified before any demand): 13 AI agents turn a meeting into 12 formal artifacts (BPMN 2.0, IEEE 830, IBIS, knowledge graph) in under 5 minutes - a 90% reduction in process formalization time and automatic contradiction detection across meetings. Access available on request via LinkedIn."
+  - "SJUR/FGV: R$28M in annual accounting-provision savings (legal risk reclassification), 4,980 legal cases resolved (2025) + 11,760 SERDON emails classified via LLM at 88% accuracy over a 12-month period (Aug/2025-Aug/2026) - detecting FGV citations before the case is formally known. Cross-referencing with the DataJud/CNJ API has already investigated 19,560 cases."
+  - "96% accuracy (Macro F1: 0.96) in automatic classification of FGV's academic archive (6,228 documents processed): classic NLP/ML pipeline (scikit-learn + spaCy) with multi-engine OCR (Tesseract, PyMuPDF, Tika), trained on HPC and served via a hardened Flask/JWT API in production (CIDA project)."
+  - "Process2Diagram (self-authored project, identified before any demand): 13 AI agents, orchestrated by a custom Orchestrator with LangGraph applied specifically to adaptive quality retry, turn a meeting into 12 formal artifacts (BPMN 2.0, IEEE 830, IBIS, knowledge graph) in under 5 minutes - a 90% reduction in process formalization time and automatic contradiction detection across meetings. Access available on request via LinkedIn."
   - "~30% reduction in remaining execution time on a critical project (Xerox Brasil), through an innovative solution  - delivered ahead of schedule."
 
 publicacoes_titulo: "AUTHORED PROJECTS PORTFOLIO"
 publicacoes:
-  - "Process2Diagram (P2D): multi-agent AI platform (13 agents · LangGraph · Supabase) turning meetings into 12 formal artifacts (BPMN 2.0, IEEE 830, SBVR, DMN, IBIS, cross-meeting knowledge graph) across 7 interchangeable LLM providers (incl. Azure OpenAI), with native LGPD compliance and per-provider cost/error telemetry (FinOps) - a self-authored project, identified before any demand, 874 automated tests, in continuous production. Demo access available on request via LinkedIn."
+  - "Process2Diagram (P2D): multi-agent AI platform (13 agents · custom Python Orchestrator · LangGraph restricted to adaptive quality retry · Supabase) turning meetings into 12 formal artifacts (BPMN 2.0, IEEE 830, SBVR, DMN, IBIS, cross-meeting knowledge graph) across 7 interchangeable LLM providers (incl. Azure OpenAI), with deterministic quality validation (AgentValidator, no LLM involved), native LGPD compliance and per-provider cost/error telemetry (FinOps) - a self-authored project, identified before any demand, 874 automated tests, in continuous production. Demo access available on request via LinkedIn."
   - "DataJud Monitor: self-authored web platform for batch lookup and monitoring of court cases across all Brazilian courts (STJ, TRFs, TJs, TRTs, TREs) via the public DataJud/CNJ API - automatic classification via the CNJ's Unified Procedural Table (TPU), Statute of Limitations Radar (art. 485 CPC), Excel/PDF/JSON export, and a plans/quota/admin panel (Python · Streamlit · Supabase)."
   - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) - kaggle.com/pedrogentil."
   - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Apr/2025) - kaggle.com/pedrogentil."
@@ -48,9 +48,9 @@ experiencia:
     nota: "FGV direct employee (CLT) since Apr/2022; Senior Consultant allocated via MGN Informática S.A. from Apr/2019 to Mar/2022  - same role and projects throughout."
     detalhes:
       - "Technical leadership on strategic AI/ML, automation, and systems integration projects for FGV's corporate areas (Legal, Audit, Academic, Contracts)."
-      - "SJUR [GenAI/LLM]: legal-AI ecosystem for FGV's Legal Affairs Office (Superintendência Jurídica), comprising (1) case monitoring and triage via CNJ/DataJud API (Python · Streamlit)  - R$28M in annual accounting-provision savings via legal risk reclassification, 4,980 cases resolved (2025), 3,765 flagged (Q1-2026); and (2) Official Gazette citation classifier via LLM (DeepSeek · Gemini · Llama), processing 11,998 SERDON emails at 88% accuracy."
-      - "CIDA [ML/NLP]: pipeline for automatic academic document classification  - 96.82% accuracy (13 categories, 1,750 docs), GPU-accelerated training (PyTorch + CUDA), multi-engine PDF extraction (PyMuPDF · Tesseract · EasyOCR), SOAP integration with FGV SGC, Flask/JWT API in production on FGV HPC."
-      - "NDOC [Computer Vision]: RetinaFace for automatic captioning of institutional photo archive."
+      - "SJUR [GenAI/LLM]: legal-AI ecosystem for FGV's Legal Affairs Office (Superintendência Jurídica), comprising (1) case monitoring and triage via CNJ/DataJud API (Python · Streamlit), with semantic validation of case status (e.g., distinguishing final judgment from definitive filing) and cross-referencing that has already investigated 19,560 cases - R$28M in annual accounting-provision savings via legal risk reclassification, 4,980 cases resolved (2025), 3,765 flagged (Q1-2026); and (2) Official Gazette citation classifier via multi-provider LLM (DeepSeek · Gemini · Llama) with provider fallback, processing 11,760 SERDON emails over a 12-month period (Aug/2025-Aug/2026) at 88% accuracy with human review for cases below the confidence threshold."
+      - "CIDA [NLP/ML]: classic pipeline for automatic academic document classification - 96% accuracy (Macro F1: 0.96) across 6,228 documents, with spaCy preprocessing and scikit-learn classification, multi-engine PDF extraction (Tesseract, PyMuPDF, Tika), model trained on FGV HPC and served via a Flask/JWT API with production hardening (gunicorn, rate limiting, security headers), integrated with FGV's SGC via SOAP."
+      - "NDOC [Computer Vision]: RetinaFace for automatic detection and captioning of multiple faces in the institutional photo archive - structured metadata generation (JSON) with per-face coordinates and interactive visualization (SVG with zoom, pan and tooltips), delivered via REST API (FastAPI)."
       - "ECM & BPM [Automation/Integration]: technical owner of content governance and process automation on SE-SUITE. Contracts Portal: 1,330 contractual instruments, end-to-end BPM pipeline with D4Sign e-signature. SE-SUITE Utils: SOAP wrappers (22+ operations), migration of 200+ documents across 28 units, FastAPI/Docker."
   - empresa: "TRUST BUSINESS CONSULTING (own company)"
     periodo: "2013 - 2018"
@@ -79,9 +79,9 @@ competencias:
       - "Discriminant Analysis"
   - grupo: "AI & DATA ENGINEERING"
     itens:
-      - "Machine Learning (Scikit-learn · XGBoost · PyTorch)"
-      - "LLMs · RAG · LangGraph · AI Agents"
-      - "NLP & Computer Vision"
+      - "Classic Machine Learning (Scikit-learn · XGBoost)"
+      - "LLMs · RAG · Agent Orchestration (LangGraph, custom Orchestrator)"
+      - "NLP (spaCy) & Computer Vision"
       - "Prompt Engineering"
       - "ETL/ELT · Advanced SQL · SOAP/REST"
   - grupo: "DEVELOPMENT & GOVERNANCE"

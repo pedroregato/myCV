@@ -33,7 +33,8 @@ projetos:
     descricao: >
       Ferramenta open source que converte transcrições de reunião em diagramas BPMN 2.0,
       atas estruturadas e requisitos IEEE 830 em uma única execução automatizada. Pipeline
-      multi-agente (13 agentes) sobre 7 provedores LLM, com camada de conformidade LGPD
+      multi-agente (13 agentes, Orchestrator próprio em Python, LangGraph restrito a retry
+      adaptativo de qualidade) sobre 7 provedores LLM, com camada de conformidade LGPD
       e telemetria de custo/erro (FinOps).
     impacto: "Elimina trabalho manual de documentação pós-reunião."
     notas_claude: "data/projetos/process2diagram.md"
