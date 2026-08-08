@@ -24,6 +24,8 @@ resumo_texto: |
 
   I don't always wait for the demand: when I recognize an institutional risk before anyone has named it - such as the cost of knowledge lost in corporate meetings -, I take on building the solution as an authored project, with the same discipline as a commissioned one (Process2Diagram case).
 
+  My technical autonomy operates within a rigorous corporate IT governance process at FGV - with approval and alignment across Architecture, Infrastructure, Database, Networks, Business, and Security fronts, plus formal Change Management and version control with a CI/CD pipeline (Git/Bamboo). I lead technically end-to-end, but always negotiating deliverables with multiple specialized areas - not isolated work.
+
 destaques_titulo: "IMPACT HIGHLIGHTS"
 destaques:
   - "AI Product Builder: SJUR (commissioned by FGV) and Process2Diagram and DataJud Monitor (authored projects, with no formal demand) - three AI products conceived, built, and operated individually, from discovery to production deployment, with no dedicated squad."
@@ -87,7 +89,7 @@ competencias:
   - grupo: "DEVELOPMENT & GOVERNANCE"
     itens:
       - "Python (Pandas · NumPy · FastAPI · Streamlit)"
-      - "Docker · Git · BPMN · ECM (SE-Suite)"
+      - "Docker · Git + CI/CD (Bamboo) · BPMN · ECM (SE-Suite)"
       - "Process Automation & Systems Integration"
       - "Data/AI Governance · ISO 9000"
       - "Agile Methodologies (Scrum/Kanban)"
@@ -131,7 +133,7 @@ comunidade:
 
 sidebar_publicacoes_side: "AUTHORED PORTFOLIO"
 publicacoes_side:
-  - "Process2Diagram - multi-agent multi-provider, self-authored (Python · LangGraph)"
+  - "Process2Diagram - multi-agent multi-provider, self-authored (Python · custom Orchestrator + LangGraph)"
   - "DataJud Monitor - multi-court legal platform, self-authored (Streamlit · Supabase)"
   - "LearnMate - multi-agent tutor (Kaggle/Google, Nov/2025)"
   - "Echoes of Climate - RAG-based analysis (Kaggle/Google, Apr/2025)"

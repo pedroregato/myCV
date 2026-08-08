@@ -24,6 +24,8 @@ resumo_texto: |
 
   Nem sempre espero a demanda: quando reconheço um risco institucional antes de ele ser nomeado - como o custo do conhecimento perdido em reuniões corporativas -, assumo a construção da solução como projeto autoral, com a mesma disciplina de um projeto encomendado (caso Process2Diagram).
 
+  Minha autonomia técnica opera dentro de um processo de governança de TI corporativo rigoroso na FGV - com aprovação e alinhamento em frentes de Arquitetura, Infraestrutura, Banco de Dados, Redes, Negócio e Segurança, além de Gestão de Mudança formal e versionamento com pipeline de CI/CD (Git/Bamboo). Lidero tecnicamente de ponta a ponta, mas sempre negociando entregas com múltiplas áreas especializadas - não é trabalho isolado.
+
 destaques_titulo: "DESTAQUES DE IMPACTO"
 destaques:
   - "IA Product Builder: SJUR (encomendado pela FGV) e Process2Diagram e DataJud Monitor (projetos autorais, sem demanda formal) - tres produtos de IA concebidos, construidos e operados individualmente, do discovery ao deploy em producao, sem squad dedicado."
@@ -87,7 +89,7 @@ competencias:
   - grupo: "DESENVOLVIMENTO & GOVERNANÇA"
     itens:
       - "Python (Pandas · NumPy · FastAPI · Streamlit)"
-      - "Docker · Git · BPMN · ECM (SE-Suite)"
+      - "Docker · Git + CI/CD (Bamboo) · BPMN · ECM (SE-Suite)"
       - "Automação de Processos & Integração"
       - "Governança de Dados/IA · ISO 9000"
       - "Metodologias Ágeis (Scrum/Kanban)"
@@ -131,7 +133,7 @@ comunidade:
 
 sidebar_publicacoes_side: "PORTFÓLIO AUTORAL"
 publicacoes_side:
-  - "Process2Diagram - multi-agente multi-provedor, autoral (Python · LangGraph)"
+  - "Process2Diagram - multi-agente multi-provedor, autoral (Python · Orchestrator próprio + LangGraph)"
   - "DataJud Monitor - plataforma jurídica multi-tribunal, autoral (Streamlit · Supabase)"
   - "LearnMate - tutor multi-agente (Kaggle/Google, Nov/2025)"
   - "Echoes of Climate - análise com RAG (Kaggle/Google, Abr/2025)"
