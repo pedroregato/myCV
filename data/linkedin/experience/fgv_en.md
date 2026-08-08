@@ -3,7 +3,7 @@
 # Title: Technical Lead | Applied AI, Automation & Systems Integration
 # Period: April 2019 – Present
 # Location: Rio de Janeiro, Brazil
-# Updated: 2026-07-03
+# Updated: 2026-08-08
 
 ---
 
@@ -18,10 +18,10 @@ Technical leadership on strategic AI/ML, automation, and systems integration pro
 ▸ CIDA [ML/NLP] — Automatic classification of academic documents:
 96% accuracy (Macro F1: 0.96) across 6,228 documents processed. Classic NLP/ML pipeline (scikit-learn + spaCy), multi-engine PDF extraction (Tesseract · PyMuPDF · Tika), model trained on FGV HPC and served via a Flask/JWT API with production hardening (gunicorn, rate limiting, security headers), integrated with FGV's SGC via SOAP.
 
-▸ Process2Diagram [GenAI] — Meetings → BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (LangGraph · LLMs). Access available on request.
+▸ Process2Diagram [GenAI] — Meetings → BPMN 2.0 diagrams + structured minutes + IEEE 830 requirements in a single automated run (custom orchestrator · LangGraph · LLMs). Access available on request.
 
 ▸ ECM & BPM — Contracts Portal: 1,330 contractual instruments in an end-to-end BPM pipeline with D4Sign e-signature. SE-SUITE Utils: SOAP wrappers (22+ operations), migration of 200+ documents across 28 units, FastAPI/Docker.
 
 ▸ NDOC [Computer Vision] — RetinaFace for automatic detection and captioning of multiple faces in the institutional photo archive: structured metadata (JSON) with per-face coordinates and interactive visualization (SVG with zoom, pan and tooltips), delivered via REST API (FastAPI).
 
-Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · PyTorch · NLP · FastAPI · SOAP · BPMN · Docker · D4Sign
+Stack: Python · LangGraph · LLMs · RAG · Streamlit · scikit-learn · PyTorch · NLP · FastAPI · SOAP · BPMN · Docker · Git/Bamboo (CI/CD) · D4Sign
