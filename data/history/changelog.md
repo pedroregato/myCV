@@ -33,3 +33,7 @@ Snapshot antes de sincronizar com LinkedIn Profile.pdf exportado em Abr/2026
 ## v4 — 2026-04-26
 
 Snapshot antes de corrigir entrada FGV (período, cargo e projetos) e números SJUR
+
+## v5 — 2026-08-08
+
+Adiciona paragrafo de governanca de TI corporativa (arquitetura, infra, banco de dados, redes, negocio, seguranca, gestao de mudanca formal), CI/CD (Git/Bamboo) nas competencias e menciona Orchestrator proprio do Process2Diagram (alem de LangGraph); sincroniza mesmo conteudo nas referencias do LinkedIn (about e experiencia FGV).
