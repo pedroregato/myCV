@@ -51,6 +51,12 @@ class CV(FPDF):
         self.set_xy(x + BULLET_INDENT, y)
         self.multi_cell(w - BULLET_INDENT, line_h, text)
 
+    # ── Real height a bullet will need, under the current font ──────────────
+    def _bullet_height(self, w, line_h, text):
+        lines = self.multi_cell(w - BULLET_INDENT, line_h, text,
+                                 dry_run=True, output="LINES")
+        return len(lines) * line_h
+
     # ── Sidebar background (every page) ─────────────────────────────────────
     def _draw_sidebar_bg(self):
         _rgb(self, DARK, "fill")
@@ -358,19 +364,11 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
             pdf.draw_sidebar_continuation(data, page=continuation_page[0])
             y = 12
 
-    def force_new_page():
-        nonlocal y
-        if y > 12.5:
-            pdf.add_page()
-            continuation_page[0] += 1
-            pdf.draw_sidebar_continuation(data, page=continuation_page[0])
-            y = 12
-
     # ── DESTAQUES ────────────────────────────────────────────────────────────
     y = pdf._main_section(y, data["destaques_titulo"])
     pdf.set_font("Arial", "", 8.5)
     for item in data["destaques"]:
-        check_page(12)
+        check_page(pdf._bullet_height(iw, 4.5, item) + 2)
         pdf._bullet(ix, y, iw, 4.5, item)
         y = pdf.get_y() + 1.5
     y += 4
@@ -381,13 +379,14 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
         y = pdf._main_section(y, data["publicacoes_titulo"])
         pdf.set_font("Arial", "", 8.5)
         for item in data["publicacoes"]:
-            check_page(10)
+            check_page(pdf._bullet_height(iw, 4.5, item) + 2)
             pdf._bullet(ix, y, iw, 4.5, item)
             y = pdf.get_y() + 1.5
         y += 4
 
-    # ── EXPERIENCIA (sempre comeca em pagina nova) ────────────────────────────
-    force_new_page()
+    # ── EXPERIENCIA (continua na pagina atual se houver espaco para o titulo
+    #    e o primeiro bloco; senao comeca pagina nova) ─────────────────────────
+    check_page(45)
     y = pdf._main_section(y, data["experiencia_titulo"])
 
     for exp in data["experiencia"]:
@@ -422,7 +421,7 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
         # Bullets
         pdf.set_font("Arial", "", 8.5)
         for detalhe in exp["detalhes"]:
-            check_page(8)
+            check_page(pdf._bullet_height(iw, 4.5, detalhe) + 2)
             pdf._bullet(ix, y, iw, 4.5, detalhe)
             y = pdf.get_y()
         y += 5
@@ -433,7 +432,7 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
         y = pdf._main_section(y, data["resultados_titulo"])
         pdf.set_font("Arial", "", 8.5)
         for item in data["resultados"]:
-            check_page(10)
+            check_page(pdf._bullet_height(iw, 4.5, item) + 2)
             pdf._bullet(ix, y, iw, 4.5, item)
             y = pdf.get_y() + 1.5
         y += 4
