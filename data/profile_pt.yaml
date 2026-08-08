@@ -33,6 +33,7 @@ destaques:
   - "96% de acurácia (Macro F1: 0,96) em classificação automática de acervo acadêmico da FGV (6.228 documentos processados): pipeline de NLP/ML clássico (scikit-learn + spaCy) com OCR multi-engine (Tesseract, PyMuPDF, Tika), treinado em HPC e servido em API Flask/JWT endurecida para produção (projeto CIDA)."
   - "Process2Diagram (projeto autoral, identificado antes de qualquer demanda): 13 agentes de IA, orquestrados por um Orchestrator próprio com LangGraph aplicado especificamente a retry adaptativo de qualidade, transformam reunião em 12 artefatos formais (BPMN 2.0, IEEE 830, IBIS, grafo de conhecimento) em menos de 5 minutos - reduz em 90% o tempo de formalização de processos e detecta contradições entre reuniões automaticamente. Acesso sob solicitação via LinkedIn."
   - "~30% de redução: do tempo restante de execução em projeto crítico (Xerox Brasil), por solução inovadora aplicada em cenário real  - entrega antecipada ao cliente."
+  - "Autonomia técnica exercida dentro de governança de TI corporativa rigorosa na FGV (Arquitetura, Infraestrutura, Banco de Dados, Redes, Negócio, Segurança) + Gestão de Mudança formal e CI/CD (Git/Bamboo) - liderança de ponta a ponta, não trabalho isolado."
 
 publicacoes_titulo: "PORTFÓLIO DE PROJETOS AUTORAIS"
 publicacoes:

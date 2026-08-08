@@ -1,6 +1,6 @@
 # Career Card — SJUR (Superintendencia Juridica FGV)
 # Projeto FGV | Status: Ativo
-# Atualizado: 2026-07-03
+# Atualizado: 2026-08-08
 
 **Nota de nomenclatura (2026-07-03):** este projeto NAO deve ser confundido com o
 "DataJud Monitor", projeto autoral pessoal (plataforma web multi-tribunal com planos/cotas,
@@ -44,6 +44,7 @@ Python - Requests (API CNJ/DataJud) - Streamlit - pandas - SQLite/PostgreSQL
   do risco juridico dos processos monitorados
 - 4.980 processos acompanhados em 2025
 - 3.765 novos processos no 1T2026
+- Cruzamento com a API DataJud/CNJ ja investigou 19.560 processos
 - Reducao do tempo de triagem manual (preencher % ou horas/semana)
 - Visibilidade completa do pipeline juridico (antes: zero)
 
@@ -61,11 +62,13 @@ Ex: geracao do cliente API, modelagem do banco, dashboard Streamlit, etc.)
 ## Bullet CV (rascunho)
 
 Desenvolvi ecossistema juridico-IA para o SJUR/FGV: (1) monitor do DataJud/CNJ
-acompanhando +4.900 processos, gerando R$28M em economia de provisionamento contabil
-anual via reclassificacao de risco; (2) classificador de citacoes
-em Diarios Oficiais via LLM (DeepSeek/GPT/Gemini/Llama), processando 11.998 e-mails
-da SERDON com 88% de acuracia — detectando processos desconhecidos antes que prazos
-processuais comecem a correr.
+acompanhando +4.900 processos e ja investigando 19.560 processos via cruzamento
+com a API, gerando R$28M em economia de provisionamento contabil anual via
+reclassificacao de risco; (2) classificador de citacoes em Diarios Oficiais via
+LLM (DeepSeek/Gemini/Llama, com fallback entre provedores), processando 11.760
+e-mails da SERDON em 12 meses (ago/2025-ago/2026) com 88% de acuracia e revisao
+humana para casos abaixo do limiar de confianca — detectando processos
+desconhecidos antes que prazos processuais comecem a correr.
 
 ## Iniciativas relacionadas
 
@@ -108,7 +111,7 @@ em tres categorias:
 - **Stack:** Python - DeepSeek API - Gemini API - OpenAI API - llama-cpp-python - Voila -
   Streamlit - SQLite - spaCy (`pt_core_news_lg`) - BeautifulSoup4 - Docker
 - **Status:** POC funcional com pipeline completo (maio/2025)
-- **11.998 e-mails SERDON processados** com **88% de acuracia** na classificacao
+- **11.760 e-mails SERDON processados** em 12 meses (ago/2025-ago/2026) com **88% de acuracia** na classificacao
 - **(Preencher: integracao futura com o monitoramento de processos do SJUR apos identificar o numero do processo?)**
 
 **Por que e complementar ao monitoramento de processos do SJUR:**

@@ -33,6 +33,7 @@ destaques:
   - "96% accuracy (Macro F1: 0.96) in automatic classification of FGV's academic archive (6,228 documents processed): classic NLP/ML pipeline (scikit-learn + spaCy) with multi-engine OCR (Tesseract, PyMuPDF, Tika), trained on HPC and served via a hardened Flask/JWT API in production (CIDA project)."
   - "Process2Diagram (self-authored project, identified before any demand): 13 AI agents, orchestrated by a custom Orchestrator with LangGraph applied specifically to adaptive quality retry, turn a meeting into 12 formal artifacts (BPMN 2.0, IEEE 830, IBIS, knowledge graph) in under 5 minutes - a 90% reduction in process formalization time and automatic contradiction detection across meetings. Access available on request via LinkedIn."
   - "~30% reduction in remaining execution time on a critical project (Xerox Brasil), through an innovative solution  - delivered ahead of schedule."
+  - "Technical autonomy exercised within a rigorous corporate IT governance process at FGV (Architecture, Infrastructure, Database, Networks, Business, Security) + formal Change Management and CI/CD (Git/Bamboo) - end-to-end leadership, not isolated work."
 
 publicacoes_titulo: "AUTHORED PROJECTS PORTFOLIO"
 publicacoes:
