@@ -38,6 +38,10 @@ def _rgb(pdf, color, target="text"):
 
 
 class CV(FPDF):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.rendered_competencia_groups = set()
+
     def header(self): pass
     def footer(self): pass
 
@@ -55,6 +59,11 @@ class CV(FPDF):
     def _bullet_height(self, w, line_h, text):
         lines = self.multi_cell(w - BULLET_INDENT, line_h, text,
                                  dry_run=True, output="LINES")
+        return len(lines) * line_h
+
+    # ── Real height a plain (non-bulleted) multi_cell will need ─────────────
+    def _text_height(self, w, line_h, text):
+        lines = self.multi_cell(w, line_h, text, dry_run=True, output="LINES")
         return len(lines) * line_h
 
     # ── Sidebar background (every page) ─────────────────────────────────────
@@ -239,6 +248,7 @@ class CV(FPDF):
                              text_color=LIGHT_GRAY, bullet_color=AMBER, sq=1.1)
                 y = self.get_y()
             y += 3
+            self.rendered_competencia_groups.add(grupo["grupo"])
 
         self._draw_wave(data)
 
@@ -266,6 +276,7 @@ class CV(FPDF):
                                          text_color=LIGHT_GRAY, bullet_color=AMBER, sq=1.1)
                             y = self.get_y()
                         y += 3
+                        self.rendered_competencia_groups.add(grupo["grupo"])
                     y += 1
                 # FORMAÇÃO COMPLEMENTAR
                 if data.get("formacao_comp"):
@@ -364,7 +375,26 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
             pdf.draw_sidebar_continuation(data, page=continuation_page[0])
             y = 12
 
+    def check_page_for_section(title, first_item_text=None, is_bullet=True):
+        """Reserve real height of the section title + its first item, so the
+        title never gets orphaned at the bottom of a page while the first
+        item spills to the next one."""
+        pdf.set_font("Arial", "", 11)
+        title_lines = pdf.multi_cell(M_CONT_W, 7, title, dry_run=True, output="LINES")
+        needed = len(title_lines) * 7 + 5
+
+        if first_item_text:
+            pdf.set_font("Arial", "", 8.5)
+            if is_bullet:
+                needed += pdf._bullet_height(iw, 4.5, first_item_text) + 2
+            else:
+                lines = pdf.multi_cell(iw, 4.5, first_item_text, dry_run=True, output="LINES")
+                needed += len(lines) * 4.5 + 2
+
+        check_page(needed)
+
     # ── DESTAQUES ────────────────────────────────────────────────────────────
+    check_page_for_section(data["destaques_titulo"], data["destaques"][0], is_bullet=True)
     y = pdf._main_section(y, data["destaques_titulo"])
     pdf.set_font("Arial", "", 8.5)
     for item in data["destaques"]:
@@ -375,7 +405,7 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
 
     # ── PORTFÓLIO DE PROJETOS PESSOAIS ────────────────────────────────────────
     if data.get("publicacoes"):
-        check_page(20)
+        check_page_for_section(data["publicacoes_titulo"], data["publicacoes"][0], is_bullet=True)
         y = pdf._main_section(y, data["publicacoes_titulo"])
         pdf.set_font("Arial", "", 8.5)
         for item in data["publicacoes"]:
@@ -386,7 +416,7 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
 
     # ── EXPERIENCIA (continua na pagina atual se houver espaco para o titulo
     #    e o primeiro bloco; senao comeca pagina nova) ─────────────────────────
-    check_page(45)
+    check_page_for_section(data["experiencia_titulo"], data["experiencia"][0]["empresa"], is_bullet=False)
     y = pdf._main_section(y, data["experiencia_titulo"])
 
     for exp in data["experiencia"]:
@@ -428,7 +458,7 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
 
     # ── RESULTADOS VERIFICÁVEIS ───────────────────────────────────────────────
     if data.get("resultados"):
-        check_page(20)
+        check_page_for_section(data["resultados_titulo"], data["resultados"][0], is_bullet=True)
         y = pdf._main_section(y, data["resultados_titulo"])
         pdf.set_font("Arial", "", 8.5)
         for item in data["resultados"]:
@@ -438,12 +468,12 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
         y += 4
 
     # ── FORMACAO ─────────────────────────────────────────────────────────────
-    check_page(20)
+    check_page_for_section(data["educacao_titulo"], data["educacao"][0], is_bullet=False)
     y = pdf._main_section(y, data["educacao_titulo"])
     for edu in data["educacao"]:
-        check_page(12)
-        pdf.set_xy(ix, y)
         pdf.set_font("Arial", "", 8.5)
+        check_page(pdf._text_height(iw, 4.5, edu) + 1)
+        pdf.set_xy(ix, y)
         _rgb(pdf, BODY_COL, "text")
         pdf.multi_cell(iw, 4.5, edu)
         y = pdf.get_y() + 3
@@ -451,23 +481,39 @@ def create_cv(filename, data, photo_path="data/linkedin/FotoLinkedin.png"):
     y += 3
 
     # ── DEPOIMENTOS ──────────────────────────────────────────────────────────
-    check_page(20)
+    check_page_for_section(data["depoimentos_titulo"], data["depoimentos"][0]["texto"], is_bullet=False)
     y = pdf._main_section(y, data["depoimentos_titulo"])
 
     for dep in data["depoimentos"]:
-        check_page(18)
-        pdf.set_xy(ix, y)
         pdf.set_font("Arial", "I", 8.5)
+        check_page(pdf._text_height(iw, 4.5, dep["texto"]) + 1)
+        pdf.set_xy(ix, y)
         _rgb(pdf, BODY_COL, "text")
         pdf.multi_cell(iw, 4.5, dep["texto"])
         y = pdf.get_y() + 1
 
-        check_page(6)
-        pdf.set_xy(ix, y)
         pdf.set_font("Arial", "B", 8.5)
+        check_page(pdf._text_height(iw, 4.5, dep["autor"]) + 1)
+        pdf.set_xy(ix, y)
         _rgb(pdf, AMBER, "text")
         pdf.cell(iw, 4.5, dep["autor"], 0, 1,
                  link=dep.get("link", ""))
         y = pdf.get_y() + 4
+
+    # ── Rede de seguranca: todo grupo de competencias precisa ter sido desenhado
+    #    em algum lugar (sidebar da pagina 1 ou continuacao da pagina 2). Hoje o
+    #    grupo em DEFERRED_COMPETENCIA_GROUPS so aparece se houver pelo menos uma
+    #    quebra de pagina no fluxo principal; se o conteudo encolher a ponto de
+    #    caber em 1 pagina, esse grupo sumiria silenciosamente sem este check.
+    all_groups = {g["grupo"] for g in data.get("competencias", [])}
+    missing = all_groups - pdf.rendered_competencia_groups
+    if missing:
+        raise RuntimeError(
+            f"Grupo(s) de competencias nao renderizados em nenhuma pagina: {missing}. "
+            "Provavelmente o CV coube em menos paginas do que o esperado e a "
+            "pagina de continuacao (onde DEFERRED_COMPETENCIA_GROUPS e desenhado) "
+            "nao foi criada. Veja DEFERRED_COMPETENCIA_GROUPS e "
+            "draw_sidebar_continuation() em pdf_generator.py."
+        )
 
     pdf.output(filename)

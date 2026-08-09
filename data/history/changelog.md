@@ -37,3 +37,7 @@ Snapshot antes de corrigir entrada FGV (período, cargo e projetos) e números S
 ## v5 — 2026-08-08
 
 Adiciona paragrafo de governanca de TI corporativa (arquitetura, infra, banco de dados, redes, negocio, seguranca, gestao de mudanca formal), CI/CD (Git/Bamboo) nas competencias e menciona Orchestrator proprio do Process2Diagram (alem de LangGraph); sincroniza mesmo conteudo nas referencias do LinkedIn (about e experiencia FGV).
+
+## v6 — 2026-08-08
+
+correção de layout: títulos órfãos, alturas calculadas, proteção de competências

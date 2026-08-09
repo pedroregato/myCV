@@ -1,0 +1,157 @@
+nome: "PEDRO GENTIL REGATO DE OLIVEIRA SOARES"
+linkedin_url: "https://www.linkedin.com/in/pedro-gentil-regato-de-oliveira-soares-46916823"
+kaggle_url: "https://www.kaggle.com/pedrogentil"
+
+titulo: "IA PRODUCT BUILDER | GENAI & AGENTES DE IA | ARQUITETO DE SOLUÇÕES ANALÍTICAS | ESTATÍSTICO | BPM SÊNIOR - AUTOMAÇÃO PONTA A PONTA"
+contato: "Rio de Janeiro - RJ | pedro.regato@gmail.com | +55 21 99330-6338 | LinkedIn | Kaggle"
+
+sidebar_sobre: "SOBRE MIM"
+wave_pro: "GenAI · BPM · ECM · ITIL"
+wave_pessoal: "Yoga · Música · Meditação"
+sidebar_contato: "CONTATO"
+sidebar_competencias: "COMPETENCIAS"
+sidebar_idiomas: "IDIOMAS"
+
+resumo_titulo: "PERFIL PROFISSIONAL | PROPOSTA DE VALOR"
+resumo_texto: |
+  Estatístico e BPM Sênior | Da automação de processos à IA em produção - soluções que integram modelo, fluxo e sistema.
+
+  Minha trajetória evoluiu de soluções baseadas em modelagem e simulação (logística/operacional) para iniciativas de Ciência de Dados, Machine Learning, NLP e IA aplicada. Nem todo desafio exigiu estatística formal - mas o rigor de hipótese, evidência, medição e risco sempre orientou minhas decisões técnicas e de negócio.
+
+  Meu diferencial está em integrar Modelo -> Sistema -> Processo. Em vez de análises isoladas, desenho soluções operáveis (dados, automação, governança, observabilidade e custo), sustentáveis do ponto de vista institucional.
+
+  Atuo como IA Product Builder: idealizo, prototipo e construo sozinho - da concepção ao deploy em produção, sem equipe de desenvolvimento dedicada - sistemas de IA que resolvem dores reais de negócio e se traduzem em métrica de valor (ex: R$28M em economia de provisionamento contábil anual, no caso do SJUR/FGV). Prefiro codar com IA para resolver problemas reais a apenas documentá-los.
+
+  Nem sempre espero a demanda: quando reconheço um risco institucional antes de ele ser nomeado - como o custo do conhecimento perdido em reuniões corporativas -, assumo a construção da solução como projeto autoral, com a mesma disciplina de um projeto encomendado (caso Process2Diagram).
+
+  Minha autonomia técnica opera dentro de um processo de governança de TI corporativo rigoroso na FGV - com aprovação e alinhamento em frentes de Arquitetura, Infraestrutura, Banco de Dados, Redes, Negócio e Segurança, além de Gestão de Mudança formal e versionamento com pipeline de CI/CD (Git/Bamboo). Lidero tecnicamente de ponta a ponta, mas sempre negociando entregas com múltiplas áreas especializadas - não é trabalho isolado.
+
+destaques_titulo: "DESTAQUES DE IMPACTO"
+destaques:
+  - "IA Product Builder: SJUR (encomendado pela FGV) e Process2Diagram e DataJud Monitor (projetos autorais, sem demanda formal) - tres produtos de IA concebidos, construidos e operados individualmente, do discovery ao deploy em producao, sem squad dedicado."
+  - "SJUR/FGV: R$28M em economia de provisionamento contábil anual (reclassificação de risco jurídico), 4.980 processos saneados (2025) + 11.760 e-mails do SERDON classificados via LLM com 88% de acurácia no período de 12 meses (ago/2025-ago/2026) - detectando citações da FGV antes que o processo seja formalmente conhecido. Cruzamento com a API DataJud/CNJ já investigou 19.560 processos."
+  - "96% de acurácia (Macro F1: 0,96) em classificação automática de acervo acadêmico da FGV (6.228 documentos processados): pipeline de NLP/ML clássico (scikit-learn + spaCy) com OCR multi-engine (Tesseract, PyMuPDF, Tika), treinado em HPC e servido em API Flask/JWT endurecida para produção (projeto CIDA)."
+  - "Process2Diagram (projeto autoral, identificado antes de qualquer demanda): 13 agentes de IA, orquestrados por um Orchestrator próprio com LangGraph aplicado especificamente a retry adaptativo de qualidade, transformam reunião em 12 artefatos formais (BPMN 2.0, IEEE 830, IBIS, grafo de conhecimento) em menos de 5 minutos - reduz em 90% o tempo de formalização de processos e detecta contradições entre reuniões automaticamente. Acesso sob solicitação via LinkedIn."
+  - "~30% de redução: do tempo restante de execução em projeto crítico (Xerox Brasil), por solução inovadora aplicada em cenário real  - entrega antecipada ao cliente."
+  - "Autonomia técnica exercida dentro de governança de TI corporativa rigorosa na FGV (Arquitetura, Infraestrutura, Banco de Dados, Redes, Negócio, Segurança) + Gestão de Mudança formal e CI/CD (Git/Bamboo) - liderança de ponta a ponta, não trabalho isolado."
+
+publicacoes_titulo: "PORTFÓLIO DE PROJETOS AUTORAIS"
+publicacoes:
+  - "Process2Diagram (P2D): plataforma de IA multi-agente (13 agentes · Orchestrator próprio em Python · LangGraph restrito a retry adaptativo de qualidade · Supabase) que transforma reuniões em 12 artefatos formais (BPMN 2.0, IEEE 830, SBVR, DMN, IBIS, grafo de conhecimento) sobre 7 provedores LLM intercambiáveis (incl. Azure OpenAI), com validação determinística de qualidade (AgentValidator, sem uso de LLM), governança LGPD nativa e telemetria de custo/erro por provedor (FinOps) - projeto autoral, identificado antes de qualquer demanda, 874 testes automatizados, em produção contínua. Acesso sob solicitação via LinkedIn."
+  - "DataJud Monitor: plataforma web autoral para consulta e monitoramento em lote de processos judiciais em todos os tribunais brasileiros (STJ, TRFs, TJs, TRTs, TREs) via API pública do DataJud/CNJ - classificação automática pela Tabela Processual Unificada (TPU), Radar de Prescrição (art. 485 CPC), exportação Excel/PDF/JSON, sistema de planos/cotas e painel administrativo (Python · Streamlit · Supabase)."
+  - "LearnMate: A Multi-Agent AI Tutor for Python (Kaggle/Google AI Agents Intensive capstone, Nov/2025) - kaggle.com/pedrogentil."
+  - "Echoes of Climate: How Politics Has Been Shaping the Planet (Kaggle/Google GenAI Intensive capstone, Abr/2025) - kaggle.com/pedrogentil."
+  - "Kaggle: 56 datasets publicados, 217 notebooks, competicao Hull Tactical Market Prediction (S&P 500, premio USD 100k) + capstone GenAI Intensive Google/Kaggle - 5 cursos concluídos."
+
+experiencia_titulo: "EXPERIÊNCIA PROFISSIONAL"
+experiencia:
+  - empresa: "FUNDAÇÃO GETÚLIO VARGAS (FGV)"
+    periodo: "2019 - Atual"
+    cargo: "Responsável Técnico | IA Aplicada, Automação & Integração de Sistemas"
+    nota: "CLT FGV desde abr/2022; Consultor Sênior alocado via MGN Informática S.A. de abr/2019 a mar/2022  - mesma função e projetos durante todo o período."
+    detalhes:
+      - "Liderança técnica em projetos estratégicos de IA/ML, automação e integração de sistemas para áreas corporativas da DTI/FGV (Jurídico, Auditoria, Acadêmico, Contratos)."
+      - "SJUR [GenAI/LLM]: ecossistema jurídico-IA para a Superintendência Jurídica da FGV, composto por (1) monitoramento e triagem processual via API CNJ/DataJud (Python · Streamlit), com validação semântica de status processual (ex: distinção entre trânsito em julgado e arquivamento definitivo) e cruzamento que já investigou 19.560 processos - R$28M em economia de provisionamento contábil anual via reclassificação de risco, 4.980 processos saneados (2025), 3.765 sinalizados (1T2026); e (2) classificador de citações em Diários Oficiais via LLM multi-provedor (DeepSeek · Gemini · Llama) com fallback entre provedores, processando 11.760 e-mails do SERDON no período de 12 meses (ago/2025-ago/2026) com 88% de acurácia e revisão humana para casos abaixo do limiar de confiança."
+      - "CIDA [NLP/ML]: pipeline clássico de classificação automática de documentos acadêmicos - 96% de acurácia (Macro F1: 0,96) sobre 6.228 documentos, com pré-processamento via spaCy e classificação via scikit-learn, extração multi-engine de PDFs (Tesseract, PyMuPDF, Tika), modelo treinado em HPC FGV e servido via API Flask/JWT com hardening de produção (gunicorn, rate limiting, headers de segurança), integrada ao SGC FGV via SOAP."
+      - "NDOC [Visão Computacional]: RetinaFace para detecção e legendagem automática de múltiplos rostos em acervo fotográfico institucional - geração de metadados estruturados (JSON) com coordenadas de cada face e visualização interativa (SVG com zoom, pan e tooltips), entregue via API REST (FastAPI)."
+      - "ECM & BPM [Automação/Integração]: responsável técnico por governança de conteúdo e processos no SE-SUITE. Portal de Contratos DO/Compras: 1.330 instrumentos contratuais, pipeline BPM end-to-end com assinatura digital via D4Sign. SE-SUITE Utils: wrappers SOAP (22+ operações), migração de 200+ documentos para 28 unidades, servido via FastAPI/Docker."
+  - empresa: "TRUST BUSINESS CONSULTING (empresa própria)"
+    periodo: "2013 - 2018"
+    cargo: "Fundador & Consultor Sênior"
+    detalhes:
+      - "EPE - Empresa de Pesquisa Energética: levantamento, diagramação e automação de 90 processos corporativos (Plano Decenal de Energia, Contratação de Bens/Serviços/Obras, Licitações) em BizAgi BPM Suite, em parceria com a Microware."
+      - "PUC/Petrobras: coordenação de equipe técnica para desenvolvimento de sistema de gestão de serviços em plataformas de petróleo (Groovy/Grails · Java · Oracle)."
+      - "Sanofi / Remer Villaça & Nogueira: design e implantação de Gestão de Indicadores Estratégicos para a divisão de Patent Support da Sanofi - diagnóstico de KPIs por segmento (Innovative Healthcare, CHC, Generics), proposição de métricas de pró-atividade e automação em BizAgi."
+  - empresa: "CONSULTORIA INDEPENDENTE"
+    periodo: "2006 - 2013"
+    cargo: "Consultor Sênior | BPM, ITIL & Automação de Processos"
+    nota: "Probank Inteligência e Tecnologia (2006-2008) · Path ITTS (2008-2011) · Partner IT (2011-2013)"
+    detalhes:
+      - "Path ITTS (sócio, 2008-2011): Consultor Master ITIL v3 na PMESP - Polícia Militar do Estado de São Paulo (Gestão de Mudanças, Configuração e Catálogo de Serviços no IBM Tivoli Maximo SRM 7.1); projetos similares para Grupo Pague Menos e Multiterminais."
+      - "Partner IT (2011-2013) - RioCard TI / FETRANSPOR: implementação IBM Maximo com módulos de Gestão Ambiental (licenças, outorgas, penalidades, recursos), Consultórios Volantes de Saúde (CVS) para frota FETRANSPOR e algoritmos de predição de quebra de SLA (SQL/DB2); processos ITIL v3 completos (Mudanças, Problemas, Configuração, Nível de Serviço)."
+      - "Probank (2006-2008) - Xerox Brasil: redesenho do processo de Gestão de Ativos de TI e desenvolvimento em Oracle Applications/PLSQL/Java. Turnaround com ~30% de redução no tempo restante, entrega antecipada ao cliente."
+
+competencias_titulo: "COMPETÊNCIAS-CHAVE"
+competencias:
+  - grupo: "ESTATÍSTICA & MODELAGEM"
+    itens:
+      - "Estatística Descritiva/Inferencial"
+      - "Testes de Hipóteses & Validação"
+      - "Modelagem Probabilística/Preditiva"
+      - "Séries Temporais"
+      - "Análise Discriminante"
+  - grupo: "IA & ENGENHARIA DE DADOS"
+    itens:
+      - "Machine Learning Clássico (Scikit-learn · XGBoost)"
+      - "LLMs · RAG · Orquestração de Agentes (LangGraph, Orchestrator próprio)"
+      - "NLP (spaCy) & Visão Computacional"
+      - "Engenharia de Prompt"
+      - "ETL/ELT · SQL Avançado · SOAP/REST"
+  - grupo: "DESENVOLVIMENTO & GOVERNANÇA"
+    itens:
+      - "Python (Pandas · NumPy · FastAPI · Streamlit)"
+      - "Docker · Git + CI/CD (Bamboo) · BPMN · ECM (SE-Suite)"
+      - "Automação de Processos & Integração"
+      - "Governança de Dados/IA · ISO 9000"
+      - "Metodologias Ágeis (Scrum/Kanban)"
+  - grupo: "BPM & AUTOMAÇÃO"
+    itens:
+      - "BizAgi BPM Suite · IBM Maximo SRM"
+      - "ITIL v3 · Oracle Applications"
+      - "PL/SQL · Java · Groovy/Grails"
+
+educacao_titulo: "FORMAÇÃO ACADÊMICA"
+educacao:
+  - "MBA em Gestão Estratégica e Econômica de Negócios\nInstituição: Fundação Getúlio Vargas - FGV, Agosto/2014"
+  - "Extensão em Análise e Projeto Estruturado de Sistemas\nInstituição: Universidade do Estado do Rio de Janeiro - UERJ, Dez /1990"
+  - "Graduação em Estatística\nInstituição: Departamento de Matemática e Estatística da Universidade do Estado do Rio de Janeiro - UERJ, Dez/1990"
+
+idiomas_titulo: "IDIOMAS"
+idiomas:
+  - "Português (Nativo)"
+  - "Inglês (Avançado - leitura)"
+
+sidebar_formacao_comp: "FORMAÇÃO COMPLEMENTAR"
+formacao_comp:
+  - "5-Day AI Agents: Intensive Vibe Coding Course with Google - Google/Kaggle (Jul/2026)"
+  - "Introduction to Model Context Protocol - Anthropic (Mai/2026)"
+  - "5-Day Gen AI Intensive - Google/Kaggle (Abr/2025)"
+  - "5-Day AI Agents Intensive - Google/Kaggle (Nov/2025)"
+  - "Kaggle Learn: Intro to ML · Intermediate ML · Feature Engineering · Intro to Deep Learning · Computer Vision (5 cursos)"
+
+sidebar_interesses: "INTERESSES"
+interesses:
+  - "Yoga e meditação (prática regular)"
+  - "Culinária"
+  - "Mitologia indiana aplicada a negócios"
+  - "Xadrez / pensamento estratégico"
+  - "Música"
+
+sidebar_comunidade: "ATUAÇÃO COMUNITÁRIA"
+comunidade:
+  - "Membro Diretor - Centro Ramakrishna Vedanta Rio de Janeiro (vedantarj.org.br)"
+  - "Líder do grupo musical do centro"
+
+sidebar_publicacoes_side: "PORTFÓLIO AUTORAL"
+publicacoes_side:
+  - "Process2Diagram - multi-agente multi-provedor, autoral (Python · Orchestrator próprio + LangGraph)"
+  - "DataJud Monitor - plataforma jurídica multi-tribunal, autoral (Streamlit · Supabase)"
+  - "LearnMate - tutor multi-agente (Kaggle/Google, Nov/2025)"
+  - "Echoes of Climate - análise com RAG (Kaggle/Google, Abr/2025)"
+
+resultados_titulo: "RESULTADOS VERIFICÁVEIS"
+resultados:
+  - "1.330 instrumentos contratuais em pipeline BPM end-to-end com assinatura digital D4Sign (Portal de Contratos FGV)"
+  - "~30% de reducao no tempo restante de projeto critico - entrega antecipada confirmada em depoimento de gestor (Xerox Brasil)"
+  - "90+ processos corporativos mapeados e automatizados em BizAgi BPM Suite para a EPE (Plano Decenal de Energia Nacional)"
+  - "Predicao de quebra de SLA (SQL/DB2) + Gestao Ambiental IBM Maximo - RioCard / FETRANSPOR"
+  - "ITIL v3 implementado na PMESP - projeto pioneiro de Gestao de Servicos de TIC no Estado de Sao Paulo"
+
+depoimentos_titulo: "DEPOIMENTOS"
+depoimentos:
+  - texto: "\"Inovação decisiva em momento crítico: propôs e executou solução com risco técnico controlado, gerando ~30% de economia no tempo restante e permitindo entrega antes do prazo. Profissional brilhante e confiável.\""
+    autor: "Rodrigo Monteiro Gaio - PMP | IT Project Manager (Xerox Brasil)"
+    link: "https://www.linkedin.com/in/rodrigogaiopmp/"
+  - texto: "\"Profissional business-solution driven, altamente comprometido com resultado e rigor técnico. Entrega soluções simples e brilhantes, com visão, ética, confiabilidade e forte capacidade de relacionamento e liderança.\""
+    autor: "Joaquim Santos Neto - CIO | Transformação Digital"
+    link: "https://www.linkedin.com/in/joaquimsantosneto/"
