@@ -47,11 +47,27 @@ def generate(lang):
     print(f"[{lang.upper()}] Generated: {config['output_file']}")
 
 
+def generate_custom(data_file, output_file):
+    with open(data_file, encoding='utf-8') as f:
+        data = yaml.safe_load(f)
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    create_cv(output_file, data, photo_path=PHOTO_PATH)
+    print(f"Generated: {output_file}")
+
+
 def main():
     parser = argparse.ArgumentParser(description='Generate CV PDFs from YAML data.')
     parser.add_argument('--lang', choices=['pt', 'en', 'all'], default='all',
                         help='Language to generate (default: all)')
+    parser.add_argument('--data-file', help='Custom YAML data file (overrides --lang)')
+    parser.add_argument('--output-file', help='Custom output PDF path (used with --data-file)')
     args = parser.parse_args()
+
+    if args.data_file or args.output_file:
+        if not (args.data_file and args.output_file):
+            parser.error('--data-file and --output-file must be used together')
+        generate_custom(args.data_file, args.output_file)
+        return
 
     langs = ['pt', 'en'] if args.lang == 'all' else [args.lang]
     for lang in langs:
